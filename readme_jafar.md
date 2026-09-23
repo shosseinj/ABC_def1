@@ -35,17 +35,23 @@ Phase 1 now uses the amended amplitude-bearing-cell contract. Integer amplitudes
 
 ### Full-test clean accuracy (2026-09-23)
 
+> **Representation audit failure (2026-09-23):** The reported Binary-grid accuracies below are diagnostic OOD evaluations, not valid Binary-trained-model accuracies. All nine checkpoints were trained on count or per-sample-normalized-count inputs; no Binary-trained checkpoint exists, and the same checkpoint was reused after thresholding input to occupancy. Mark all Binary rows `REPRESENTATION_MISMATCH / NON_COMPARABLE` and remove them from paper benchmark tables. DVS-Gesture/CIFAR10-DVS “Integer” rows are actually fractional normalized-count rows and are `NON_COMPARABLE` to strict Integer-grid amplitudes; CIFAR10-DVS seed 42 additionally has a float32-training versus float16-cache evaluation mismatch. See `Reports/clean_accuracy_audit.md`.
+
+> **Corrected Phase A active:** New N-MNIST strict Integer-only manifests are complete for seeds 42, 123, and 777. Each contains 1,000 samples selected deterministically only from that seed's Integer-clean-correct official-test predictions, with no Binary dependency. Corrected attacks write only under `Reports/results/nmnist_integer_corrected/`; the first condition (seed 42, $B_\infty=1$) independently passed at 84.70% ASR, and the remaining resumable conditions are running. Legacy intersection-based Integer rows are excluded from final tables.
+
+> **True N-MNIST Binary clean training PASS (2026-09-23):** Independently initialized Binary-grid checkpoints were trained with occupancy inputs in both training and evaluation. Full official-test accuracies are 98.73% (seed 42), 98.29% (seed 123), and 98.53% (seed 777), giving **98.52 ± 0.22%** (sample SD; 95% t CI 97.97–99.06%). All three use all classes and pass the class-collapse check. These results supersede the invalid 85.48%, 95.65%, and 80.15% count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/nmnist_binary_true/`.
+
 Clean-only evaluation of all requested seeds and both frozen representations is complete. It used all 10,000 official N-MNIST test samples, all 264 official DVS-Gesture test samples, and all 1,000 samples in the frozen CIFAR10-DVS stratified test split (CIFAR10-DVS has no official train/test partition). No attack manifest, clean-correct filtering, balancing, or subsampling was used. All sample-count, checkpoint seed/hash, representation-difference, eval-mode, and repeated-prefix determinism checks passed. See `Reports/clean_accuracy_report.md`, `Reports/results/clean_accuracy_by_seed.csv`, and `Reports/results/clean_accuracy_summary.csv`.
 
 | Dataset | Binary-grid mean ± SD | Integer-grid mean ± SD |
 |---|---:|---:|
-| N-MNIST | 87.0933% ± 7.8749% | 98.3867% ± 0.2146% |
+| N-MNIST | **98.5167% ± 0.2203% (true Binary-trained)** | 98.3867% ± 0.2146% |
 | DVS-Gesture | 13.7626% ± 5.0442% | 83.0808% ± 4.6289% |
 | CIFAR10-DVS | 16.0333% ± 3.3828% | 46.2000% ± 6.1733% |
 
 ### N-MNIST benchmark tables with seed-matched clean accuracy
 
-While ASR is reported in seed-specific rows, each row uses the clean full-test accuracy from the same seed. This avoids mixing a three-seed mean accuracy with a single-seed ASR. After all seed-777 attacks finish, the final paper table should replace the three seed-specific rows with one **SNN (Ours)** row containing the three-seed mean accuracy and three-seed aggregated ASR.
+While ASR is reported in seed-specific rows, each row uses the clean full-test accuracy from the same seed. This avoids mixing a three-seed mean accuracy with a single-seed ASR. The prior Binary ASRs were generated against count-trained checkpoints and are excluded; true Binary attack cells remain pending. After representation-matched attacks finish, the final paper table should replace the three seed-specific rows with one **SNN (Ours)** row containing the three-seed mean accuracy and three-seed aggregated ASR.
 
 #### Table 1 — Binary-grid DVS, N-MNIST
 
@@ -54,11 +60,11 @@ While ASR is reported in seed-specific rows, each row uses the clean full-test a
 | N-MNIST | ConvNet | 99.06 | 100 | 100 | 100 | 58.9 | 99.9 | 100 | 13.0 | 53.1 | 98.5 |
 |  | ResNet18 | 99.62 | 100 | 100 | 100 | 69.2 | 97.4 | 100 | 78.9 | 100 | 100 |
 |  | VGGSNN | 99.64 | 98.9 | 100 | 100 | 26.4 | 65.5 | 94.7 | 18.3 | 81.8 | 99.8 |
-|  | **SNN (Ours), seed 42** | **85.48** | **83.4** | **100** | **100** | **100** | **100** | **100** | **97.3** | **99.9** | **100** |
-|  | **SNN (Ours), seed 123** | **95.65** | **76.9** | **100** | **100** | **100** | **100** | **100** | **99.2** | **100** | **100** |
-|  | **SNN (Ours), seed 777** | **80.15** | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+|  | **SNN (Ours), seed 42** | **98.73** | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+|  | **SNN (Ours), seed 123** | **98.29** | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+|  | **SNN (Ours), seed 777** | **98.53** | pending | pending | pending | pending | pending | pending | pending | pending | pending |
 
-Final clean accuracy across seeds 42, 123, and 777: **87.09 ± 7.87%**.
+Final representation-matched clean accuracy across seeds 42, 123, and 777: **98.52 ± 0.22%** (95% t CI 97.97–99.06%).
 
 #### Table 2 — Integer-grid DVS, N-MNIST
 
@@ -77,7 +83,7 @@ Final clean accuracy across seeds 42, 123, and 777: **98.39 ± 0.21%**.
 
 | Dataset | Binary-grid Acc. | Integer-grid Acc. |
 |---|---:|---:|
-| N-MNIST | **87.09 ± 7.87%** | **98.39 ± 0.21%** |
+| N-MNIST | **98.52 ± 0.22%** | **98.39 ± 0.21%** |
 | DVS-Gesture | **13.76 ± 5.04%** | **83.08 ± 4.63%** |
 | CIFAR10-DVS | **16.03 ± 3.38%** | **46.20 ± 6.17%** |
 
