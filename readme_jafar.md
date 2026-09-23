@@ -41,12 +41,14 @@ Phase 1 now uses the amended amplitude-bearing-cell contract. Integer amplitudes
 
 > **True N-MNIST Binary clean training PASS (2026-09-23):** Independently initialized Binary-grid checkpoints were trained with occupancy inputs in both training and evaluation. Full official-test accuracies are 98.73% (seed 42), 98.29% (seed 123), and 98.53% (seed 777), giving **98.52 ± 0.22%** (sample SD; 95% t CI 97.97–99.06%). All three use all classes and pass the class-collapse check. These results supersede the invalid 85.48%, 95.65%, and 80.15% count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/nmnist_binary_true/`.
 
+> **True DVS-Gesture Binary clean training PASS (2026-09-23):** Representation-matched full official-test accuracies are 78.79% (seed 42), 80.68% (seed 123), and 84.47% (seed 777), giving **81.31 ± 2.89%**. All class-collapse checks pass. These results supersede the invalid 12.50%, 19.32%, and 9.47% normalized-count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/dvs_gesture_binary_true/`.
+
 Clean-only evaluation of all requested seeds and both frozen representations is complete. It used all 10,000 official N-MNIST test samples, all 264 official DVS-Gesture test samples, and all 1,000 samples in the frozen CIFAR10-DVS stratified test split (CIFAR10-DVS has no official train/test partition). No attack manifest, clean-correct filtering, balancing, or subsampling was used. All sample-count, checkpoint seed/hash, representation-difference, eval-mode, and repeated-prefix determinism checks passed. See `Reports/clean_accuracy_report.md`, `Reports/results/clean_accuracy_by_seed.csv`, and `Reports/results/clean_accuracy_summary.csv`.
 
 | Dataset | Binary-grid mean ± SD | Integer-grid mean ± SD |
 |---|---:|---:|
 | N-MNIST | **98.5167% ± 0.2203% (true Binary-trained)** | 98.3867% ± 0.2146% |
-| DVS-Gesture | 13.7626% ± 5.0442% | 83.0808% ± 4.6289% |
+| DVS-Gesture | **81.3131% ± 2.8930% (true Binary-trained)** | 83.0808% ± 4.6289% |
 | CIFAR10-DVS | 16.0333% ± 3.3828% | 46.2000% ± 6.1733% |
 
 ### N-MNIST benchmark tables with seed-matched clean accuracy
@@ -84,7 +86,7 @@ Final clean accuracy across seeds 42, 123, and 777: **98.39 ± 0.21%**.
 | Dataset | Binary-grid Acc. | Integer-grid Acc. |
 |---|---:|---:|
 | N-MNIST | **98.52 ± 0.22%** | **98.39 ± 0.21%** |
-| DVS-Gesture | **13.76 ± 5.04%** | **83.08 ± 4.63%** |
+| DVS-Gesture | **81.31 ± 2.89%** | **83.08 ± 4.63%** |
 | CIFAR10-DVS | **16.03 ± 3.38%** | **46.20 ± 6.17%** |
 
 ---

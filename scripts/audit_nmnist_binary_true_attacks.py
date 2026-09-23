@@ -1,4 +1,4 @@
-"""Independent reconstruction audit for corrected N-MNIST Integer attacks."""
+﻿"""Independent reconstruction audit for corrected N-MNIST Binary attacks."""
 from __future__ import annotations
 
 import argparse
@@ -54,8 +54,8 @@ def main() -> None:
         if sha256(path) != expected:
             errors.append(f"{name} hash mismatch")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    if manifest.get("selection_dependency") != "integer_clean_correct_only":
-        errors.append("manifest is not Integer-only")
+    if manifest.get("selection_dependency") != "binary_clean_correct_only":
+        errors.append("manifest is not Binary-only")
     if manifest.get("binary_dependency") is not False:
         errors.append("manifest has Binary dependency")
     if int(manifest.get("seed", -1)) != int(meta["seed"]):
@@ -77,7 +77,7 @@ def main() -> None:
         errors.append("checkpoint embedded seed mismatch")
     model = NMNISTConvSNN(0.5).to(device).eval()
     model.load_state_dict(checkpoint["model_state"], strict=True)
-    clean_all = cache["integer"]
+    clean_all = cache["binary"]
     labels = payload["labels"].astype(np.int64)
     offsets = payload["offsets"].astype(np.int64)
     reconstructed = np.zeros_like(clean_all)
@@ -110,7 +110,7 @@ def main() -> None:
         mass_ok = int(clean.astype(np.int64).sum()) == int(reconstructed[i].astype(np.int64).sum())
         manifest_row = manifest["samples"][i]
         label_ok = int(manifest_row["true_label"]) == int(labels[i]) == int(cache["labels"][i])
-        clean_correct_recorded = int(manifest_row["integer_clean_prediction"]) == int(labels[i])
+        clean_correct_recorded = int(manifest_row["binary_clean_prediction"]) == int(labels[i])
         sample_pass = all((source_ok, values_ok, domain_ok, no_collision, budget_ok,
                            packet_count_ok, amplitude_ok, mass_ok, label_ok, clean_correct_recorded))
         samples.append({"sample_id": int(expected_ids[i]), "passed_structural": sample_pass,
@@ -146,11 +146,11 @@ def main() -> None:
                 samples[i]["attack_success"] = success
     passed = not errors
     atomic_json(ROOT / args.output, {"passed": passed, "status": "PASS" if passed else "FAIL",
-        "run_id": meta["run_id"], "seed": meta["seed"], "representation": "integer",
-        "manifest_policy": "integer_clean_correct_only", "sample_count": len(expected_ids),
+        "run_id": meta["run_id"], "seed": meta["seed"], "representation": "binary",
+        "manifest_policy": "binary_clean_correct_only", "sample_count": len(expected_ids),
         "successful_attacks": successes, "asr_percent": 100.0 * successes / max(len(expected_ids), 1),
         "errors": errors[:100], "samples": samples,
-        "verified": ["seed", "checkpoint hash", "manifest hash and Integer-only policy", "sample identity",
+        "verified": ["seed", "checkpoint hash", "manifest hash and Binary-only policy", "sample identity",
           "clean correctness", "packet identity/count/amplitude", "mass", "temporal domain", "capacity-1",
           "B_inf", "B1", "B0", "reconstruction", "clean prediction", "adversarial prediction", "success"]})
     if not passed:
@@ -159,3 +159,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

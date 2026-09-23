@@ -1,4 +1,4 @@
-"""Resumable corrected N-MNIST Integer-only manifest and attack benchmark."""
+﻿"""Resumable corrected N-MNIST Binary-only manifest and attack benchmark."""
 from __future__ import annotations
 
 import argparse
@@ -28,8 +28,8 @@ from models.nmnist_snn import NMNISTConvSNN
 
 PYTHON = Path(r"C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\Scripts\python.exe")
 SEEDS = (42, 123, 777)
-BUDGETS = {"B_inf": (1, 2, 3), "B1": (500, 750, 1000, 1500), "B0": (200, 300, 400, 600)}
-RESULT_DIR = ROOT / "Reports/results/nmnist_integer_corrected"
+BUDGETS = {"B_inf": (1, 2, 3), "B1": (500, 750, 1000), "B0": (200, 300, 400)}
+RESULT_DIR = ROOT / "Reports/results/nmnist_binary_true_attacks"
 CHECKPOINT_DIR = RESULT_DIR / "checkpoints"
 BATCH = int(os.environ.get("ATTACK_BATCH_SIZE", "64"))
 AUDIT_BATCH = int(os.environ.get("AUDIT_BATCH_SIZE", "64"))
@@ -81,20 +81,20 @@ def build_full_cache(dataset) -> tuple[np.ndarray, np.ndarray, Path]:
         info = json.loads(metadata.read_text())
         if info.get("artifact_sha256") == sha256(path):
             data = np.load(path, allow_pickle=False)
-            if len(data["labels"]) == 10000: return data["integer"], data["labels"], path
+            if len(data["labels"]) == 10000: return data["binary"], data["labels"], path
     frames = np.empty((len(dataset), 10, 2, 34, 34), dtype=np.uint8)
     labels = np.empty(len(dataset), dtype=np.int8)
     for i in range(len(dataset)):
-        events, label = dataset[i]; frames[i] = events_to_frames(events, 10); labels[i] = int(label)
+        events, label = dataset[i]; frames[i] = (events_to_frames(events, 10) != 0); labels[i] = int(label)
         if (i + 1) % 500 == 0: print(f"manifest preprocessing | {i+1}/10000", flush=True)
-    digest = atomic_npz(path, integer=frames, labels=labels, sample_ids=np.arange(len(dataset), dtype=np.int32))
+    digest = atomic_npz(path, binary=frames, labels=labels, sample_ids=np.arange(len(dataset), dtype=np.int32))
     atomic_json(metadata, {"status": "PASS", "official_test_samples": len(dataset), "T": 10,
-        "representation": "strict_integer_count", "artifact_sha256": digest})
+        "representation": "binary_occupancy", "artifact_sha256": digest})
     return frames, labels, path
 
 
 def load_model(seed: int, device):
-    checkpoint_path = ROOT / f"checkpoints/nmnist_snn_clean_seed{seed}_best.pt"
+    checkpoint_path = ROOT / f"checkpoints/nmnist_binary_true/nmnist_binary_seed{seed}_best.pt"
     checkpoint = torch.load(checkpoint_path, map_location=device, weights_only=True)
     stored = checkpoint.get("seed", checkpoint.get("config", {}).get("seed"))
     if int(stored) != seed: raise RuntimeError("checkpoint seed mismatch")
@@ -105,10 +105,10 @@ def load_model(seed: int, device):
 @torch.no_grad()
 def build_manifest(seed, model, frames, labels, checkpoint_path, device):
     directory = RESULT_DIR / "manifests"; directory.mkdir(parents=True, exist_ok=True)
-    path = directory / f"nmnist_integer_seed{seed}_manifest.json"
+    path = directory / f"nmnist_binary_seed{seed}_manifest.json"
     if path.exists():
         manifest = json.loads(path.read_text())
-        if (manifest.get("selection_dependency") == "integer_clean_correct_only" and
+        if (manifest.get("selection_dependency") == "binary_clean_correct_only" and
                 manifest.get("checkpoint_sha256") == sha256(checkpoint_path) and len(manifest.get("samples", [])) == 1000):
             return manifest, path
     predictions = np.empty(len(labels), dtype=np.int8)
@@ -118,15 +118,13 @@ def build_manifest(seed, model, frames, labels, checkpoint_path, device):
         predictions[i] = int(model(x).argmax(1))
         if (i + 1) % 1000 == 0: print(f"seed {seed} clean evaluation | {i+1}/10000", flush=True)
     eligible = np.flatnonzero(predictions == labels)
-    if len(eligible) < 1000: raise RuntimeError(f"seed {seed} has only {len(eligible)} Integer-clean-correct samples")
-    selected = sorted(map(int, eligible), key=lambda i: (hashlib.sha256(f"nmnist_integer_corrected:{seed}:{i}".encode()).digest(), i))[:1000]
-    rows = [{"sample_id": i, "true_label": int(labels[i]), "integer_clean_prediction": int(predictions[i])} for i in selected]
-    manifest = {"dataset": "N-MNIST", "representation": "integer", "seed": seed,
-        "official_test_samples": len(labels), "full_test_correct": int((predictions == labels).sum()),
-        "full_test_accuracy_percent": 100.0 * float((predictions == labels).mean()),
-        "eligible_integer_clean_correct": len(eligible), "sample_count": 1000,
-        "selection": "first 1000 by SHA-256(nmnist_integer_corrected:seed:sample_id) among Integer-only clean-correct samples",
-        "selection_dependency": "integer_clean_correct_only", "binary_dependency": False,
+    if len(eligible) < 1000: raise RuntimeError(f"seed {seed} has only {len(eligible)} Binary-clean-correct samples")
+    selected = sorted(map(int, eligible), key=lambda i: (hashlib.sha256(f"nmnist_binary_true_attacks:{seed}:{i}".encode()).digest(), i))[:1000]
+    rows = [{"sample_id": i, "true_label": int(labels[i]), "binary_clean_prediction": int(predictions[i])} for i in selected]
+    manifest = {"dataset": "N-MNIST", "representation": "binary", "seed": seed,
+        "official_test_samples": len(labels), "eligible_binary_clean_correct": len(eligible), "sample_count": 1000,
+        "selection": "first 1000 by SHA-256(nmnist_binary_true_attacks:seed:sample_id) among Binary-only clean-correct samples",
+        "selection_dependency": "binary_clean_correct_only", "binary_dependency": False,
         "checkpoint_path": str(checkpoint_path.relative_to(ROOT)).replace("\\", "/"),
         "checkpoint_sha256": sha256(checkpoint_path), "samples": rows, "samples_sha256": canonical_hash(rows)}
     atomic_json(path, manifest); manifest["manifest_sha256_file"] = sha256(path)
@@ -134,17 +132,17 @@ def build_manifest(seed, model, frames, labels, checkpoint_path, device):
 
 
 def selected_cache(seed, manifest, manifest_path, frames, labels):
-    path = CHECKPOINT_DIR / f"seed{seed}_integer_manifest_cache.npz"
-    metadata = CHECKPOINT_DIR / f"seed{seed}_integer_manifest_cache.json"
+    path = CHECKPOINT_DIR / f"seed{seed}_binary_manifest_cache.npz"
+    metadata = CHECKPOINT_DIR / f"seed{seed}_binary_manifest_cache.json"
     ids = np.asarray([r["sample_id"] for r in manifest["samples"]], dtype=np.int32)
     if path.exists() and metadata.exists():
         info = json.loads(metadata.read_text())
         if info.get("manifest_sha256_file") == sha256(manifest_path) and info.get("artifact_sha256") == sha256(path):
             data = np.load(path, allow_pickle=False)
             if np.array_equal(data["sample_ids"], ids): return data, path
-    digest = atomic_npz(path, integer=frames[ids], labels=labels[ids], sample_ids=ids)
+    digest = atomic_npz(path, binary=frames[ids], labels=labels[ids], sample_ids=ids)
     atomic_json(metadata, {"manifest_sha256_file": sha256(manifest_path), "artifact_sha256": digest,
-                           "sample_count": len(ids), "representation": "strict_integer_count"})
+                           "sample_count": len(ids), "representation": "binary_occupancy"})
     return np.load(path, allow_pickle=False), path
 
 
@@ -168,15 +166,15 @@ def write_partial(path, state):
 
 def run_condition(seed, model, checkpoint_path, manifest, manifest_path, cache, cache_path,
                   budget_type, budget, device):
-    run_id = f"nmnist_integer_corrected_seed{seed}_{budget_type}_{budget}"
+    run_id = f"nmnist_binary_true_attacks_seed{seed}_{budget_type}_{budget}"
     run_dir = RESULT_DIR / "runs"; run_dir.mkdir(parents=True, exist_ok=True)
     metadata_path = run_dir / f"{run_id}.json"; artifact_path = run_dir / f"{run_id}.npz"
     audit_path = run_dir / f"{run_id}.audit.json"; marker = CHECKPOINT_DIR / f"{run_id}.complete.json"
     if audit_path.exists():
         audit = json.loads(audit_path.read_text())
         if (audit.get("passed") and int(audit.get("seed", -1)) == seed
-                and audit.get("manifest_policy") == "integer_clean_correct_only"):
-            print(f"integer | {seed} | {budget_type}={budget} | {audit['asr_percent']:.2f}% | PASS", flush=True); return
+                and audit.get("manifest_policy") == "binary_clean_correct_only"):
+            print(f"binary | {seed} | {budget_type}={budget} | {audit['asr_percent']:.2f}% | PASS", flush=True); return
     partial = CHECKPOINT_DIR / f"{run_id}.partial.npz"
     lists = {"sample_ids": ([], np.int32), "labels": ([], np.int8), "clean_predictions": ([], np.int8),
       "adv_predictions": ([], np.int8), "offsets": ([0], np.int64), "source_t": ([], np.int8),
@@ -187,10 +185,10 @@ def run_condition(seed, model, checkpoint_path, manifest, manifest_path, cache, 
         for key in lists: lists[key] = (p[key].tolist(), lists[key][1])
     start = len(lists["sample_ids"][0]); expected_ids = [r["sample_id"] for r in manifest["samples"]]
     if lists["sample_ids"][0] != expected_ids[:start]: raise RuntimeError("partial is not manifest prefix")
-    integer = cache["integer"]; labels = cache["labels"]
+    binary = cache["binary"]; labels = cache["labels"]
     for batch_start in range(start, 1000, BATCH):
         end = min(batch_start + BATCH, 1000)
-        clean_cpu = torch.from_numpy(np.array(integer[batch_start:end], dtype=np.float32, copy=True))
+        clean_cpu = torch.from_numpy(np.array(binary[batch_start:end], dtype=np.float32, copy=True))
         y = torch.from_numpy(np.array(labels[batch_start:end], dtype=np.int64, copy=True)).to(device)
         clean = clean_cpu.to(device)
         with torch.no_grad():
@@ -202,7 +200,7 @@ def run_condition(seed, model, checkpoint_path, manifest, manifest_path, cache, 
         adv_np = adv.cpu().numpy().astype(np.uint8); disp_np = displacement.cpu().numpy().astype(np.int8)
         adv_predictions = attack.last_logits.argmax(1).cpu().tolist()
         for local, pos in enumerate(range(batch_start, end)):
-            st, line, target, values, realized = direct_validate(integer[pos], adv_np[local], disp_np[local], budget_type, budget)
+            st, line, target, values, realized = direct_validate(binary[pos], adv_np[local], disp_np[local], budget_type, budget)
             lists["sample_ids"][0].append(expected_ids[pos]); lists["labels"][0].append(int(labels[pos]))
             lists["clean_predictions"][0].append(int(clean_predictions[local])); lists["adv_predictions"][0].append(adv_predictions[local])
             lists["source_t"][0].extend(st); lists["line"][0].extend(line); lists["target_t"][0].extend(target); lists["value"][0].extend(values)
@@ -210,9 +208,9 @@ def run_condition(seed, model, checkpoint_path, manifest, manifest_path, cache, 
         write_partial(partial, lists)
         print(f"{run_id} | {end}/1000", flush=True)
     artifact_sha = atomic_npz(artifact_path, **{k: np.asarray(v, dtype=d) for k, (v, d) in lists.items()})
-    metadata = {"run_id": run_id, "dataset": "N-MNIST", "representation": "integer", "seed": seed,
+    metadata = {"run_id": run_id, "dataset": "N-MNIST", "representation": "binary", "seed": seed,
       "budget_type": budget_type, "budget": budget, "sample_count": 1000,
-      "manifest_policy": "integer_clean_correct_only", "binary_dependency": False,
+      "manifest_policy": "binary_clean_correct_only", "binary_dependency": False,
       "manifest_path": str(manifest_path.relative_to(ROOT)).replace("\\", "/"), "manifest_sha256_file": sha256(manifest_path),
       "cache_path": str(cache_path.relative_to(ROOT)).replace("\\", "/"), "cache_sha256": sha256(cache_path),
       "checkpoint_path": str(checkpoint_path.relative_to(ROOT)).replace("\\", "/"), "checkpoint_sha256": sha256(checkpoint_path),
@@ -220,13 +218,13 @@ def run_condition(seed, model, checkpoint_path, manifest, manifest_path, cache, 
       "exact_command": " ".join(sys.argv), "attack_batch_size": BATCH, "audit_batch_size": AUDIT_BATCH,
       "packet_contract": "indivisible amplitude-bearing nonzero cell"}
     atomic_json(metadata_path, metadata)
-    command = [str(PYTHON), "scripts/audit_nmnist_integer_corrected.py", str(metadata_path.relative_to(ROOT)), "--output", str(audit_path.relative_to(ROOT))]
+    command = [str(PYTHON), "scripts/audit_nmnist_binary_true_attacks.py", str(metadata_path.relative_to(ROOT)), "--output", str(audit_path.relative_to(ROOT))]
     subprocess.run(command, cwd=ROOT, check=True)
     audit = json.loads(audit_path.read_text())
     atomic_json(marker, {"status": "PASS", "run_id": run_id, "metadata_sha256": sha256(metadata_path),
                          "artifact_sha256": artifact_sha, "audit_sha256": sha256(audit_path)})
     if partial.exists(): partial.unlink()
-    print(f"integer | {seed} | {budget_type}={budget} | {audit['asr_percent']:.2f}% | PASS", flush=True)
+    print(f"binary | {seed} | {budget_type}={budget} | {audit['asr_percent']:.2f}% | PASS", flush=True)
 
 
 def aggregate():
@@ -234,10 +232,10 @@ def aggregate():
     for seed in SEEDS:
         for kind, budgets in BUDGETS.items():
             for budget in budgets:
-                run_id=f"nmnist_integer_corrected_seed{seed}_{kind}_{budget}"; path=RESULT_DIR/"runs"/f"{run_id}.audit.json"
+                run_id=f"nmnist_binary_true_attacks_seed{seed}_{kind}_{budget}"; path=RESULT_DIR/"runs"/f"{run_id}.audit.json"
                 if path.exists():
                     a=json.loads(path.read_text()); audits.append({"run_id":run_id,"status":a["status"],"audit_sha256":sha256(path)})
-                    rows.append({"dataset":"N-MNIST","representation":"integer","seed":seed,"budget_type":kind,"budget":budget,
+                    rows.append({"dataset":"N-MNIST","representation":"binary","seed":seed,"budget_type":kind,"budget":budget,
                                  "sample_count":a["sample_count"],"successful_attacks":a["successful_attacks"],"asr_percent":a["asr_percent"],"status":a["status"]})
     fields=["dataset","representation","seed","budget_type","budget","sample_count","successful_attacks","asr_percent","status"]
     with (RESULT_DIR/"asr_by_seed.csv").open("w",newline="",encoding="utf-8") as f: w=csv.DictWriter(f,fieldnames=fields);w.writeheader();w.writerows(rows)
@@ -247,17 +245,17 @@ def aggregate():
             values=[r["asr_percent"] for r in rows if r["budget_type"]==kind and r["budget"]==budget and r["status"]=="PASS"]
             if len(values)==3:
                 mean=float(np.mean(values));sd=float(np.std(values,ddof=1));half=4.302652729911275*sd/math.sqrt(3)
-                summary.append({"dataset":"N-MNIST","representation":"integer","budget_type":kind,"budget":budget,"seeds":"42;123;777","n":3,"mean_asr_percent":mean,"std_asr_percent":sd,"ci95_low":mean-half,"ci95_high":mean+half,"status":"PASS"})
+                summary.append({"dataset":"N-MNIST","representation":"binary","budget_type":kind,"budget":budget,"seeds":"42;123;777","n":3,"mean_asr_percent":mean,"std_asr_percent":sd,"ci95_low":mean-half,"ci95_high":mean+half,"status":"PASS"})
     sfields=["dataset","representation","budget_type","budget","seeds","n","mean_asr_percent","std_asr_percent","ci95_low","ci95_high","status"]
     with (RESULT_DIR/"asr_summary.csv").open("w",newline="",encoding="utf-8") as f:w=csv.DictWriter(f,fieldnames=sfields);w.writeheader();w.writerows(summary)
-    completed=len(rows); remaining=33-completed
-    atomic_json(RESULT_DIR/"audit.json", {"status":"PASS" if completed==33 and all(x["status"]=="PASS" for x in audits) else "RUNNING",
+    completed=len(rows); remaining=27-completed
+    atomic_json(RESULT_DIR/"audit.json", {"status":"PASS" if completed==27 and all(x["status"]=="PASS" for x in audits) else "RUNNING",
       "completed_conditions":completed,"remaining_conditions":remaining,"conditions":audits})
     next_unit=None
     for seed in SEEDS:
         for kind,budgets in BUDGETS.items():
             for budget in budgets:
-                rid=f"nmnist_integer_corrected_seed{seed}_{kind}_{budget}"
+                rid=f"nmnist_binary_true_attacks_seed{seed}_{kind}_{budget}"
                 if not (CHECKPOINT_DIR/f"{rid}.complete.json").exists(): next_unit=f"seed={seed} {kind}={budget}";break
             if next_unit:break
         if next_unit:break
@@ -277,7 +275,7 @@ def main():
         set_determinism(seed);model,checkpoint=load_model(seed,device);manifest,manifest_path=build_manifest(seed,model,frames,labels,checkpoint,device)
         manifest["manifest_sha256_file"]=sha256(manifest_path);cache,cache_path=selected_cache(seed,manifest,manifest_path,frames,labels)
         if args.manifest_only:
-            print(f"N-MNIST | integer | {seed} | manifest | 1000 | n/a | PASS", flush=True)
+            print(f"N-MNIST | binary | {seed} | manifest | 1000 | n/a | PASS", flush=True)
             continue
         conditions=[(kind,budget) for kind,budgets in BUDGETS.items() for budget in budgets]
         if args.budget_type is not None or args.budget is not None:
@@ -289,3 +287,4 @@ def main():
 
 
 if __name__=="__main__":main()
+
