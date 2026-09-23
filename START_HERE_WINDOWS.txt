@@ -1,0 +1,17 @@
+WINDOWS / POWERSHELL QUICK START
+
+1) Install Python 3.11 if it is not installed.
+2) Open PowerShell in this project directory.
+3) If PowerShell blocks local scripts, run for this session only:
+   Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+4) Run:
+   .\setup_windows.ps1
+5) Then:
+   .\run_phase.ps1 -Phase 1
+6) Only move forward when the phase reports PASSED.
+
+Training after Phase 4:
+   python scripts\train_iris.py
+
+Attack demo after clean baseline is validated:
+   python scripts\run_attack_demo.py
