@@ -1,6 +1,63 @@
 # Current Research Status — TEMP-DRIFT Benchmark / Prior QSNN Work
 
-> **Active autonomous workflow status (2026-09-22):** Phase 0, 0.5, and 0.75 independently `PASS`. Phase 1 uses indivisible amplitude-bearing cell-packets and its contract/regression suite passes 18/18. Seed-42 binary `B_inf=1` is complete (834/1000 attacks, ASR 83.4%, independent audit PASS). Fixed attack/audit batch 64 GPU vectorization passed 192/192 exact comparisons, independent audit, profiler evidence, and 19.81x–51.16x measured speedup. The resumable `B_inf=2` condition preserves its valid 175-sample scalar prefix and continues from sample 176 without rerunning completed work.
+> **Active clean-training remediation (2026-09-24):** TEMP-DRIFT and all other attacks are paused. A representation-matched, clean-only 12-checkpoint campaign is running for DVS-Gesture and CIFAR10-DVS over Binary/strict Integer grids and seeds 42/123/777. Three final seed-42 runs are currently complete; the campaign is resumable and selects checkpoints only by validation accuracy.
+
+## Improved representation-matched clean SNN campaign (2026-09-24)
+
+This campaign replaces the weak 64×64/normalized/float16 paths used by earlier DVS-Gesture and CIFAR10-DVS baselines. It retains the repository's own direct convolutional LIF SNN family; it does **not** use the paper's ResNet18, VGGSNN, or SpikingResformer as the final model.
+
+### Verified data contract
+
+- Both datasets use tensors ordered `[time, polarity, y, x]` with `T=10`, two polarity channels, and native **128×128** spatial resolution.
+- Binary-grid caches are uint8 occupancy (`0/1`) with no amplitude normalization.
+- Strict Integer-grid caches are non-negative raw uint16 cell counts with no per-sample maximum division, no `[0,1]` scaling, and a direct float32 cast at model input.
+- Cached samples were independently reconstructed from raw events for both representations; temporal order, polarity, labels, shapes, and dtypes passed the focused audit.
+- DVS-Gesture uses Tonic's official 1,077-train/264-test partition, with a deterministic stratified 861/216 train/validation split inside the official training partition.
+- CIFAR10-DVS reuses one frozen, balanced, deterministic 8,000/1,000/1,000 train/validation/test split for every seed and representation.
+- Pipeline evidence: `Reports/results/clean_improved_pipeline_audit.json` (status `PASS`).
+
+### Strengthened repository-native SNN
+
+- Conv/BatchNorm/LIF stages process all ten time steps with reset-by-subtraction and a fast-sigmoid surrogate gradient.
+- DVS-Gesture uses channels `2→32→64→64→128→128→256`, gradual pooling, and a 4×4 adaptive spatial readout (**618,379 parameters**).
+- CIFAR10-DVS uses `2→32→64→128→128→256→256`, post-spike max pooling, a 4×4 adaptive readout, feature dropout, and per-timestep temporal-ensemble supervision (**1,167,626 parameters**).
+- Training uses AdamW (`lr=1e-3`, weight decay `1e-4`), cosine annealing, mixed precision, modest spatial translation, and validation-only checkpoint selection. CIFAR additionally uses horizontal flip, 16×16 cutout, and label smoothing; DVS does not use horizontal flips.
+- Frozen recipe: `configs/clean_improved.config.json`; implementation: `models/improved_event_snn.py` and `scripts/train_clean_improved.py`.
+
+### Validation-only development results
+
+No test samples were accessed while choosing these recipes.
+
+| Dataset | Representation | Seed | Best validation accuracy | Development conclusion |
+|---|---|---:|---:|---|
+| DVS-Gesture | Binary | 42 | **93.06%** | Target behavior reached; DVS recipe frozen. |
+| DVS-Gesture | Integer | 42 | **88.89%** | Below the 90% aim; strict raw counts retained unchanged. |
+| CIFAR10-DVS | Binary | 42 | **68.90%** | Best of three meaningful configurations; 6.10 points below the 75% minimum aim. |
+| CIFAR10-DVS | Integer | 42 | **68.20%** | Consistent with Binary; no precision/cache mismatch. |
+
+The CIFAR target was not fabricated or forced. After three focused configurations, the best validated recipe was frozen rather than expanding into a large hyperparameter search.
+
+### Final campaign status
+
+The final campaign trains every condition independently from scratch, stores per-epoch resume state, selects the best checkpoint by validation only, and evaluates the frozen test split exactly once. No attack manifests or attack evaluations are created.
+
+| Dataset | Representation | Seed | Best validation | Frozen test | Best epoch | Status |
+|---|---|---:|---:|---:|---:|---|
+| DVS-Gesture | Binary | 42 | 91.20% | **87.50%** | 108 | Complete |
+| DVS-Gesture | Integer | 42 | 89.81% | **85.98%** | 76 | Complete |
+| CIFAR10-DVS | Binary | 42 | 70.50% | **69.40%** | 108 | Complete |
+| CIFAR10-DVS | Integer | 42 | — | — | — | Running/pending |
+| Both datasets | Both representations | 123, 777 | — | — | — | Pending |
+
+These are interim single-seed results, not three-seed aggregates. DVS seed 42 remains 4.5 points below the paper's 92–95% Binary clean range, while CIFAR Binary remains 8.6 points below the paper's 78–83% lower bound. Cross-paper comparison remains approximate because the final architecture is intentionally our own model family.
+
+Final artifacts are written under:
+
+- `Reports/results/dvs_gesture_clean_improved/`
+- `Reports/results/cifar10_dvs_clean_improved/`
+- `Reports/logs/clean_improved_final/`
+
+The runner is `scripts/run_clean_improved_final.py`. It stops after clean aggregation and invokes no attack code.
 
 ## Benchmark phase status (updated 2026-09-21)
 
@@ -43,13 +100,15 @@ Phase 1 now uses the amended amplitude-bearing-cell contract. Integer amplitudes
 
 > **True DVS-Gesture Binary clean training PASS (2026-09-23):** Representation-matched full official-test accuracies are 78.79% (seed 42), 80.68% (seed 123), and 84.47% (seed 777), giving **81.31 ± 2.89%**. All class-collapse checks pass. These results supersede the invalid 12.50%, 19.32%, and 9.47% normalized-count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/dvs_gesture_binary_true/`.
 
+> **True CIFAR10-DVS Binary clean training PASS (2026-09-23):** Representation-matched frozen-test-split accuracies are 48.10% (seed 42), 51.80% (seed 123), and 51.30% (seed 777), giving **50.40 ± 2.01%**. The raw-event-derived cache stores uint8 occupancy with no normalization and is cast to float32 only at model input; all class-collapse checks pass. These values supersede the invalid 12.20%, 18.60%, and 17.30% normalized-count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/cifar10_dvs_binary_true/`.
+
 Clean-only evaluation of all requested seeds and both frozen representations is complete. It used all 10,000 official N-MNIST test samples, all 264 official DVS-Gesture test samples, and all 1,000 samples in the frozen CIFAR10-DVS stratified test split (CIFAR10-DVS has no official train/test partition). No attack manifest, clean-correct filtering, balancing, or subsampling was used. All sample-count, checkpoint seed/hash, representation-difference, eval-mode, and repeated-prefix determinism checks passed. See `Reports/clean_accuracy_report.md`, `Reports/results/clean_accuracy_by_seed.csv`, and `Reports/results/clean_accuracy_summary.csv`.
 
 | Dataset | Binary-grid mean ± SD | Integer-grid mean ± SD |
 |---|---:|---:|
 | N-MNIST | **98.5167% ± 0.2203% (true Binary-trained)** | 98.3867% ± 0.2146% |
 | DVS-Gesture | **81.3131% ± 2.8930% (true Binary-trained)** | 83.0808% ± 4.6289% |
-| CIFAR10-DVS | 16.0333% ± 3.3828% | 46.2000% ± 6.1733% |
+| CIFAR10-DVS | **50.4000% ± 2.0075% (true Binary-trained)** | 46.2000% ± 6.1733% |
 
 ### N-MNIST benchmark tables with seed-matched clean accuracy
 
@@ -87,7 +146,7 @@ Final clean accuracy across seeds 42, 123, and 777: **98.39 ± 0.21%**.
 |---|---:|---:|
 | N-MNIST | **98.52 ± 0.22%** | **98.39 ± 0.21%** |
 | DVS-Gesture | **81.31 ± 2.89%** | **83.08 ± 4.63%** |
-| CIFAR10-DVS | **16.03 ± 3.38%** | **46.20 ± 6.17%** |
+| CIFAR10-DVS | **50.40 ± 2.01%** | **46.20 ± 6.17%** |
 
 ---
 
