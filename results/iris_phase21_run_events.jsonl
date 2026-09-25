@@ -1,0 +1,3 @@
+{"event":"run_started","provenance":"repository-local initially recorded protocol; prospective timing and immutability not independently established"}
+{"event": "stage_a_completed_and_gate_persisted", "passed": false}
+{"event": "generator_outputs_completed_final"}

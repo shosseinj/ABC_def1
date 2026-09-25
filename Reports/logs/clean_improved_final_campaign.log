@@ -1,0 +1,5 @@
+﻿START | dvs_gesture | binary | 42
+DONE | dvs_gesture | binary | 42
+START | dvs_gesture | integer | 42
+DONE | dvs_gesture | integer | 42
+START | cifar10_dvs | binary | 42

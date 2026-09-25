@@ -1,0 +1,6 @@
+﻿N-MNIST: inference diagnostics complete
+DVS-Gesture: inference diagnostics complete
+CIFAR10-DVS: inference diagnostics complete
+Clean accuracy audit artifacts written
+AUDIT STATUS: FAIL_REPRESENTATION_MISMATCH_FOUND
+No training or attack execution performed.

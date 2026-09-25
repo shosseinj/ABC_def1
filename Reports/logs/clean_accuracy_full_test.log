@@ -1,0 +1,4 @@
+﻿N-MNIST: PASS (10000 complete test samples)
+DVS-Gesture: PASS (264 complete test samples)
+CIFAR10-DVS: PASS (1000 complete frozen benchmark test samples)
+Wrote clean-accuracy CSVs and report

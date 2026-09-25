@@ -1,0 +1,2077 @@
+START nmnist_seed42_binary_B_inf_1 samples=1000
+nmnist_seed42_binary_B_inf_1 sample=1/1000 id=6697 B=(1,1786,1786) success=False
+nmnist_seed42_binary_B_inf_1 sample=2/1000 id=415 B=(1,2170,2170) success=True
+nmnist_seed42_binary_B_inf_1 sample=3/1000 id=8930 B=(1,2135,2135) success=True
+nmnist_seed42_binary_B_inf_1 sample=4/1000 id=6374 B=(1,2004,2004) success=False
+nmnist_seed42_binary_B_inf_1 sample=5/1000 id=2551 B=(1,1798,1798) success=True
+nmnist_seed42_binary_B_inf_1 sample=6/1000 id=9699 B=(1,1621,1621) success=True
+nmnist_seed42_binary_B_inf_1 sample=7/1000 id=4982 B=(1,1743,1743) success=True
+nmnist_seed42_binary_B_inf_1 sample=8/1000 id=7911 B=(1,1762,1762) success=True
+nmnist_seed42_binary_B_inf_1 sample=9/1000 id=5766 B=(1,1655,1655) success=True
+nmnist_seed42_binary_B_inf_1 sample=10/1000 id=4875 B=(1,1523,1523) success=True
+nmnist_seed42_binary_B_inf_1 sample=11/1000 id=6503 B=(1,2087,2087) success=False
+nmnist_seed42_binary_B_inf_1 sample=12/1000 id=7068 B=(1,1820,1820) success=True
+nmnist_seed42_binary_B_inf_1 sample=13/1000 id=3704 B=(1,1898,1898) success=True
+nmnist_seed42_binary_B_inf_1 sample=14/1000 id=3519 B=(1,2099,2099) success=True
+nmnist_seed42_binary_B_inf_1 sample=15/1000 id=9020 B=(1,1871,1871) success=True
+nmnist_seed42_binary_B_inf_1 sample=16/1000 id=1554 B=(1,1175,1175) success=True
+nmnist_seed42_binary_B_inf_1 sample=17/1000 id=3379 B=(1,1600,1600) success=True
+nmnist_seed42_binary_B_inf_1 sample=18/1000 id=266 B=(1,2010,2010) success=True
+nmnist_seed42_binary_B_inf_1 sample=19/1000 id=8411 B=(1,2170,2170) success=True
+nmnist_seed42_binary_B_inf_1 sample=20/1000 id=1188 B=(1,959,959) success=True
+nmnist_seed42_binary_B_inf_1 sample=21/1000 id=9417 B=(1,1351,1351) success=True
+nmnist_seed42_binary_B_inf_1 sample=22/1000 id=4447 B=(1,1211,1211) success=True
+nmnist_seed42_binary_B_inf_1 sample=23/1000 id=8768 B=(1,1831,1831) success=False
+nmnist_seed42_binary_B_inf_1 sample=24/1000 id=9730 B=(1,1499,1499) success=True
+nmnist_seed42_binary_B_inf_1 sample=25/1000 id=6045 B=(1,1948,1948) success=False
+nmnist_seed42_binary_B_inf_1 sample=26/1000 id=1052 B=(1,1061,1061) success=True
+nmnist_seed42_binary_B_inf_1 sample=27/1000 id=5540 B=(1,1262,1262) success=True
+nmnist_seed42_binary_B_inf_1 sample=28/1000 id=3547 B=(1,1895,1895) success=True
+nmnist_seed42_binary_B_inf_1 sample=29/1000 id=9549 B=(1,1954,1954) success=True
+nmnist_seed42_binary_B_inf_1 sample=30/1000 id=6212 B=(1,1590,1590) success=False
+nmnist_seed42_binary_B_inf_1 sample=31/1000 id=191 B=(1,1886,1886) success=True
+nmnist_seed42_binary_B_inf_1 sample=32/1000 id=3172 B=(1,1642,1642) success=True
+nmnist_seed42_binary_B_inf_1 sample=33/1000 id=88 B=(1,2182,2182) success=False
+nmnist_seed42_binary_B_inf_1 sample=34/1000 id=6485 B=(1,1545,1545) success=True
+nmnist_seed42_binary_B_inf_1 sample=35/1000 id=653 B=(1,2506,2506) success=True
+nmnist_seed42_binary_B_inf_1 sample=36/1000 id=7289 B=(1,1301,1301) success=True
+nmnist_seed42_binary_B_inf_1 sample=37/1000 id=6688 B=(1,1720,1720) success=True
+nmnist_seed42_binary_B_inf_1 sample=38/1000 id=1361 B=(1,1052,1052) success=False
+nmnist_seed42_binary_B_inf_1 sample=39/1000 id=2208 B=(1,1852,1852) success=True
+nmnist_seed42_binary_B_inf_1 sample=40/1000 id=5538 B=(1,1657,1657) success=True
+nmnist_seed42_binary_B_inf_1 sample=41/1000 id=2605 B=(1,1512,1512) success=True
+nmnist_seed42_binary_B_inf_1 sample=42/1000 id=7421 B=(1,1368,1368) success=True
+nmnist_seed42_binary_B_inf_1 sample=43/1000 id=4442 B=(1,1899,1899) success=True
+nmnist_seed42_binary_B_inf_1 sample=44/1000 id=456 B=(1,2319,2319) success=False
+nmnist_seed42_binary_B_inf_1 sample=45/1000 id=1793 B=(1,968,968) success=True
+nmnist_seed42_binary_B_inf_1 sample=46/1000 id=5985 B=(1,1813,1813) success=True
+nmnist_seed42_binary_B_inf_1 sample=47/1000 id=542 B=(1,2020,2020) success=False
+nmnist_seed42_binary_B_inf_1 sample=48/1000 id=1547 B=(1,1007,1007) success=True
+nmnist_seed42_binary_B_inf_1 sample=49/1000 id=9953 B=(1,1611,1611) success=True
+nmnist_seed42_binary_B_inf_1 sample=50/1000 id=1612 B=(1,1064,1064) success=True
+nmnist_seed42_binary_B_inf_1 sample=51/1000 id=4568 B=(1,1569,1569) success=True
+nmnist_seed42_binary_B_inf_1 sample=52/1000 id=5083 B=(1,1805,1805) success=True
+nmnist_seed42_binary_B_inf_1 sample=53/1000 id=775 B=(1,2199,2199) success=True
+nmnist_seed42_binary_B_inf_1 sample=54/1000 id=2807 B=(1,1550,1550) success=False
+nmnist_seed42_binary_B_inf_1 sample=55/1000 id=7828 B=(1,1488,1488) success=True
+nmnist_seed42_binary_B_inf_1 sample=56/1000 id=7830 B=(1,1874,1874) success=True
+nmnist_seed42_binary_B_inf_1 sample=57/1000 id=9468 B=(1,1483,1483) success=True
+nmnist_seed42_binary_B_inf_1 sample=58/1000 id=5731 B=(1,1784,1784) success=True
+nmnist_seed42_binary_B_inf_1 sample=59/1000 id=1217 B=(1,1001,1001) success=True
+nmnist_seed42_binary_B_inf_1 sample=60/1000 id=9405 B=(1,1449,1449) success=True
+nmnist_seed42_binary_B_inf_1 sample=61/1000 id=8631 B=(1,2195,2195) success=False
+nmnist_seed42_binary_B_inf_1 sample=62/1000 id=1040 B=(1,969,969) success=True
+nmnist_seed42_binary_B_inf_1 sample=63/1000 id=9791 B=(1,1679,1679) success=True
+nmnist_seed42_binary_B_inf_1 sample=64/1000 id=6931 B=(1,1987,1987) success=False
+nmnist_seed42_binary_B_inf_1 sample=65/1000 id=4306 B=(1,1522,1522) success=True
+nmnist_seed42_binary_B_inf_1 sample=66/1000 id=2217 B=(1,1529,1529) success=True
+nmnist_seed42_binary_B_inf_1 sample=67/1000 id=1482 B=(1,1147,1147) success=True
+nmnist_seed42_binary_B_inf_1 sample=68/1000 id=660 B=(1,1932,1932) success=True
+nmnist_seed42_binary_B_inf_1 sample=69/1000 id=3596 B=(1,2074,2074) success=True
+nmnist_seed42_binary_B_inf_1 sample=70/1000 id=129 B=(1,2139,2139) success=True
+nmnist_seed42_binary_B_inf_1 sample=71/1000 id=7627 B=(1,1758,1758) success=True
+nmnist_seed42_binary_B_inf_1 sample=72/1000 id=9394 B=(1,1996,1996) success=True
+nmnist_seed42_binary_B_inf_1 sample=73/1000 id=3774 B=(1,2178,2178) success=True
+nmnist_seed42_binary_B_inf_1 sample=74/1000 id=3420 B=(1,2227,2227) success=True
+nmnist_seed42_binary_B_inf_1 sample=75/1000 id=4087 B=(1,1442,1442) success=True
+nmnist_seed42_binary_B_inf_1 sample=76/1000 id=5270 B=(1,2232,2232) success=True
+nmnist_seed42_binary_B_inf_1 sample=77/1000 id=3829 B=(1,1578,1578) success=True
+nmnist_seed42_binary_B_inf_1 sample=78/1000 id=9783 B=(1,1531,1531) success=True
+nmnist_seed42_binary_B_inf_1 sample=79/1000 id=926 B=(1,2276,2276) success=False
+nmnist_seed42_binary_B_inf_1 sample=80/1000 id=4335 B=(1,1953,1953) success=True
+nmnist_seed42_binary_B_inf_1 sample=81/1000 id=1098 B=(1,837,837) success=True
+nmnist_seed42_binary_B_inf_1 sample=82/1000 id=2462 B=(1,2085,2085) success=True
+nmnist_seed42_binary_B_inf_1 sample=83/1000 id=3868 B=(1,2011,2011) success=True
+nmnist_seed42_binary_B_inf_1 sample=84/1000 id=9458 B=(1,1943,1943) success=True
+nmnist_seed42_binary_B_inf_1 sample=85/1000 id=2977 B=(1,1955,1955) success=True
+nmnist_seed42_binary_B_inf_1 sample=86/1000 id=5542 B=(1,1278,1278) success=True
+nmnist_seed42_binary_B_inf_1 sample=87/1000 id=9689 B=(1,1568,1568) success=True
+nmnist_seed42_binary_B_inf_1 sample=88/1000 id=2554 B=(1,1796,1796) success=True
+nmnist_seed42_binary_B_inf_1 sample=89/1000 id=6272 B=(1,1611,1611) success=True
+nmnist_seed42_binary_B_inf_1 sample=90/1000 id=3618 B=(1,2096,2096) success=True
+nmnist_seed42_binary_B_inf_1 sample=91/1000 id=2108 B=(1,1076,1076) success=True
+nmnist_seed42_binary_B_inf_1 sample=92/1000 id=8494 B=(1,2010,2010) success=True
+nmnist_seed42_binary_B_inf_1 sample=93/1000 id=384 B=(1,2452,2452) success=False
+nmnist_seed42_binary_B_inf_1 sample=94/1000 id=1646 B=(1,1158,1158) success=True
+nmnist_seed42_binary_B_inf_1 sample=95/1000 id=4977 B=(1,1617,1617) success=True
+nmnist_seed42_binary_B_inf_1 sample=96/1000 id=136 B=(1,2130,2130) success=True
+nmnist_seed42_binary_B_inf_1 sample=97/1000 id=1284 B=(1,1136,1136) success=True
+nmnist_seed42_binary_B_inf_1 sample=98/1000 id=5089 B=(1,1886,1886) success=True
+nmnist_seed42_binary_B_inf_1 sample=99/1000 id=5395 B=(1,1758,1758) success=True
+nmnist_seed42_binary_B_inf_1 sample=100/1000 id=4085 B=(1,1312,1312) success=True
+nmnist_seed42_binary_B_inf_1 sample=101/1000 id=2602 B=(1,1473,1473) success=True
+nmnist_seed42_binary_B_inf_1 sample=102/1000 id=5997 B=(1,1885,1885) success=True
+nmnist_seed42_binary_B_inf_1 sample=103/1000 id=8727 B=(1,2372,2372) success=False
+nmnist_seed42_binary_B_inf_1 sample=104/1000 id=7894 B=(1,1513,1513) success=True
+nmnist_seed42_binary_B_inf_1 sample=105/1000 id=8122 B=(1,1970,1970) success=True
+nmnist_seed42_binary_B_inf_1 sample=106/1000 id=9688 B=(1,1552,1552) success=True
+nmnist_seed42_binary_B_inf_1 sample=107/1000 id=2857 B=(1,2058,2058) success=True
+nmnist_seed42_binary_B_inf_1 sample=108/1000 id=2388 B=(1,1626,1626) success=False
+nmnist_seed42_binary_B_inf_1 sample=109/1000 id=4111 B=(1,1777,1777) success=True
+nmnist_seed42_binary_B_inf_1 sample=110/1000 id=8428 B=(1,2279,2279) success=False
+nmnist_seed42_binary_B_inf_1 sample=111/1000 id=5982 B=(1,1821,1821) success=True
+nmnist_seed42_binary_B_inf_1 sample=112/1000 id=8416 B=(1,1702,1702) success=False
+nmnist_seed42_binary_B_inf_1 sample=113/1000 id=8330 B=(1,2118,2118) success=False
+nmnist_seed42_binary_B_inf_1 sample=114/1000 id=9995 B=(1,2007,2007) success=True
+nmnist_seed42_binary_B_inf_1 sample=115/1000 id=9962 B=(1,1420,1420) success=True
+nmnist_seed42_binary_B_inf_1 sample=116/1000 id=1139 B=(1,1099,1099) success=True
+nmnist_seed42_binary_B_inf_1 sample=117/1000 id=2995 B=(1,1940,1940) success=True
+nmnist_seed42_binary_B_inf_1 sample=118/1000 id=1840 B=(1,1251,1251) success=True
+nmnist_seed42_binary_B_inf_1 sample=119/1000 id=7461 B=(1,1557,1557) success=True
+nmnist_seed42_binary_B_inf_1 sample=120/1000 id=4805 B=(1,1349,1349) success=False
+nmnist_seed42_binary_B_inf_1 sample=121/1000 id=7864 B=(1,1460,1460) success=True
+nmnist_seed42_binary_B_inf_1 sample=122/1000 id=8960 B=(1,1940,1940) success=False
+nmnist_seed42_binary_B_inf_1 sample=123/1000 id=4910 B=(1,1376,1376) success=True
+nmnist_seed42_binary_B_inf_1 sample=124/1000 id=4317 B=(1,1900,1900) success=True
+nmnist_seed42_binary_B_inf_1 sample=125/1000 id=3663 B=(1,1944,1944) success=True
+nmnist_seed42_binary_B_inf_1 sample=126/1000 id=2137 B=(1,1426,1426) success=True
+nmnist_seed42_binary_B_inf_1 sample=127/1000 id=1226 B=(1,1023,1023) success=True
+nmnist_seed42_binary_B_inf_1 sample=128/1000 id=8182 B=(1,1839,1839) success=False
+nmnist_seed42_binary_B_inf_1 sample=129/1000 id=4177 B=(1,1740,1740) success=True
+nmnist_seed42_binary_B_inf_1 sample=130/1000 id=6334 B=(1,2095,2095) success=True
+nmnist_seed42_binary_B_inf_1 sample=131/1000 id=9717 B=(1,1638,1638) success=True
+nmnist_seed42_binary_B_inf_1 sample=132/1000 id=9818 B=(1,1667,1667) success=True
+nmnist_seed42_binary_B_inf_1 sample=133/1000 id=2658 B=(1,1905,1905) success=True
+nmnist_seed42_binary_B_inf_1 sample=134/1000 id=4588 B=(1,1685,1685) success=True
+nmnist_seed42_binary_B_inf_1 sample=135/1000 id=1 B=(1,2162,2162) success=False
+nmnist_seed42_binary_B_inf_1 sample=136/1000 id=8733 B=(1,2084,2084) success=False
+nmnist_seed42_binary_B_inf_1 sample=137/1000 id=6493 B=(1,2031,2031) success=True
+nmnist_seed42_binary_B_inf_1 sample=138/1000 id=1294 B=(1,992,992) success=True
+nmnist_seed42_binary_B_inf_1 sample=139/1000 id=8802 B=(1,2078,2078) success=False
+nmnist_seed42_binary_B_inf_1 sample=140/1000 id=484 B=(1,2109,2109) success=True
+nmnist_seed42_binary_B_inf_1 sample=141/1000 id=861 B=(1,1900,1900) success=True
+nmnist_seed42_binary_B_inf_1 sample=142/1000 id=9229 B=(1,1403,1403) success=True
+nmnist_seed42_binary_B_inf_1 sample=143/1000 id=216 B=(1,1759,1759) success=True
+nmnist_seed42_binary_B_inf_1 sample=144/1000 id=3364 B=(1,1754,1754) success=True
+nmnist_seed42_binary_B_inf_1 sample=145/1000 id=5937 B=(1,1860,1860) success=True
+nmnist_seed42_binary_B_inf_1 sample=146/1000 id=2839 B=(1,1899,1899) success=True
+nmnist_seed42_binary_B_inf_1 sample=147/1000 id=904 B=(1,2116,2116) success=True
+nmnist_seed42_binary_B_inf_1 sample=148/1000 id=2808 B=(1,1695,1695) success=True
+nmnist_seed42_binary_B_inf_1 sample=149/1000 id=3280 B=(1,1972,1972) success=True
+nmnist_seed42_binary_B_inf_1 sample=150/1000 id=8675 B=(1,1965,1965) success=True
+nmnist_seed42_binary_B_inf_1 sample=151/1000 id=9051 B=(1,1613,1613) success=True
+nmnist_seed42_binary_B_inf_1 sample=152/1000 id=5455 B=(1,1962,1962) success=True
+nmnist_seed42_binary_B_inf_1 sample=153/1000 id=7629 B=(1,1621,1621) success=True
+nmnist_seed42_binary_B_inf_1 sample=154/1000 id=5465 B=(1,1758,1758) success=True
+nmnist_seed42_binary_B_inf_1 sample=155/1000 id=8827 B=(1,2160,2160) success=False
+nmnist_seed42_binary_B_inf_1 sample=156/1000 id=3807 B=(1,1217,1217) success=True
+nmnist_seed42_binary_B_inf_1 sample=157/1000 id=9196 B=(1,1746,1746) success=True
+nmnist_seed42_binary_B_inf_1 sample=158/1000 id=9332 B=(1,1964,1964) success=True
+nmnist_seed42_binary_B_inf_1 sample=159/1000 id=9529 B=(1,1587,1587) success=True
+nmnist_seed42_binary_B_inf_1 sample=160/1000 id=6588 B=(1,1590,1590) success=True
+nmnist_seed42_binary_B_inf_1 sample=161/1000 id=2316 B=(1,1890,1890) success=True
+nmnist_seed42_binary_B_inf_1 sample=162/1000 id=154 B=(1,2119,2119) success=True
+nmnist_seed42_binary_B_inf_1 sample=163/1000 id=8215 B=(1,1677,1677) success=True
+nmnist_seed42_binary_B_inf_1 sample=164/1000 id=1533 B=(1,1099,1099) success=True
+nmnist_seed42_binary_B_inf_1 sample=165/1000 id=8884 B=(1,2097,2097) success=False
+nmnist_seed42_binary_B_inf_1 sample=166/1000 id=6282 B=(1,1629,1629) success=True
+nmnist_seed42_binary_B_inf_1 sample=167/1000 id=3008 B=(1,2109,2109) success=True
+nmnist_seed42_binary_B_inf_1 sample=168/1000 id=9541 B=(1,1619,1619) success=True
+nmnist_seed42_binary_B_inf_1 sample=169/1000 id=5815 B=(1,1767,1767) success=True
+nmnist_seed42_binary_B_inf_1 sample=170/1000 id=3691 B=(1,2277,2277) success=True
+nmnist_seed42_binary_B_inf_1 sample=171/1000 id=9685 B=(1,2106,2106) success=True
+nmnist_seed42_binary_B_inf_1 sample=172/1000 id=4043 B=(1,1967,1967) success=True
+nmnist_seed42_binary_B_inf_1 sample=173/1000 id=491 B=(1,1964,1964) success=True
+nmnist_seed42_binary_B_inf_1 sample=174/1000 id=601 B=(1,2187,2187) success=True
+nmnist_seed42_binary_B_inf_1 sample=175/1000 id=7259 B=(1,1797,1797) success=True
+nmnist_seed42_binary_B_inf_1 sample=176/1000 id=8547 B=(1,1821,1821) success=False
+nmnist_seed42_binary_B_inf_1 sample=177/1000 id=8421 B=(1,2138,2138) success=False
+nmnist_seed42_binary_B_inf_1 sample=178/1000 id=8596 B=(1,1943,1943) success=False
+nmnist_seed42_binary_B_inf_1 sample=179/1000 id=8012 B=(1,1333,1333) success=True
+nmnist_seed42_binary_B_inf_1 sample=180/1000 id=4980 B=(1,1864,1864) success=True
+nmnist_seed42_binary_B_inf_1 sample=181/1000 id=8607 B=(1,1946,1946) success=True
+nmnist_seed42_binary_B_inf_1 sample=182/1000 id=5396 B=(1,2074,2074) success=True
+nmnist_seed42_binary_B_inf_1 sample=183/1000 id=1240 B=(1,884,884) success=True
+nmnist_seed42_binary_B_inf_1 sample=184/1000 id=2393 B=(1,2169,2169) success=True
+nmnist_seed42_binary_B_inf_1 sample=185/1000 id=3642 B=(1,2166,2166) success=True
+nmnist_seed42_binary_B_inf_1 sample=186/1000 id=4679 B=(1,1900,1900) success=False
+nmnist_seed42_binary_B_inf_1 sample=187/1000 id=8817 B=(1,1993,1993) success=False
+nmnist_seed42_binary_B_inf_1 sample=188/1000 id=5726 B=(1,1818,1818) success=True
+nmnist_seed42_binary_B_inf_1 sample=189/1000 id=1168 B=(1,1040,1040) success=True
+nmnist_seed42_binary_B_inf_1 sample=190/1000 id=9790 B=(1,1830,1830) success=True
+nmnist_seed42_binary_B_inf_1 sample=191/1000 id=4242 B=(1,1919,1919) success=True
+nmnist_seed42_binary_B_inf_1 sample=192/1000 id=8659 B=(1,1901,1901) success=True
+nmnist_seed42_binary_B_inf_1 sample=193/1000 id=8417 B=(1,2067,2067) success=False
+nmnist_seed42_binary_B_inf_1 sample=194/1000 id=5261 B=(1,1767,1767) success=True
+nmnist_seed42_binary_B_inf_1 sample=195/1000 id=145 B=(1,2249,2249) success=False
+nmnist_seed42_binary_B_inf_1 sample=196/1000 id=2962 B=(1,1468,1468) success=True
+nmnist_seed42_binary_B_inf_1 sample=197/1000 id=5433 B=(1,2180,2180) success=True
+nmnist_seed42_binary_B_inf_1 sample=198/1000 id=9747 B=(1,1498,1498) success=True
+nmnist_seed42_binary_B_inf_1 sample=199/1000 id=1149 B=(1,795,795) success=True
+nmnist_seed42_binary_B_inf_1 sample=200/1000 id=1301 B=(1,1153,1153) success=True
+nmnist_seed42_binary_B_inf_1 sample=201/1000 id=1975 B=(1,1161,1161) success=True
+nmnist_seed42_binary_B_inf_1 sample=202/1000 id=1377 B=(1,1128,1128) success=True
+nmnist_seed42_binary_B_inf_1 sample=203/1000 id=453 B=(1,2082,2082) success=False
+nmnist_seed42_binary_B_inf_1 sample=204/1000 id=8335 B=(1,1804,1804) success=True
+nmnist_seed42_binary_B_inf_1 sample=205/1000 id=4850 B=(1,1521,1521) success=True
+nmnist_seed42_binary_B_inf_1 sample=206/1000 id=5609 B=(1,1919,1919) success=True
+nmnist_seed42_binary_B_inf_1 sample=207/1000 id=7460 B=(1,1340,1340) success=True
+nmnist_seed42_binary_B_inf_1 sample=208/1000 id=8923 B=(1,2013,2013) success=True
+nmnist_seed42_binary_B_inf_1 sample=209/1000 id=7884 B=(1,1403,1403) success=True
+nmnist_seed42_binary_B_inf_1 sample=210/1000 id=6543 B=(1,2186,2186) success=True
+nmnist_seed42_binary_B_inf_1 sample=211/1000 id=1690 B=(1,1058,1058) success=True
+nmnist_seed42_binary_B_inf_1 sample=212/1000 id=2869 B=(1,1722,1722) success=True
+nmnist_seed42_binary_B_inf_1 sample=213/1000 id=395 B=(1,2288,2288) success=False
+nmnist_seed42_binary_B_inf_1 sample=214/1000 id=8397 B=(1,1858,1858) success=True
+nmnist_seed42_binary_B_inf_1 sample=215/1000 id=5762 B=(1,2155,2155) success=True
+nmnist_seed42_binary_B_inf_1 sample=216/1000 id=2114 B=(1,1136,1136) success=True
+nmnist_seed42_binary_B_inf_1 sample=217/1000 id=677 B=(1,2131,2131) success=True
+nmnist_seed42_binary_B_inf_1 sample=218/1000 id=8865 B=(1,2073,2073) success=True
+nmnist_seed42_binary_B_inf_1 sample=219/1000 id=6565 B=(1,2116,2116) success=False
+nmnist_seed42_binary_B_inf_1 sample=220/1000 id=5177 B=(1,2111,2111) success=True
+nmnist_seed42_binary_B_inf_1 sample=221/1000 id=8437 B=(1,2276,2276) success=False
+nmnist_seed42_binary_B_inf_1 sample=222/1000 id=2120 B=(1,2031,2031) success=False
+nmnist_seed42_binary_B_inf_1 sample=223/1000 id=630 B=(1,2243,2243) success=True
+nmnist_seed42_binary_B_inf_1 sample=224/1000 id=194 B=(1,1957,1957) success=False
+nmnist_seed42_binary_B_inf_1 sample=225/1000 id=462 B=(1,2374,2374) success=False
+nmnist_seed42_binary_B_inf_1 sample=226/1000 id=1343 B=(1,894,894) success=True
+nmnist_seed42_binary_B_inf_1 sample=227/1000 id=441 B=(1,1819,1819) success=True
+nmnist_seed42_binary_B_inf_1 sample=228/1000 id=6188 B=(1,2203,2203) success=True
+nmnist_seed42_binary_B_inf_1 sample=229/1000 id=5417 B=(1,1193,1193) success=True
+nmnist_seed42_binary_B_inf_1 sample=230/1000 id=3716 B=(1,2075,2075) success=True
+nmnist_seed42_binary_B_inf_1 sample=231/1000 id=9115 B=(1,1563,1563) success=True
+nmnist_seed42_binary_B_inf_1 sample=232/1000 id=6219 B=(1,1643,1643) success=True
+nmnist_seed42_binary_B_inf_1 sample=233/1000 id=5155 B=(1,2107,2107) success=True
+nmnist_seed42_binary_B_inf_1 sample=234/1000 id=8672 B=(1,2069,2069) success=True
+nmnist_seed42_binary_B_inf_1 sample=235/1000 id=3152 B=(1,1709,1709) success=True
+nmnist_seed42_binary_B_inf_1 sample=236/1000 id=766 B=(1,2172,2172) success=True
+nmnist_seed42_binary_B_inf_1 sample=237/1000 id=2053 B=(1,1191,1191) success=True
+nmnist_seed42_binary_B_inf_1 sample=238/1000 id=2091 B=(1,1128,1128) success=True
+nmnist_seed42_binary_B_inf_1 sample=239/1000 id=2660 B=(1,2119,2119) success=True
+nmnist_seed42_binary_B_inf_1 sample=240/1000 id=9138 B=(1,1723,1723) success=True
+nmnist_seed42_binary_B_inf_1 sample=241/1000 id=7093 B=(1,1352,1352) success=True
+nmnist_seed42_binary_B_inf_1 sample=242/1000 id=3914 B=(1,1799,1799) success=True
+nmnist_seed42_binary_B_inf_1 sample=243/1000 id=2884 B=(1,1803,1803) success=True
+nmnist_seed42_binary_B_inf_1 sample=244/1000 id=8738 B=(1,2131,2131) success=False
+nmnist_seed42_binary_B_inf_1 sample=245/1000 id=4483 B=(1,1254,1254) success=True
+nmnist_seed42_binary_B_inf_1 sample=246/1000 id=1056 B=(1,1026,1026) success=True
+nmnist_seed42_binary_B_inf_1 sample=247/1000 id=6224 B=(1,2316,2316) success=False
+nmnist_seed42_binary_B_inf_1 sample=248/1000 id=6719 B=(1,1611,1611) success=True
+nmnist_seed42_binary_B_inf_1 sample=249/1000 id=6902 B=(1,2277,2277) success=True
+nmnist_seed42_binary_B_inf_1 sample=250/1000 id=912 B=(1,2254,2254) success=True
+nmnist_seed42_binary_B_inf_1 sample=251/1000 id=9967 B=(1,1568,1568) success=True
+nmnist_seed42_binary_B_inf_1 sample=252/1000 id=1060 B=(1,954,954) success=True
+nmnist_seed42_binary_B_inf_1 sample=253/1000 id=6544 B=(1,1746,1746) success=False
+nmnist_seed42_binary_B_inf_1 sample=254/1000 id=5254 B=(1,1796,1796) success=True
+nmnist_seed42_binary_B_inf_1 sample=255/1000 id=7499 B=(1,1255,1255) success=True
+nmnist_seed42_binary_B_inf_1 sample=256/1000 id=2993 B=(1,1994,1994) success=False
+nmnist_seed42_binary_B_inf_1 sample=257/1000 id=4506 B=(1,1748,1748) success=True
+nmnist_seed42_binary_B_inf_1 sample=258/1000 id=4364 B=(1,1560,1560) success=True
+nmnist_seed42_binary_B_inf_1 sample=259/1000 id=8168 B=(1,1725,1725) success=False
+nmnist_seed42_binary_B_inf_1 sample=260/1000 id=3000 B=(1,1591,1591) success=True
+nmnist_seed42_binary_B_inf_1 sample=261/1000 id=7723 B=(1,1522,1522) success=True
+nmnist_seed42_binary_B_inf_1 sample=262/1000 id=4458 B=(1,1645,1645) success=True
+nmnist_seed42_binary_B_inf_1 sample=263/1000 id=1821 B=(1,1265,1265) success=True
+nmnist_seed42_binary_B_inf_1 sample=264/1000 id=3644 B=(1,1790,1790) success=True
+nmnist_seed42_binary_B_inf_1 sample=265/1000 id=7281 B=(1,1640,1640) success=True
+nmnist_seed42_binary_B_inf_1 sample=266/1000 id=2671 B=(1,2160,2160) success=True
+nmnist_seed42_binary_B_inf_1 sample=267/1000 id=6763 B=(1,1702,1702) success=False
+nmnist_seed42_binary_B_inf_1 sample=268/1000 id=469 B=(1,2376,2376) success=True
+nmnist_seed42_binary_B_inf_1 sample=269/1000 id=9477 B=(1,2054,2054) success=True
+nmnist_seed42_binary_B_inf_1 sample=270/1000 id=465 B=(1,2206,2206) success=False
+nmnist_seed42_binary_B_inf_1 sample=271/1000 id=2257 B=(1,1350,1350) success=True
+nmnist_seed42_binary_B_inf_1 sample=272/1000 id=8721 B=(1,1962,1962) success=False
+nmnist_seed42_binary_B_inf_1 sample=273/1000 id=331 B=(1,2535,2535) success=True
+nmnist_seed42_binary_B_inf_1 sample=274/1000 id=5383 B=(1,2136,2136) success=True
+nmnist_seed42_binary_B_inf_1 sample=275/1000 id=9810 B=(1,1481,1481) success=True
+nmnist_seed42_binary_B_inf_1 sample=276/1000 id=8778 B=(1,2016,2016) success=False
+nmnist_seed42_binary_B_inf_1 sample=277/1000 id=6396 B=(1,2090,2090) success=True
+nmnist_seed42_binary_B_inf_1 sample=278/1000 id=9505 B=(1,1539,1539) success=True
+nmnist_seed42_binary_B_inf_1 sample=279/1000 id=4001 B=(1,1942,1942) success=True
+nmnist_seed42_binary_B_inf_1 sample=280/1000 id=4193 B=(1,1566,1566) success=True
+nmnist_seed42_binary_B_inf_1 sample=281/1000 id=607 B=(1,2296,2296) success=True
+nmnist_seed42_binary_B_inf_1 sample=282/1000 id=2002 B=(1,1282,1282) success=True
+nmnist_seed42_binary_B_inf_1 sample=283/1000 id=1519 B=(1,1066,1066) success=True
+nmnist_seed42_binary_B_inf_1 sample=284/1000 id=6189 B=(1,1599,1599) success=True
+nmnist_seed42_binary_B_inf_1 sample=285/1000 id=2360 B=(1,1909,1909) success=True
+nmnist_seed42_binary_B_inf_1 sample=286/1000 id=4214 B=(1,1617,1617) success=True
+nmnist_seed42_binary_B_inf_1 sample=287/1000 id=8325 B=(1,1929,1929) success=False
+nmnist_seed42_binary_B_inf_1 sample=288/1000 id=5733 B=(1,1743,1743) success=True
+nmnist_seed42_binary_B_inf_1 sample=289/1000 id=9605 B=(1,1872,1872) success=True
+nmnist_seed42_binary_B_inf_1 sample=290/1000 id=7468 B=(1,1983,1983) success=True
+nmnist_seed42_binary_B_inf_1 sample=291/1000 id=4254 B=(1,1737,1737) success=False
+nmnist_seed42_binary_B_inf_1 sample=292/1000 id=9099 B=(1,1890,1890) success=True
+nmnist_seed42_binary_B_inf_1 sample=293/1000 id=1630 B=(1,997,997) success=True
+nmnist_seed42_binary_B_inf_1 sample=294/1000 id=6980 B=(1,1826,1826) success=True
+nmnist_seed42_binary_B_inf_1 sample=295/1000 id=580 B=(1,2536,2536) success=True
+nmnist_seed42_binary_B_inf_1 sample=296/1000 id=4964 B=(1,1635,1635) success=True
+nmnist_seed42_binary_B_inf_1 sample=297/1000 id=5033 B=(1,1662,1662) success=True
+nmnist_seed42_binary_B_inf_1 sample=298/1000 id=5988 B=(1,1843,1843) success=True
+nmnist_seed42_binary_B_inf_1 sample=299/1000 id=7771 B=(1,1554,1554) success=False
+nmnist_seed42_binary_B_inf_1 sample=300/1000 id=2821 B=(1,1851,1851) success=True
+nmnist_seed42_binary_B_inf_1 sample=301/1000 id=9547 B=(1,1860,1860) success=True
+nmnist_seed42_binary_B_inf_1 sample=302/1000 id=4457 B=(1,1569,1569) success=True
+nmnist_seed42_binary_B_inf_1 sample=303/1000 id=9735 B=(1,2038,2038) success=True
+nmnist_seed42_binary_B_inf_1 sample=304/1000 id=7097 B=(1,1368,1368) success=True
+nmnist_seed42_binary_B_inf_1 sample=305/1000 id=6873 B=(1,1986,1986) success=False
+nmnist_seed42_binary_B_inf_1 sample=306/1000 id=8720 B=(1,1926,1926) success=False
+nmnist_seed42_binary_B_inf_1 sample=307/1000 id=4972 B=(1,1812,1812) success=True
+nmnist_seed42_binary_B_inf_1 sample=308/1000 id=5216 B=(1,1626,1626) success=True
+nmnist_seed42_binary_B_inf_1 sample=309/1000 id=1107 B=(1,1017,1017) success=True
+nmnist_seed42_binary_B_inf_1 sample=310/1000 id=8664 B=(1,1725,1725) success=True
+nmnist_seed42_binary_B_inf_1 sample=311/1000 id=9286 B=(1,1799,1799) success=True
+nmnist_seed42_binary_B_inf_1 sample=312/1000 id=3466 B=(1,1558,1558) success=True
+nmnist_seed42_binary_B_inf_1 sample=313/1000 id=8710 B=(1,1726,1726) success=False
+nmnist_seed42_binary_B_inf_1 sample=314/1000 id=114 B=(1,2365,2365) success=True
+nmnist_seed42_binary_B_inf_1 sample=315/1000 id=8790 B=(1,2166,2166) success=True
+nmnist_seed42_binary_B_inf_1 sample=316/1000 id=4814 B=(1,1399,1399) success=True
+nmnist_seed42_binary_B_inf_1 sample=317/1000 id=474 B=(1,2350,2350) success=False
+nmnist_seed42_binary_B_inf_1 sample=318/1000 id=2243 B=(1,1263,1263) success=True
+nmnist_seed42_binary_B_inf_1 sample=319/1000 id=2079 B=(1,1223,1223) success=True
+nmnist_seed42_binary_B_inf_1 sample=320/1000 id=8125 B=(1,2174,2174) success=True
+nmnist_seed42_binary_B_inf_1 sample=321/1000 id=3681 B=(1,1804,1804) success=True
+nmnist_seed42_binary_B_inf_1 sample=322/1000 id=6410 B=(1,2182,2182) success=True
+nmnist_seed42_binary_B_inf_1 sample=323/1000 id=6791 B=(1,1830,1830) success=False
+nmnist_seed42_binary_B_inf_1 sample=324/1000 id=3988 B=(1,2202,2202) success=True
+nmnist_seed42_binary_B_inf_1 sample=325/1000 id=5273 B=(1,1542,1542) success=True
+nmnist_seed42_binary_B_inf_1 sample=326/1000 id=8268 B=(1,2117,2117) success=False
+nmnist_seed42_binary_B_inf_1 sample=327/1000 id=2215 B=(1,1959,1959) success=True
+nmnist_seed42_binary_B_inf_1 sample=328/1000 id=4461 B=(1,1572,1572) success=True
+nmnist_seed42_binary_B_inf_1 sample=329/1000 id=8934 B=(1,1832,1832) success=True
+nmnist_seed42_binary_B_inf_1 sample=330/1000 id=9474 B=(1,1392,1392) success=True
+nmnist_seed42_binary_B_inf_1 sample=331/1000 id=6446 B=(1,1554,1554) success=True
+nmnist_seed42_binary_B_inf_1 sample=332/1000 id=7356 B=(1,1295,1295) success=True
+nmnist_seed42_binary_B_inf_1 sample=333/1000 id=3784 B=(1,1972,1972) success=True
+nmnist_seed42_binary_B_inf_1 sample=334/1000 id=682 B=(1,1968,1968) success=True
+nmnist_seed42_binary_B_inf_1 sample=335/1000 id=9590 B=(1,1902,1902) success=True
+nmnist_seed42_binary_B_inf_1 sample=336/1000 id=378 B=(1,2265,2265) success=True
+nmnist_seed42_binary_B_inf_1 sample=337/1000 id=6445 B=(1,1794,1794) success=True
+nmnist_seed42_binary_B_inf_1 sample=338/1000 id=5340 B=(1,1819,1819) success=True
+nmnist_seed42_binary_B_inf_1 sample=339/1000 id=8992 B=(1,1855,1855) success=True
+nmnist_seed42_binary_B_inf_1 sample=340/1000 id=3309 B=(1,1873,1873) success=True
+nmnist_seed42_binary_B_inf_1 sample=341/1000 id=2867 B=(1,1523,1523) success=True
+nmnist_seed42_binary_B_inf_1 sample=342/1000 id=8103 B=(1,1923,1923) success=False
+nmnist_seed42_binary_B_inf_1 sample=343/1000 id=3334 B=(1,1952,1952) success=True
+nmnist_seed42_binary_B_inf_1 sample=344/1000 id=1943 B=(1,1205,1205) success=True
+nmnist_seed42_binary_B_inf_1 sample=345/1000 id=2281 B=(1,2063,2063) success=True
+nmnist_seed42_binary_B_inf_1 sample=346/1000 id=8379 B=(1,1944,1944) success=False
+nmnist_seed42_binary_B_inf_1 sample=347/1000 id=4486 B=(1,1411,1411) success=True
+nmnist_seed42_binary_B_inf_1 sample=348/1000 id=1772 B=(1,1068,1068) success=True
+nmnist_seed42_binary_B_inf_1 sample=349/1000 id=4561 B=(1,1474,1474) success=False
+nmnist_seed42_binary_B_inf_1 sample=350/1000 id=9313 B=(1,1755,1755) success=True
+nmnist_seed42_binary_B_inf_1 sample=351/1000 id=53 B=(1,2249,2249) success=True
+nmnist_seed42_binary_B_inf_1 sample=352/1000 id=5135 B=(1,1369,1369) success=True
+nmnist_seed42_binary_B_inf_1 sample=353/1000 id=2374 B=(1,1847,1847) success=True
+nmnist_seed42_binary_B_inf_1 sample=354/1000 id=1501 B=(1,887,887) success=True
+nmnist_seed42_binary_B_inf_1 sample=355/1000 id=1745 B=(1,1167,1167) success=True
+nmnist_seed42_binary_B_inf_1 sample=356/1000 id=9297 B=(1,1382,1382) success=True
+nmnist_seed42_binary_B_inf_1 sample=357/1000 id=8285 B=(1,1885,1885) success=False
+nmnist_seed42_binary_B_inf_1 sample=358/1000 id=4694 B=(1,1542,1542) success=True
+nmnist_seed42_binary_B_inf_1 sample=359/1000 id=8876 B=(1,2241,2241) success=False
+nmnist_seed42_binary_B_inf_1 sample=360/1000 id=5354 B=(1,2298,2298) success=True
+nmnist_seed42_binary_B_inf_1 sample=361/1000 id=4624 B=(1,1448,1448) success=True
+nmnist_seed42_binary_B_inf_1 sample=362/1000 id=3851 B=(1,1833,1833) success=True
+nmnist_seed42_binary_B_inf_1 sample=363/1000 id=8935 B=(1,1905,1905) success=True
+nmnist_seed42_binary_B_inf_1 sample=364/1000 id=671 B=(1,2070,2070) success=True
+nmnist_seed42_binary_B_inf_1 sample=365/1000 id=291 B=(1,2299,2299) success=True
+nmnist_seed42_binary_B_inf_1 sample=366/1000 id=8798 B=(1,1725,1725) success=True
+nmnist_seed42_binary_B_inf_1 sample=367/1000 id=2978 B=(1,1855,1855) success=True
+nmnist_seed42_binary_B_inf_1 sample=368/1000 id=5355 B=(1,1765,1765) success=True
+nmnist_seed42_binary_B_inf_1 sample=369/1000 id=3987 B=(1,2240,2240) success=True
+nmnist_seed42_binary_B_inf_1 sample=370/1000 id=3884 B=(1,2030,2030) success=True
+nmnist_seed42_binary_B_inf_1 sample=371/1000 id=5232 B=(1,1904,1904) success=True
+nmnist_seed42_binary_B_inf_1 sample=372/1000 id=1755 B=(1,1136,1136) success=True
+nmnist_seed42_binary_B_inf_1 sample=373/1000 id=2767 B=(1,1984,1984) success=True
+nmnist_seed42_binary_B_inf_1 sample=374/1000 id=8447 B=(1,1644,1644) success=True
+nmnist_seed42_binary_B_inf_1 sample=375/1000 id=4798 B=(1,1698,1698) success=True
+nmnist_seed42_binary_B_inf_1 sample=376/1000 id=4860 B=(1,1536,1536) success=True
+nmnist_seed42_binary_B_inf_1 sample=377/1000 id=6889 B=(1,1872,1872) success=False
+nmnist_seed42_binary_B_inf_1 sample=378/1000 id=7406 B=(1,1557,1557) success=True
+nmnist_seed42_binary_B_inf_1 sample=379/1000 id=6080 B=(1,1753,1753) success=True
+nmnist_seed42_binary_B_inf_1 sample=380/1000 id=4399 B=(1,1227,1227) success=True
+nmnist_seed42_binary_B_inf_1 sample=381/1000 id=9565 B=(1,1720,1720) success=True
+nmnist_seed42_binary_B_inf_1 sample=382/1000 id=5756 B=(1,2123,2123) success=True
+nmnist_seed42_binary_B_inf_1 sample=383/1000 id=5917 B=(1,1901,1901) success=True
+nmnist_seed42_binary_B_inf_1 sample=384/1000 id=1303 B=(1,781,781) success=True
+nmnist_seed42_binary_B_inf_1 sample=385/1000 id=2383 B=(1,1683,1683) success=True
+nmnist_seed42_binary_B_inf_1 sample=386/1000 id=245 B=(1,1728,1728) success=True
+nmnist_seed42_binary_B_inf_1 sample=387/1000 id=2562 B=(1,1978,1978) success=True
+nmnist_seed42_binary_B_inf_1 sample=388/1000 id=1832 B=(1,1204,1204) success=True
+nmnist_seed42_binary_B_inf_1 sample=389/1000 id=2664 B=(1,1995,1995) success=True
+nmnist_seed42_binary_B_inf_1 sample=390/1000 id=9334 B=(1,1859,1859) success=True
+nmnist_seed42_binary_B_inf_1 sample=391/1000 id=9181 B=(1,1580,1580) success=True
+nmnist_seed42_binary_B_inf_1 sample=392/1000 id=7284 B=(1,1580,1580) success=True
+nmnist_seed42_binary_B_inf_1 sample=393/1000 id=4289 B=(1,1503,1503) success=False
+nmnist_seed42_binary_B_inf_1 sample=394/1000 id=8897 B=(1,2105,2105) success=False
+nmnist_seed42_binary_B_inf_1 sample=395/1000 id=6119 B=(1,2024,2024) success=True
+nmnist_seed42_binary_B_inf_1 sample=396/1000 id=6896 B=(1,1976,1976) success=False
+nmnist_seed42_binary_B_inf_1 sample=397/1000 id=7608 B=(1,1551,1551) success=True
+nmnist_seed42_binary_B_inf_1 sample=398/1000 id=818 B=(1,2202,2202) success=False
+nmnist_seed42_binary_B_inf_1 sample=399/1000 id=7471 B=(1,1597,1597) success=True
+nmnist_seed42_binary_B_inf_1 sample=400/1000 id=3059 B=(1,2224,2224) success=True
+nmnist_seed42_binary_B_inf_1 sample=401/1000 id=2242 B=(1,1982,1982) success=True
+nmnist_seed42_binary_B_inf_1 sample=402/1000 id=8968 B=(1,1852,1852) success=False
+nmnist_seed42_binary_B_inf_1 sample=403/1000 id=3804 B=(1,1087,1087) success=True
+nmnist_seed42_binary_B_inf_1 sample=404/1000 id=8534 B=(1,2043,2043) success=True
+nmnist_seed42_binary_B_inf_1 sample=405/1000 id=8510 B=(1,1865,1865) success=True
+nmnist_seed42_binary_B_inf_1 sample=406/1000 id=7576 B=(1,1727,1727) success=True
+nmnist_seed42_binary_B_inf_1 sample=407/1000 id=149 B=(1,2343,2343) success=False
+nmnist_seed42_binary_B_inf_1 sample=408/1000 id=3465 B=(1,2028,2028) success=True
+nmnist_seed42_binary_B_inf_1 sample=409/1000 id=9879 B=(1,1523,1523) success=True
+nmnist_seed42_binary_B_inf_1 sample=410/1000 id=86 B=(1,2200,2200) success=True
+nmnist_seed42_binary_B_inf_1 sample=411/1000 id=228 B=(1,2086,2086) success=True
+nmnist_seed42_binary_B_inf_1 sample=412/1000 id=4979 B=(1,1832,1832) success=True
+nmnist_seed42_binary_B_inf_1 sample=413/1000 id=2795 B=(1,2222,2222) success=True
+nmnist_seed42_binary_B_inf_1 sample=414/1000 id=6539 B=(1,2389,2389) success=True
+nmnist_seed42_binary_B_inf_1 sample=415/1000 id=206 B=(1,2350,2350) success=True
+nmnist_seed42_binary_B_inf_1 sample=416/1000 id=4815 B=(1,1234,1234) success=True
+nmnist_seed42_binary_B_inf_1 sample=417/1000 id=6398 B=(1,1596,1596) success=True
+nmnist_seed42_binary_B_inf_1 sample=418/1000 id=2575 B=(1,1845,1845) success=True
+nmnist_seed42_binary_B_inf_1 sample=419/1000 id=7860 B=(1,1363,1363) success=True
+nmnist_seed42_binary_B_inf_1 sample=420/1000 id=5203 B=(1,2088,2088) success=True
+nmnist_seed42_binary_B_inf_1 sample=421/1000 id=2157 B=(1,2089,2089) success=True
+nmnist_seed42_binary_B_inf_1 sample=422/1000 id=5936 B=(1,1840,1840) success=True
+nmnist_seed42_binary_B_inf_1 sample=423/1000 id=1537 B=(1,1124,1124) success=True
+nmnist_seed42_binary_B_inf_1 sample=424/1000 id=2439 B=(1,1791,1791) success=True
+nmnist_seed42_binary_B_inf_1 sample=425/1000 id=4745 B=(1,1634,1634) success=True
+nmnist_seed42_binary_B_inf_1 sample=426/1000 id=7875 B=(1,1587,1587) success=True
+nmnist_seed42_binary_B_inf_1 sample=427/1000 id=2854 B=(1,1946,1946) success=True
+nmnist_seed42_binary_B_inf_1 sample=428/1000 id=4403 B=(1,1737,1737) success=True
+nmnist_seed42_binary_B_inf_1 sample=429/1000 id=8040 B=(1,1727,1727) success=False
+nmnist_seed42_binary_B_inf_1 sample=430/1000 id=6273 B=(1,1907,1907) success=True
+nmnist_seed42_binary_B_inf_1 sample=431/1000 id=520 B=(1,2126,2126) success=True
+nmnist_seed42_binary_B_inf_1 sample=432/1000 id=1344 B=(1,1105,1105) success=True
+nmnist_seed42_binary_B_inf_1 sample=433/1000 id=1739 B=(1,1080,1080) success=True
+nmnist_seed42_binary_B_inf_1 sample=434/1000 id=6666 B=(1,2196,2196) success=True
+nmnist_seed42_binary_B_inf_1 sample=435/1000 id=1068 B=(1,1147,1147) success=True
+nmnist_seed42_binary_B_inf_1 sample=436/1000 id=1683 B=(1,1196,1196) success=True
+nmnist_seed42_binary_B_inf_1 sample=437/1000 id=8805 B=(1,1961,1961) success=False
+nmnist_seed42_binary_B_inf_1 sample=438/1000 id=2765 B=(1,2079,2079) success=True
+nmnist_seed42_binary_B_inf_1 sample=439/1000 id=8938 B=(1,1941,1941) success=False
+nmnist_seed42_binary_B_inf_1 sample=440/1000 id=2152 B=(1,1735,1735) success=True
+nmnist_seed42_binary_B_inf_1 sample=441/1000 id=6862 B=(1,1620,1620) success=False
+nmnist_seed42_binary_B_inf_1 sample=442/1000 id=3543 B=(1,1556,1556) success=True
+nmnist_seed42_binary_B_inf_1 sample=443/1000 id=4524 B=(1,1435,1435) success=True
+nmnist_seed42_binary_B_inf_1 sample=444/1000 id=4898 B=(1,1438,1438) success=True
+nmnist_seed42_binary_B_inf_1 sample=445/1000 id=3965 B=(1,2410,2410) success=True
+nmnist_seed42_binary_B_inf_1 sample=446/1000 id=234 B=(1,2056,2056) success=True
+nmnist_seed42_binary_B_inf_1 sample=447/1000 id=3648 B=(1,1860,1860) success=True
+nmnist_seed42_binary_B_inf_1 sample=448/1000 id=9324 B=(1,1617,1617) success=True
+nmnist_seed42_binary_B_inf_1 sample=449/1000 id=9207 B=(1,2013,2013) success=True
+nmnist_seed42_binary_B_inf_1 sample=450/1000 id=4176 B=(1,1600,1600) success=True
+nmnist_seed42_binary_B_inf_1 sample=451/1000 id=9766 B=(1,1748,1748) success=True
+nmnist_seed42_binary_B_inf_1 sample=452/1000 id=9748 B=(1,1590,1590) success=True
+nmnist_seed42_binary_B_inf_1 sample=453/1000 id=7586 B=(1,1565,1565) success=True
+nmnist_seed42_binary_B_inf_1 sample=454/1000 id=1447 B=(1,1085,1085) success=True
+nmnist_seed42_binary_B_inf_1 sample=455/1000 id=5246 B=(1,1941,1941) success=True
+nmnist_seed42_binary_B_inf_1 sample=456/1000 id=7271 B=(1,1285,1285) success=True
+nmnist_seed42_binary_B_inf_1 sample=457/1000 id=6757 B=(1,2329,2329) success=False
+nmnist_seed42_binary_B_inf_1 sample=458/1000 id=5034 B=(1,1651,1651) success=True
+nmnist_seed42_binary_B_inf_1 sample=459/1000 id=5774 B=(1,1737,1737) success=True
+nmnist_seed42_binary_B_inf_1 sample=460/1000 id=2804 B=(1,1747,1747) success=True
+nmnist_seed42_binary_B_inf_1 sample=461/1000 id=8474 B=(1,2184,2184) success=True
+nmnist_seed42_binary_B_inf_1 sample=462/1000 id=1222 B=(1,954,954) success=True
+nmnist_seed42_binary_B_inf_1 sample=463/1000 id=6958 B=(1,1302,1302) success=True
+nmnist_seed42_binary_B_inf_1 sample=464/1000 id=8375 B=(1,1632,1632) success=True
+nmnist_seed42_binary_B_inf_1 sample=465/1000 id=9853 B=(1,1909,1909) success=True
+nmnist_seed42_binary_B_inf_1 sample=466/1000 id=1607 B=(1,1116,1116) success=True
+nmnist_seed42_binary_B_inf_1 sample=467/1000 id=9060 B=(1,1634,1634) success=False
+nmnist_seed42_binary_B_inf_1 sample=468/1000 id=7941 B=(1,1389,1389) success=False
+nmnist_seed42_binary_B_inf_1 sample=469/1000 id=5870 B=(1,1530,1530) success=True
+nmnist_seed42_binary_B_inf_1 sample=470/1000 id=5941 B=(1,1797,1797) success=True
+nmnist_seed42_binary_B_inf_1 sample=471/1000 id=2292 B=(1,1897,1897) success=True
+nmnist_seed42_binary_B_inf_1 sample=472/1000 id=4668 B=(1,1436,1436) success=True
+nmnist_seed42_binary_B_inf_1 sample=473/1000 id=438 B=(1,2149,2149) success=True
+nmnist_seed42_binary_B_inf_1 sample=474/1000 id=5859 B=(1,1772,1772) success=True
+nmnist_seed42_binary_B_inf_1 sample=475/1000 id=6091 B=(1,1662,1662) success=True
+nmnist_seed42_binary_B_inf_1 sample=476/1000 id=1038 B=(1,1069,1069) success=True
+nmnist_seed42_binary_B_inf_1 sample=477/1000 id=1512 B=(1,830,830) success=True
+nmnist_seed42_binary_B_inf_1 sample=478/1000 id=9567 B=(1,1712,1712) success=True
+nmnist_seed42_binary_B_inf_1 sample=479/1000 id=4525 B=(1,1380,1380) success=True
+nmnist_seed42_binary_B_inf_1 sample=480/1000 id=7933 B=(1,1456,1456) success=True
+nmnist_seed42_binary_B_inf_1 sample=481/1000 id=1665 B=(1,984,984) success=True
+nmnist_seed42_binary_B_inf_1 sample=482/1000 id=1851 B=(1,1019,1019) success=True
+nmnist_seed42_binary_B_inf_1 sample=483/1000 id=6801 B=(1,2075,2075) success=False
+nmnist_seed42_binary_B_inf_1 sample=484/1000 id=2615 B=(1,1658,1658) success=True
+nmnist_seed42_binary_B_inf_1 sample=485/1000 id=5502 B=(1,1664,1664) success=True
+nmnist_seed42_binary_B_inf_1 sample=486/1000 id=2827 B=(1,1683,1683) success=True
+nmnist_seed42_binary_B_inf_1 sample=487/1000 id=2507 B=(1,1779,1779) success=True
+nmnist_seed42_binary_B_inf_1 sample=488/1000 id=5635 B=(1,1640,1640) success=True
+nmnist_seed42_binary_B_inf_1 sample=489/1000 id=612 B=(1,2052,2052) success=False
+nmnist_seed42_binary_B_inf_1 sample=490/1000 id=7171 B=(1,1253,1253) success=True
+nmnist_seed42_binary_B_inf_1 sample=491/1000 id=5454 B=(1,2050,2050) success=True
+nmnist_seed42_binary_B_inf_1 sample=492/1000 id=8947 B=(1,1975,1975) success=False
+nmnist_seed42_binary_B_inf_1 sample=493/1000 id=6660 B=(1,1573,1573) success=False
+nmnist_seed42_binary_B_inf_1 sample=494/1000 id=1829 B=(1,1089,1089) success=True
+nmnist_seed42_binary_B_inf_1 sample=495/1000 id=1455 B=(1,1108,1108) success=True
+nmnist_seed42_binary_B_inf_1 sample=496/1000 id=6799 B=(1,2317,2317) success=True
+nmnist_seed42_binary_B_inf_1 sample=497/1000 id=4172 B=(1,1636,1636) success=True
+nmnist_seed42_binary_B_inf_1 sample=498/1000 id=8850 B=(1,2088,2088) success=True
+nmnist_seed42_binary_B_inf_1 sample=499/1000 id=8490 B=(1,1734,1734) success=False
+nmnist_seed42_binary_B_inf_1 sample=500/1000 id=8361 B=(1,1982,1982) success=False
+nmnist_seed42_binary_B_inf_1 sample=501/1000 id=3020 B=(1,1926,1926) success=True
+nmnist_seed42_binary_B_inf_1 sample=502/1000 id=5267 B=(1,1804,1804) success=True
+nmnist_seed42_binary_B_inf_1 sample=503/1000 id=9121 B=(1,1488,1488) success=True
+nmnist_seed42_binary_B_inf_1 sample=504/1000 id=3151 B=(1,2167,2167) success=True
+nmnist_seed42_binary_B_inf_1 sample=505/1000 id=9652 B=(1,1782,1782) success=True
+nmnist_seed42_binary_B_inf_1 sample=506/1000 id=5495 B=(1,1866,1866) success=True
+nmnist_seed42_binary_B_inf_1 sample=507/1000 id=7533 B=(1,1570,1570) success=True
+nmnist_seed42_binary_B_inf_1 sample=508/1000 id=1503 B=(1,1049,1049) success=True
+nmnist_seed42_binary_B_inf_1 sample=509/1000 id=8626 B=(1,1927,1927) success=False
+nmnist_seed42_binary_B_inf_1 sample=510/1000 id=1063 B=(1,1005,1005) success=True
+nmnist_seed42_binary_B_inf_1 sample=511/1000 id=2627 B=(1,1720,1720) success=True
+nmnist_seed42_binary_B_inf_1 sample=512/1000 id=600 B=(1,2109,2109) success=True
+nmnist_seed42_binary_B_inf_1 sample=513/1000 id=5442 B=(1,2444,2444) success=True
+nmnist_seed42_binary_B_inf_1 sample=514/1000 id=3136 B=(1,1582,1582) success=True
+nmnist_seed42_binary_B_inf_1 sample=515/1000 id=8644 B=(1,1941,1941) success=False
+nmnist_seed42_binary_B_inf_1 sample=516/1000 id=2606 B=(1,1885,1885) success=True
+nmnist_seed42_binary_B_inf_1 sample=517/1000 id=4605 B=(1,1664,1664) success=True
+nmnist_seed42_binary_B_inf_1 sample=518/1000 id=2744 B=(1,1988,1988) success=True
+nmnist_seed42_binary_B_inf_1 sample=519/1000 id=8261 B=(1,2020,2020) success=False
+nmnist_seed42_binary_B_inf_1 sample=520/1000 id=9897 B=(1,1659,1659) success=True
+nmnist_seed42_binary_B_inf_1 sample=521/1000 id=1513 B=(1,1020,1020) success=True
+nmnist_seed42_binary_B_inf_1 sample=522/1000 id=1715 B=(1,1132,1132) success=True
+nmnist_seed42_binary_B_inf_1 sample=523/1000 id=3677 B=(1,2105,2105) success=True
+nmnist_seed42_binary_B_inf_1 sample=524/1000 id=2135 B=(1,1611,1611) success=False
+nmnist_seed42_binary_B_inf_1 sample=525/1000 id=3559 B=(1,2038,2038) success=True
+nmnist_seed42_binary_B_inf_1 sample=526/1000 id=4542 B=(1,1614,1614) success=True
+nmnist_seed42_binary_B_inf_1 sample=527/1000 id=8572 B=(1,1785,1785) success=False
+nmnist_seed42_binary_B_inf_1 sample=528/1000 id=5202 B=(1,1637,1637) success=True
+nmnist_seed42_binary_B_inf_1 sample=529/1000 id=4314 B=(1,1770,1770) success=True
+nmnist_seed42_binary_B_inf_1 sample=530/1000 id=3229 B=(1,2308,2308) success=True
+nmnist_seed42_binary_B_inf_1 sample=531/1000 id=1081 B=(1,901,901) success=True
+nmnist_seed42_binary_B_inf_1 sample=532/1000 id=3274 B=(1,1731,1731) success=True
+nmnist_seed42_binary_B_inf_1 sample=533/1000 id=9006 B=(1,1529,1529) success=True
+nmnist_seed42_binary_B_inf_1 sample=534/1000 id=4567 B=(1,1844,1844) success=True
+nmnist_seed42_binary_B_inf_1 sample=535/1000 id=3503 B=(1,1705,1705) success=True
+nmnist_seed42_binary_B_inf_1 sample=536/1000 id=898 B=(1,2315,2315) success=True
+nmnist_seed42_binary_B_inf_1 sample=537/1000 id=1269 B=(1,855,855) success=True
+nmnist_seed42_binary_B_inf_1 sample=538/1000 id=6220 B=(1,1726,1726) success=True
+nmnist_seed42_binary_B_inf_1 sample=539/1000 id=8890 B=(1,2138,2138) success=False
+nmnist_seed42_binary_B_inf_1 sample=540/1000 id=879 B=(1,1822,1822) success=True
+nmnist_seed42_binary_B_inf_1 sample=541/1000 id=2586 B=(1,1599,1599) success=True
+nmnist_seed42_binary_B_inf_1 sample=542/1000 id=4139 B=(1,2094,2094) success=True
+nmnist_seed42_binary_B_inf_1 sample=543/1000 id=8161 B=(1,1794,1794) success=False
+nmnist_seed42_binary_B_inf_1 sample=544/1000 id=9916 B=(1,2001,2001) success=True
+nmnist_seed42_binary_B_inf_1 sample=545/1000 id=292 B=(1,1624,1624) success=True
+nmnist_seed42_binary_B_inf_1 sample=546/1000 id=3629 B=(1,1964,1964) success=True
+nmnist_seed42_binary_B_inf_1 sample=547/1000 id=3419 B=(1,1809,1809) success=True
+nmnist_seed42_binary_B_inf_1 sample=548/1000 id=4315 B=(1,1786,1786) success=True
+nmnist_seed42_binary_B_inf_1 sample=549/1000 id=6706 B=(1,1903,1903) success=False
+nmnist_seed42_binary_B_inf_1 sample=550/1000 id=6657 B=(1,1931,1931) success=False
+nmnist_seed42_binary_B_inf_1 sample=551/1000 id=1383 B=(1,1186,1186) success=True
+nmnist_seed42_binary_B_inf_1 sample=552/1000 id=680 B=(1,2109,2109) success=True
+nmnist_seed42_binary_B_inf_1 sample=553/1000 id=5134 B=(1,1576,1576) success=True
+nmnist_seed42_binary_B_inf_1 sample=554/1000 id=4919 B=(1,1986,1986) success=True
+nmnist_seed42_binary_B_inf_1 sample=555/1000 id=3300 B=(1,1314,1314) success=True
+nmnist_seed42_binary_B_inf_1 sample=556/1000 id=5266 B=(1,1584,1584) success=True
+nmnist_seed42_binary_B_inf_1 sample=557/1000 id=1661 B=(1,1017,1017) success=True
+nmnist_seed42_binary_B_inf_1 sample=558/1000 id=5248 B=(1,1788,1788) success=True
+nmnist_seed42_binary_B_inf_1 sample=559/1000 id=9805 B=(1,1385,1385) success=True
+nmnist_seed42_binary_B_inf_1 sample=560/1000 id=4221 B=(1,1571,1571) success=True
+nmnist_seed42_binary_B_inf_1 sample=561/1000 id=2240 B=(1,1967,1967) success=True
+nmnist_seed42_binary_B_inf_1 sample=562/1000 id=3881 B=(1,1760,1760) success=True
+nmnist_seed42_binary_B_inf_1 sample=563/1000 id=5611 B=(1,2289,2289) success=True
+nmnist_seed42_binary_B_inf_1 sample=564/1000 id=9336 B=(1,1775,1775) success=True
+nmnist_seed42_binary_B_inf_1 sample=565/1000 id=1758 B=(1,1049,1049) success=True
+nmnist_seed42_binary_B_inf_1 sample=566/1000 id=7890 B=(1,1602,1602) success=True
+nmnist_seed42_binary_B_inf_1 sample=567/1000 id=4499 B=(1,1925,1925) success=False
+nmnist_seed42_binary_B_inf_1 sample=568/1000 id=1346 B=(1,908,908) success=True
+nmnist_seed42_binary_B_inf_1 sample=569/1000 id=7165 B=(1,1980,1980) success=True
+nmnist_seed42_binary_B_inf_1 sample=570/1000 id=2402 B=(1,1885,1885) success=True
+nmnist_seed42_binary_B_inf_1 sample=571/1000 id=8647 B=(1,1933,1933) success=False
+nmnist_seed42_binary_B_inf_1 sample=572/1000 id=84 B=(1,2431,2431) success=False
+nmnist_seed42_binary_B_inf_1 sample=573/1000 id=9075 B=(1,1328,1328) success=True
+nmnist_seed42_binary_B_inf_1 sample=574/1000 id=4938 B=(1,1804,1804) success=True
+nmnist_seed42_binary_B_inf_1 sample=575/1000 id=3421 B=(1,1725,1725) success=True
+nmnist_seed42_binary_B_inf_1 sample=576/1000 id=1550 B=(1,969,969) success=True
+nmnist_seed42_binary_B_inf_1 sample=577/1000 id=6827 B=(1,1671,1671) success=False
+nmnist_seed42_binary_B_inf_1 sample=578/1000 id=7047 B=(1,1890,1890) success=True
+nmnist_seed42_binary_B_inf_1 sample=579/1000 id=8964 B=(1,2120,2120) success=False
+nmnist_seed42_binary_B_inf_1 sample=580/1000 id=8271 B=(1,1319,1319) success=True
+nmnist_seed42_binary_B_inf_1 sample=581/1000 id=9519 B=(1,1624,1624) success=True
+nmnist_seed42_binary_B_inf_1 sample=582/1000 id=7869 B=(1,1378,1378) success=True
+nmnist_seed42_binary_B_inf_1 sample=583/1000 id=8110 B=(1,1683,1683) success=False
+nmnist_seed42_binary_B_inf_1 sample=584/1000 id=3224 B=(1,2184,2184) success=True
+nmnist_seed42_binary_B_inf_1 sample=585/1000 id=4277 B=(1,1540,1540) success=True
+nmnist_seed42_binary_B_inf_1 sample=586/1000 id=5709 B=(1,1839,1839) success=True
+nmnist_seed42_binary_B_inf_1 sample=587/1000 id=222 B=(1,2306,2306) success=True
+nmnist_seed42_binary_B_inf_1 sample=588/1000 id=3304 B=(1,1636,1636) success=True
+nmnist_seed42_binary_B_inf_1 sample=589/1000 id=7440 B=(1,1782,1782) success=True
+nmnist_seed42_binary_B_inf_1 sample=590/1000 id=344 B=(1,2432,2432) success=True
+nmnist_seed42_binary_B_inf_1 sample=591/1000 id=4997 B=(1,1834,1834) success=True
+nmnist_seed42_binary_B_inf_1 sample=592/1000 id=6298 B=(1,1395,1395) success=False
+nmnist_seed42_binary_B_inf_1 sample=593/1000 id=9712 B=(1,1363,1363) success=True
+nmnist_seed42_binary_B_inf_1 sample=594/1000 id=4794 B=(1,1465,1465) success=True
+nmnist_seed42_binary_B_inf_1 sample=595/1000 id=8249 B=(1,2121,2121) success=False
+nmnist_seed42_binary_B_inf_1 sample=596/1000 id=4756 B=(1,1574,1574) success=True
+nmnist_seed42_binary_B_inf_1 sample=597/1000 id=2076 B=(1,1107,1107) success=True
+nmnist_seed42_binary_B_inf_1 sample=598/1000 id=6661 B=(1,1814,1814) success=True
+nmnist_seed42_binary_B_inf_1 sample=599/1000 id=3861 B=(1,2026,2026) success=True
+nmnist_seed42_binary_B_inf_1 sample=600/1000 id=6414 B=(1,2182,2182) success=True
+nmnist_seed42_binary_B_inf_1 sample=601/1000 id=41 B=(1,1791,1791) success=True
+nmnist_seed42_binary_B_inf_1 sample=602/1000 id=150 B=(1,1985,1985) success=True
+nmnist_seed42_binary_B_inf_1 sample=603/1000 id=1143 B=(1,935,935) success=True
+nmnist_seed42_binary_B_inf_1 sample=604/1000 id=3923 B=(1,1688,1688) success=True
+nmnist_seed42_binary_B_inf_1 sample=605/1000 id=5020 B=(1,1817,1817) success=True
+nmnist_seed42_binary_B_inf_1 sample=606/1000 id=8372 B=(1,2769,2769) success=True
+nmnist_seed42_binary_B_inf_1 sample=607/1000 id=6228 B=(1,1563,1563) success=True
+nmnist_seed42_binary_B_inf_1 sample=608/1000 id=9481 B=(1,1662,1662) success=True
+nmnist_seed42_binary_B_inf_1 sample=609/1000 id=5808 B=(1,2092,2092) success=True
+nmnist_seed42_binary_B_inf_1 sample=610/1000 id=2756 B=(1,2007,2007) success=True
+nmnist_seed42_binary_B_inf_1 sample=611/1000 id=2593 B=(1,1588,1588) success=True
+nmnist_seed42_binary_B_inf_1 sample=612/1000 id=7652 B=(1,1389,1389) success=True
+nmnist_seed42_binary_B_inf_1 sample=613/1000 id=2453 B=(1,1917,1917) success=True
+nmnist_seed42_binary_B_inf_1 sample=614/1000 id=1410 B=(1,1138,1138) success=True
+nmnist_seed42_binary_B_inf_1 sample=615/1000 id=7552 B=(1,1662,1662) success=True
+nmnist_seed42_binary_B_inf_1 sample=616/1000 id=8281 B=(1,2392,2392) success=False
+nmnist_seed42_binary_B_inf_1 sample=617/1000 id=4092 B=(1,2068,2068) success=True
+nmnist_seed42_binary_B_inf_1 sample=618/1000 id=1117 B=(1,799,799) success=True
+nmnist_seed42_binary_B_inf_1 sample=619/1000 id=1731 B=(1,920,920) success=True
+nmnist_seed42_binary_B_inf_1 sample=620/1000 id=6985 B=(1,1557,1557) success=True
+nmnist_seed42_binary_B_inf_1 sample=621/1000 id=472 B=(1,2255,2255) success=False
+nmnist_seed42_binary_B_inf_1 sample=622/1000 id=3259 B=(1,1774,1774) success=True
+nmnist_seed42_binary_B_inf_1 sample=623/1000 id=6921 B=(1,1503,1503) success=True
+nmnist_seed42_binary_B_inf_1 sample=624/1000 id=2424 B=(1,1884,1884) success=True
+nmnist_seed42_binary_B_inf_1 sample=625/1000 id=2471 B=(1,1754,1754) success=True
+nmnist_seed42_binary_B_inf_1 sample=626/1000 id=6571 B=(1,1776,1776) success=False
+nmnist_seed42_binary_B_inf_1 sample=627/1000 id=5426 B=(1,1681,1681) success=True
+nmnist_seed42_binary_B_inf_1 sample=628/1000 id=2872 B=(1,1624,1624) success=True
+nmnist_seed42_binary_B_inf_1 sample=629/1000 id=8507 B=(1,1510,1510) success=True
+nmnist_seed42_binary_B_inf_1 sample=630/1000 id=2350 B=(1,1597,1597) success=True
+nmnist_seed42_binary_B_inf_1 sample=631/1000 id=7293 B=(1,1391,1391) success=True
+nmnist_seed42_binary_B_inf_1 sample=632/1000 id=5967 B=(1,1831,1831) success=True
+nmnist_seed42_binary_B_inf_1 sample=633/1000 id=535 B=(1,2596,2596) success=True
+nmnist_seed42_binary_B_inf_1 sample=634/1000 id=9989 B=(1,1287,1287) success=True
+nmnist_seed42_binary_B_inf_1 sample=635/1000 id=3431 B=(1,1599,1599) success=True
+nmnist_seed42_binary_B_inf_1 sample=636/1000 id=3509 B=(1,1984,1984) success=True
+nmnist_seed42_binary_B_inf_1 sample=637/1000 id=5019 B=(1,1643,1643) success=True
+nmnist_seed42_binary_B_inf_1 sample=638/1000 id=8737 B=(1,2280,2280) success=False
+nmnist_seed42_binary_B_inf_1 sample=639/1000 id=6793 B=(1,1418,1418) success=True
+nmnist_seed42_binary_B_inf_1 sample=640/1000 id=361 B=(1,1884,1884) success=True
+nmnist_seed42_binary_B_inf_1 sample=641/1000 id=9091 B=(1,1653,1653) success=True
+nmnist_seed42_binary_B_inf_1 sample=642/1000 id=1480 B=(1,894,894) success=True
+nmnist_seed42_binary_B_inf_1 sample=643/1000 id=4481 B=(1,1897,1897) success=True
+nmnist_seed42_binary_B_inf_1 sample=644/1000 id=1789 B=(1,1123,1123) success=True
+nmnist_seed42_binary_B_inf_1 sample=645/1000 id=9629 B=(1,1602,1602) success=True
+nmnist_seed42_binary_B_inf_1 sample=646/1000 id=2046 B=(1,1120,1120) success=True
+nmnist_seed42_binary_B_inf_1 sample=647/1000 id=5220 B=(1,1959,1959) success=True
+nmnist_seed42_binary_B_inf_1 sample=648/1000 id=7382 B=(1,1456,1456) success=True
+nmnist_seed42_binary_B_inf_1 sample=649/1000 id=8533 B=(1,1956,1956) success=True
+nmnist_seed42_binary_B_inf_1 sample=650/1000 id=126 B=(1,2024,2024) success=False
+nmnist_seed42_binary_B_inf_1 sample=651/1000 id=2479 B=(1,1892,1892) success=True
+nmnist_seed42_binary_B_inf_1 sample=652/1000 id=2976 B=(1,1453,1453) success=True
+nmnist_seed42_binary_B_inf_1 sample=653/1000 id=5331 B=(1,1755,1755) success=True
+nmnist_seed42_binary_B_inf_1 sample=654/1000 id=5274 B=(1,1897,1897) success=True
+nmnist_seed42_binary_B_inf_1 sample=655/1000 id=360 B=(1,2379,2379) success=True
+nmnist_seed42_binary_B_inf_1 sample=656/1000 id=8611 B=(1,2558,2558) success=True
+nmnist_seed42_binary_B_inf_1 sample=657/1000 id=6288 B=(1,2321,2321) success=True
+nmnist_seed42_binary_B_inf_1 sample=658/1000 id=2149 B=(1,2294,2294) success=True
+nmnist_seed42_binary_B_inf_1 sample=659/1000 id=2241 B=(1,1861,1861) success=True
+nmnist_seed42_binary_B_inf_1 sample=660/1000 id=6984 B=(1,1892,1892) success=False
+nmnist_seed42_binary_B_inf_1 sample=661/1000 id=3863 B=(1,1810,1810) success=True
+nmnist_seed42_binary_B_inf_1 sample=662/1000 id=3047 B=(1,1892,1892) success=True
+nmnist_seed42_binary_B_inf_1 sample=663/1000 id=390 B=(1,2038,2038) success=False
+nmnist_seed42_binary_B_inf_1 sample=664/1000 id=6241 B=(1,1540,1540) success=True
+nmnist_seed42_binary_B_inf_1 sample=665/1000 id=9540 B=(1,1936,1936) success=True
+nmnist_seed42_binary_B_inf_1 sample=666/1000 id=9844 B=(1,1659,1659) success=True
+nmnist_seed42_binary_B_inf_1 sample=667/1000 id=3021 B=(1,2074,2074) success=True
+nmnist_seed42_binary_B_inf_1 sample=668/1000 id=4326 B=(1,1478,1478) success=True
+nmnist_seed42_binary_B_inf_1 sample=669/1000 id=6056 B=(1,1840,1840) success=True
+nmnist_seed42_binary_B_inf_1 sample=670/1000 id=7764 B=(1,1409,1409) success=True
+nmnist_seed42_binary_B_inf_1 sample=671/1000 id=3737 B=(1,1706,1706) success=True
+nmnist_seed42_binary_B_inf_1 sample=672/1000 id=5512 B=(1,1387,1387) success=True
+nmnist_seed42_binary_B_inf_1 sample=673/1000 id=2525 B=(1,2010,2010) success=True
+nmnist_seed42_binary_B_inf_1 sample=674/1000 id=3278 B=(1,1721,1721) success=True
+nmnist_seed42_binary_B_inf_1 sample=675/1000 id=3094 B=(1,1877,1877) success=True
+nmnist_seed42_binary_B_inf_1 sample=676/1000 id=9226 B=(1,1619,1619) success=True
+nmnist_seed42_binary_B_inf_1 sample=677/1000 id=9370 B=(1,1644,1644) success=True
+nmnist_seed42_binary_B_inf_1 sample=678/1000 id=2051 B=(1,1012,1012) success=True
+nmnist_seed42_binary_B_inf_1 sample=679/1000 id=8117 B=(1,1643,1643) success=False
+nmnist_seed42_binary_B_inf_1 sample=680/1000 id=6370 B=(1,2175,2175) success=False
+nmnist_seed42_binary_B_inf_1 sample=681/1000 id=5179 B=(1,1989,1989) success=True
+nmnist_seed42_binary_B_inf_1 sample=682/1000 id=9096 B=(1,1524,1524) success=True
+nmnist_seed42_binary_B_inf_1 sample=683/1000 id=1001 B=(1,734,734) success=False
+nmnist_seed42_binary_B_inf_1 sample=684/1000 id=8212 B=(1,1601,1601) success=True
+nmnist_seed42_binary_B_inf_1 sample=685/1000 id=9078 B=(1,1750,1750) success=True
+nmnist_seed42_binary_B_inf_1 sample=686/1000 id=7630 B=(1,1706,1706) success=True
+nmnist_seed42_binary_B_inf_1 sample=687/1000 id=8735 B=(1,2024,2024) success=False
+nmnist_seed42_binary_B_inf_1 sample=688/1000 id=2682 B=(1,1855,1855) success=False
+nmnist_seed42_binary_B_inf_1 sample=689/1000 id=8116 B=(1,2087,2087) success=False
+nmnist_seed42_binary_B_inf_1 sample=690/1000 id=4479 B=(1,1839,1839) success=True
+nmnist_seed42_binary_B_inf_1 sample=691/1000 id=7511 B=(1,1295,1295) success=True
+nmnist_seed42_binary_B_inf_1 sample=692/1000 id=7947 B=(1,1799,1799) success=True
+nmnist_seed42_binary_B_inf_1 sample=693/1000 id=6397 B=(1,1590,1590) success=True
+nmnist_seed42_binary_B_inf_1 sample=694/1000 id=4928 B=(1,1831,1831) success=True
+nmnist_seed42_binary_B_inf_1 sample=695/1000 id=7689 B=(1,1673,1673) success=True
+nmnist_seed42_binary_B_inf_1 sample=696/1000 id=8871 B=(1,2008,2008) success=False
+nmnist_seed42_binary_B_inf_1 sample=697/1000 id=9550 B=(1,1960,1960) success=True
+nmnist_seed42_binary_B_inf_1 sample=698/1000 id=429 B=(1,2256,2256) success=True
+nmnist_seed42_binary_B_inf_1 sample=699/1000 id=2865 B=(1,2204,2204) success=True
+nmnist_seed42_binary_B_inf_1 sample=700/1000 id=4993 B=(1,1926,1926) success=True
+nmnist_seed42_binary_B_inf_1 sample=701/1000 id=8816 B=(1,2362,2362) success=False
+nmnist_seed42_binary_B_inf_1 sample=702/1000 id=5604 B=(1,1916,1916) success=True
+nmnist_seed42_binary_B_inf_1 sample=703/1000 id=1934 B=(1,1064,1064) success=True
+nmnist_seed42_binary_B_inf_1 sample=704/1000 id=13 B=(1,2464,2464) success=True
+nmnist_seed42_binary_B_inf_1 sample=705/1000 id=4559 B=(1,1999,1999) success=True
+nmnist_seed42_binary_B_inf_1 sample=706/1000 id=6338 B=(1,1982,1982) success=False
+nmnist_seed42_binary_B_inf_1 sample=707/1000 id=6672 B=(1,1758,1758) success=True
+nmnist_seed42_binary_B_inf_1 sample=708/1000 id=106 B=(1,1992,1992) success=True
+nmnist_seed42_binary_B_inf_1 sample=709/1000 id=1486 B=(1,950,950) success=True
+nmnist_seed42_binary_B_inf_1 sample=710/1000 id=503 B=(1,2304,2304) success=True
+nmnist_seed42_binary_B_inf_1 sample=711/1000 id=4175 B=(1,1668,1668) success=True
+nmnist_seed42_binary_B_inf_1 sample=712/1000 id=64 B=(1,2112,2112) success=True
+nmnist_seed42_binary_B_inf_1 sample=713/1000 id=1700 B=(1,1061,1061) success=True
+nmnist_seed42_binary_B_inf_1 sample=714/1000 id=6310 B=(1,2002,2002) success=True
+nmnist_seed42_binary_B_inf_1 sample=715/1000 id=380 B=(1,2283,2283) success=False
+nmnist_seed42_binary_B_inf_1 sample=716/1000 id=7545 B=(1,1644,1644) success=True
+nmnist_seed42_binary_B_inf_1 sample=717/1000 id=9609 B=(1,1517,1517) success=True
+nmnist_seed42_binary_B_inf_1 sample=718/1000 id=3946 B=(1,2119,2119) success=True
+nmnist_seed42_binary_B_inf_1 sample=719/1000 id=231 B=(1,2342,2342) success=False
+nmnist_seed42_binary_B_inf_1 sample=720/1000 id=3267 B=(1,1662,1662) success=True
+nmnist_seed42_binary_B_inf_1 sample=721/1000 id=2539 B=(1,1841,1841) success=True
+nmnist_seed42_binary_B_inf_1 sample=722/1000 id=1186 B=(1,930,930) success=True
+nmnist_seed42_binary_B_inf_1 sample=723/1000 id=3468 B=(1,1135,1135) success=True
+nmnist_seed42_binary_B_inf_1 sample=724/1000 id=385 B=(1,2504,2504) success=True
+nmnist_seed42_binary_B_inf_1 sample=725/1000 id=5528 B=(1,1958,1958) success=True
+nmnist_seed42_binary_B_inf_1 sample=726/1000 id=8757 B=(1,2227,2227) success=True
+nmnist_seed42_binary_B_inf_1 sample=727/1000 id=2338 B=(1,1880,1880) success=True
+nmnist_seed42_binary_B_inf_1 sample=728/1000 id=7861 B=(1,1336,1336) success=True
+nmnist_seed42_binary_B_inf_1 sample=729/1000 id=599 B=(1,2258,2258) success=True
+nmnist_seed42_binary_B_inf_1 sample=730/1000 id=5516 B=(1,1962,1962) success=True
+nmnist_seed42_binary_B_inf_1 sample=731/1000 id=8272 B=(1,2279,2279) success=True
+nmnist_seed42_binary_B_inf_1 sample=732/1000 id=7751 B=(1,1648,1648) success=True
+nmnist_seed42_binary_B_inf_1 sample=733/1000 id=3983 B=(1,2108,2108) success=True
+nmnist_seed42_binary_B_inf_1 sample=734/1000 id=3332 B=(1,1821,1821) success=True
+nmnist_seed42_binary_B_inf_1 sample=735/1000 id=8616 B=(1,2537,2537) success=False
+nmnist_seed42_binary_B_inf_1 sample=736/1000 id=4115 B=(1,1720,1720) success=True
+nmnist_seed42_binary_B_inf_1 sample=737/1000 id=8818 B=(1,2349,2349) success=False
+nmnist_seed42_binary_B_inf_1 sample=738/1000 id=6349 B=(1,1524,1524) success=True
+nmnist_seed42_binary_B_inf_1 sample=739/1000 id=1706 B=(1,998,998) success=True
+nmnist_seed42_binary_B_inf_1 sample=740/1000 id=5773 B=(1,1960,1960) success=True
+nmnist_seed42_binary_B_inf_1 sample=741/1000 id=4765 B=(1,1945,1945) success=True
+nmnist_seed42_binary_B_inf_1 sample=742/1000 id=2919 B=(1,2140,2140) success=True
+nmnist_seed42_binary_B_inf_1 sample=743/1000 id=140 B=(1,2322,2322) success=True
+nmnist_seed42_binary_B_inf_1 sample=744/1000 id=6629 B=(1,1928,1928) success=False
+nmnist_seed42_binary_B_inf_1 sample=745/1000 id=2790 B=(1,2220,2220) success=True
+nmnist_seed42_binary_B_inf_1 sample=746/1000 id=2913 B=(1,2462,2462) success=True
+nmnist_seed42_binary_B_inf_1 sample=747/1000 id=5450 B=(1,1826,1826) success=True
+nmnist_seed42_binary_B_inf_1 sample=748/1000 id=2850 B=(1,2016,2016) success=True
+nmnist_seed42_binary_B_inf_1 sample=749/1000 id=8399 B=(1,1879,1879) success=False
+nmnist_seed42_binary_B_inf_1 sample=750/1000 id=3625 B=(1,1690,1690) success=True
+nmnist_seed42_binary_B_inf_1 sample=751/1000 id=9729 B=(1,1854,1854) success=True
+nmnist_seed42_binary_B_inf_1 sample=752/1000 id=7505 B=(1,1679,1679) success=True
+nmnist_seed42_binary_B_inf_1 sample=753/1000 id=8879 B=(1,1663,1663) success=False
+nmnist_seed42_binary_B_inf_1 sample=754/1000 id=699 B=(1,2111,2111) success=True
+nmnist_seed42_binary_B_inf_1 sample=755/1000 id=3303 B=(1,1787,1787) success=True
+nmnist_seed42_binary_B_inf_1 sample=756/1000 id=4086 B=(1,1631,1631) success=True
+nmnist_seed42_binary_B_inf_1 sample=757/1000 id=8693 B=(1,1870,1870) success=False
+nmnist_seed42_binary_B_inf_1 sample=758/1000 id=8348 B=(1,1943,1943) success=False
+nmnist_seed42_binary_B_inf_1 sample=759/1000 id=5816 B=(1,1494,1494) success=True
+nmnist_seed42_binary_B_inf_1 sample=760/1000 id=8235 B=(1,1895,1895) success=False
+nmnist_seed42_binary_B_inf_1 sample=761/1000 id=406 B=(1,1654,1654) success=True
+nmnist_seed42_binary_B_inf_1 sample=762/1000 id=8265 B=(1,1984,1984) success=False
+nmnist_seed42_binary_B_inf_1 sample=763/1000 id=546 B=(1,2018,2018) success=True
+nmnist_seed42_binary_B_inf_1 sample=764/1000 id=5518 B=(1,1514,1514) success=True
+nmnist_seed42_binary_B_inf_1 sample=765/1000 id=3809 B=(1,1611,1611) success=True
+nmnist_seed42_binary_B_inf_1 sample=766/1000 id=9645 B=(1,1515,1515) success=True
+nmnist_seed42_binary_B_inf_1 sample=767/1000 id=4104 B=(1,1744,1744) success=True
+nmnist_seed42_binary_B_inf_1 sample=768/1000 id=355 B=(1,2017,2017) success=True
+nmnist_seed42_binary_B_inf_1 sample=769/1000 id=7479 B=(1,1514,1514) success=True
+nmnist_seed42_binary_B_inf_1 sample=770/1000 id=2446 B=(1,2054,2054) success=True
+nmnist_seed42_binary_B_inf_1 sample=771/1000 id=9935 B=(1,1893,1893) success=True
+nmnist_seed42_binary_B_inf_1 sample=772/1000 id=3239 B=(1,1857,1857) success=True
+nmnist_seed42_binary_B_inf_1 sample=773/1000 id=160 B=(1,2209,2209) success=True
+nmnist_seed42_binary_B_inf_1 sample=774/1000 id=5115 B=(1,1634,1634) success=True
+nmnist_seed42_binary_B_inf_1 sample=775/1000 id=3537 B=(1,1755,1755) success=True
+nmnist_seed42_binary_B_inf_1 sample=776/1000 id=7641 B=(1,1484,1484) success=True
+nmnist_seed42_binary_B_inf_1 sample=777/1000 id=6860 B=(1,1875,1875) success=True
+nmnist_seed42_binary_B_inf_1 sample=778/1000 id=5597 B=(1,1303,1303) success=True
+nmnist_seed42_binary_B_inf_1 sample=779/1000 id=421 B=(1,1832,1832) success=True
+nmnist_seed42_binary_B_inf_1 sample=780/1000 id=1034 B=(1,853,853) success=True
+nmnist_seed42_binary_B_inf_1 sample=781/1000 id=3715 B=(1,1957,1957) success=True
+nmnist_seed42_binary_B_inf_1 sample=782/1000 id=8113 B=(1,2378,2378) success=False
+nmnist_seed42_binary_B_inf_1 sample=783/1000 id=8088 B=(1,1975,1975) success=False
+nmnist_seed42_binary_B_inf_1 sample=784/1000 id=2847 B=(1,2058,2058) success=True
+nmnist_seed42_binary_B_inf_1 sample=785/1000 id=389 B=(1,2470,2470) success=True
+nmnist_seed42_binary_B_inf_1 sample=786/1000 id=6923 B=(1,1663,1663) success=True
+nmnist_seed42_binary_B_inf_1 sample=787/1000 id=928 B=(1,2105,2105) success=False
+nmnist_seed42_binary_B_inf_1 sample=788/1000 id=1315 B=(1,921,921) success=True
+nmnist_seed42_binary_B_inf_1 sample=789/1000 id=3961 B=(1,1875,1875) success=True
+nmnist_seed42_binary_B_inf_1 sample=790/1000 id=4037 B=(1,2093,2093) success=True
+nmnist_seed42_binary_B_inf_1 sample=791/1000 id=2066 B=(1,1079,1079) success=True
+nmnist_seed42_binary_B_inf_1 sample=792/1000 id=6597 B=(1,1538,1538) success=True
+nmnist_seed42_binary_B_inf_1 sample=793/1000 id=8806 B=(1,2524,2524) success=False
+nmnist_seed42_binary_B_inf_1 sample=794/1000 id=3305 B=(1,1603,1603) success=True
+nmnist_seed42_binary_B_inf_1 sample=795/1000 id=6329 B=(1,1694,1694) success=True
+nmnist_seed42_binary_B_inf_1 sample=796/1000 id=3318 B=(1,1654,1654) success=True
+nmnist_seed42_binary_B_inf_1 sample=797/1000 id=6845 B=(1,2014,2014) success=False
+nmnist_seed42_binary_B_inf_1 sample=798/1000 id=3578 B=(1,1971,1971) success=True
+nmnist_seed42_binary_B_inf_1 sample=799/1000 id=7670 B=(1,1520,1520) success=True
+nmnist_seed42_binary_B_inf_1 sample=800/1000 id=779 B=(1,2386,2386) success=True
+nmnist_seed42_binary_B_inf_1 sample=801/1000 id=5579 B=(1,2105,2105) success=True
+nmnist_seed42_binary_B_inf_1 sample=802/1000 id=522 B=(1,2265,2265) success=True
+nmnist_seed42_binary_B_inf_1 sample=803/1000 id=8462 B=(1,2101,2101) success=True
+nmnist_seed42_binary_B_inf_1 sample=804/1000 id=5320 B=(1,1776,1776) success=True
+nmnist_seed42_binary_B_inf_1 sample=805/1000 id=9672 B=(1,1840,1840) success=True
+nmnist_seed42_binary_B_inf_1 sample=806/1000 id=8448 B=(1,2204,2204) success=False
+nmnist_seed42_binary_B_inf_1 sample=807/1000 id=1220 B=(1,874,874) success=True
+nmnist_seed42_binary_B_inf_1 sample=808/1000 id=2722 B=(1,1942,1942) success=True
+nmnist_seed42_binary_B_inf_1 sample=809/1000 id=9167 B=(1,2355,2355) success=True
+nmnist_seed42_binary_B_inf_1 sample=810/1000 id=7347 B=(1,1121,1121) success=True
+nmnist_seed42_binary_B_inf_1 sample=811/1000 id=282 B=(1,2424,2424) success=True
+nmnist_seed42_binary_B_inf_1 sample=812/1000 id=9782 B=(1,1591,1591) success=True
+nmnist_seed42_binary_B_inf_1 sample=813/1000 id=592 B=(1,2329,2329) success=False
+nmnist_seed42_binary_B_inf_1 sample=814/1000 id=8141 B=(1,2501,2501) success=False
+nmnist_seed42_binary_B_inf_1 sample=815/1000 id=4963 B=(1,1744,1744) success=False
+nmnist_seed42_binary_B_inf_1 sample=816/1000 id=54 B=(1,2236,2236) success=True
+nmnist_seed42_binary_B_inf_1 sample=817/1000 id=9834 B=(1,1925,1925) success=True
+nmnist_seed42_binary_B_inf_1 sample=818/1000 id=9443 B=(1,1394,1394) success=True
+nmnist_seed42_binary_B_inf_1 sample=819/1000 id=777 B=(1,2132,2132) success=True
+nmnist_seed42_binary_B_inf_1 sample=820/1000 id=9139 B=(1,2027,2027) success=True
+nmnist_seed42_binary_B_inf_1 sample=821/1000 id=1053 B=(1,1228,1228) success=True
+nmnist_seed42_binary_B_inf_1 sample=822/1000 id=950 B=(1,2197,2197) success=True
+nmnist_seed42_binary_B_inf_1 sample=823/1000 id=2355 B=(1,1764,1764) success=True
+nmnist_seed42_binary_B_inf_1 sample=824/1000 id=104 B=(1,2133,2133) success=True
+nmnist_seed42_binary_B_inf_1 sample=825/1000 id=9105 B=(1,1871,1871) success=True
+nmnist_seed42_binary_B_inf_1 sample=826/1000 id=420 B=(1,1987,1987) success=True
+nmnist_seed42_binary_B_inf_1 sample=827/1000 id=4548 B=(1,1389,1389) success=True
+nmnist_seed42_binary_B_inf_1 sample=828/1000 id=3640 B=(1,1916,1916) success=True
+nmnist_seed42_binary_B_inf_1 sample=829/1000 id=4886 B=(1,1577,1577) success=True
+nmnist_seed42_binary_B_inf_1 sample=830/1000 id=6346 B=(1,1921,1921) success=True
+nmnist_seed42_binary_B_inf_1 sample=831/1000 id=4563 B=(1,1859,1859) success=True
+nmnist_seed42_binary_B_inf_1 sample=832/1000 id=9789 B=(1,1678,1678) success=True
+nmnist_seed42_binary_B_inf_1 sample=833/1000 id=8209 B=(1,1767,1767) success=True
+nmnist_seed42_binary_B_inf_1 sample=834/1000 id=8990 B=(1,2081,2081) success=False
+nmnist_seed42_binary_B_inf_1 sample=835/1000 id=9731 B=(1,1822,1822) success=True
+nmnist_seed42_binary_B_inf_1 sample=836/1000 id=5237 B=(1,2182,2182) success=True
+nmnist_seed42_binary_B_inf_1 sample=837/1000 id=1289 B=(1,1011,1011) success=True
+nmnist_seed42_binary_B_inf_1 sample=838/1000 id=752 B=(1,2074,2074) success=False
+nmnist_seed42_binary_B_inf_1 sample=839/1000 id=2955 B=(1,1595,1595) success=True
+nmnist_seed42_binary_B_inf_1 sample=840/1000 id=4179 B=(1,1647,1647) success=True
+nmnist_seed42_binary_B_inf_1 sample=841/1000 id=9153 B=(1,1739,1739) success=True
+nmnist_seed42_binary_B_inf_1 sample=842/1000 id=6624 B=(1,1927,1927) success=False
+nmnist_seed42_binary_B_inf_1 sample=843/1000 id=5065 B=(1,1557,1557) success=True
+nmnist_seed42_binary_B_inf_1 sample=844/1000 id=3731 B=(1,1971,1971) success=True
+nmnist_seed42_binary_B_inf_1 sample=845/1000 id=8114 B=(1,1820,1820) success=False
+nmnist_seed42_binary_B_inf_1 sample=846/1000 id=1937 B=(1,1224,1224) success=True
+nmnist_seed42_binary_B_inf_1 sample=847/1000 id=7245 B=(1,1243,1243) success=True
+nmnist_seed42_binary_B_inf_1 sample=848/1000 id=6013 B=(1,1357,1357) success=True
+nmnist_seed42_binary_B_inf_1 sample=849/1000 id=9246 B=(1,1953,1953) success=True
+nmnist_seed42_binary_B_inf_1 sample=850/1000 id=4206 B=(1,1745,1745) success=True
+nmnist_seed42_binary_B_inf_1 sample=851/1000 id=432 B=(1,2172,2172) success=False
+nmnist_seed42_binary_B_inf_1 sample=852/1000 id=5780 B=(1,1673,1673) success=True
+nmnist_seed42_binary_B_inf_1 sample=853/1000 id=1858 B=(1,1314,1314) success=True
+nmnist_seed42_binary_B_inf_1 sample=854/1000 id=7396 B=(1,1429,1429) success=True
+nmnist_seed42_binary_B_inf_1 sample=855/1000 id=2518 B=(1,1610,1610) success=True
+nmnist_seed42_binary_B_inf_1 sample=856/1000 id=6225 B=(1,1839,1839) success=True
+nmnist_seed42_binary_B_inf_1 sample=857/1000 id=9054 B=(1,1840,1840) success=True
+nmnist_seed42_binary_B_inf_1 sample=858/1000 id=9206 B=(1,1807,1807) success=True
+nmnist_seed42_binary_B_inf_1 sample=859/1000 id=2389 B=(1,1983,1983) success=True
+nmnist_seed42_binary_B_inf_1 sample=860/1000 id=1727 B=(1,1035,1035) success=True
+nmnist_seed42_binary_B_inf_1 sample=861/1000 id=8309 B=(1,1341,1341) success=True
+nmnist_seed42_binary_B_inf_1 sample=862/1000 id=2263 B=(1,1851,1851) success=True
+nmnist_seed42_binary_B_inf_1 sample=863/1000 id=8545 B=(1,1905,1905) success=False
+nmnist_seed42_binary_B_inf_1 sample=864/1000 id=4584 B=(1,1449,1449) success=True
+nmnist_seed42_binary_B_inf_1 sample=865/1000 id=5028 B=(1,1493,1493) success=False
+nmnist_seed42_binary_B_inf_1 sample=866/1000 id=4707 B=(1,2077,2077) success=True
+nmnist_seed42_binary_B_inf_1 sample=867/1000 id=8349 B=(1,2187,2187) success=False
+nmnist_seed42_binary_B_inf_1 sample=868/1000 id=589 B=(1,1996,1996) success=True
+nmnist_seed42_binary_B_inf_1 sample=869/1000 id=2570 B=(1,2356,2356) success=True
+nmnist_seed42_binary_B_inf_1 sample=870/1000 id=5905 B=(1,2447,2447) success=True
+nmnist_seed42_binary_B_inf_1 sample=871/1000 id=6986 B=(1,1590,1590) success=False
+nmnist_seed42_binary_B_inf_1 sample=872/1000 id=7797 B=(1,1650,1650) success=True
+nmnist_seed42_binary_B_inf_1 sample=873/1000 id=5814 B=(1,1675,1675) success=True
+nmnist_seed42_binary_B_inf_1 sample=874/1000 id=4417 B=(1,1389,1389) success=True
+nmnist_seed42_binary_B_inf_1 sample=875/1000 id=8610 B=(1,2213,2213) success=True
+nmnist_seed42_binary_B_inf_1 sample=876/1000 id=443 B=(1,2181,2181) success=True
+nmnist_seed42_binary_B_inf_1 sample=877/1000 id=3236 B=(1,1850,1850) success=True
+nmnist_seed42_binary_B_inf_1 sample=878/1000 id=7667 B=(1,1628,1628) success=True
+nmnist_seed42_binary_B_inf_1 sample=879/1000 id=9741 B=(1,1692,1692) success=True
+nmnist_seed42_binary_B_inf_1 sample=880/1000 id=1256 B=(1,1075,1075) success=True
+nmnist_seed42_binary_B_inf_1 sample=881/1000 id=7544 B=(1,1597,1597) success=True
+nmnist_seed42_binary_B_inf_1 sample=882/1000 id=5966 B=(1,1815,1815) success=True
+nmnist_seed42_binary_B_inf_1 sample=883/1000 id=9725 B=(1,1848,1848) success=True
+nmnist_seed42_binary_B_inf_1 sample=884/1000 id=7553 B=(1,1457,1457) success=True
+nmnist_seed42_binary_B_inf_1 sample=885/1000 id=9466 B=(1,1723,1723) success=True
+nmnist_seed42_binary_B_inf_1 sample=886/1000 id=7018 B=(1,1370,1370) success=True
+nmnist_seed42_binary_B_inf_1 sample=887/1000 id=9088 B=(1,1268,1268) success=True
+nmnist_seed42_binary_B_inf_1 sample=888/1000 id=9427 B=(1,1351,1351) success=True
+nmnist_seed42_binary_B_inf_1 sample=889/1000 id=1825 B=(1,1004,1004) success=True
+nmnist_seed42_binary_B_inf_1 sample=890/1000 id=5711 B=(1,2044,2044) success=True
+nmnist_seed42_binary_B_inf_1 sample=891/1000 id=5910 B=(1,2197,2197) success=True
+nmnist_seed42_binary_B_inf_1 sample=892/1000 id=9069 B=(1,1584,1584) success=True
+nmnist_seed42_binary_B_inf_1 sample=893/1000 id=1036 B=(1,955,955) success=True
+nmnist_seed42_binary_B_inf_1 sample=894/1000 id=8291 B=(1,1526,1526) success=False
+nmnist_seed42_binary_B_inf_1 sample=895/1000 id=556 B=(1,2300,2300) success=True
+nmnist_seed42_binary_B_inf_1 sample=896/1000 id=9908 B=(1,1821,1821) success=True
+nmnist_seed42_binary_B_inf_1 sample=897/1000 id=6676 B=(1,1772,1772) success=True
+nmnist_seed42_binary_B_inf_1 sample=898/1000 id=3680 B=(1,1967,1967) success=True
+nmnist_seed42_binary_B_inf_1 sample=899/1000 id=9768 B=(1,1356,1356) success=True
+nmnist_seed42_binary_B_inf_1 sample=900/1000 id=6152 B=(1,1780,1780) success=True
+nmnist_seed42_binary_B_inf_1 sample=901/1000 id=4298 B=(1,1333,1333) success=True
+nmnist_seed42_binary_B_inf_1 sample=902/1000 id=7436 B=(1,1417,1417) success=True
+nmnist_seed42_binary_B_inf_1 sample=903/1000 id=870 B=(1,2189,2189) success=True
+nmnist_seed42_binary_B_inf_1 sample=904/1000 id=7161 B=(1,1327,1327) success=True
+nmnist_seed42_binary_B_inf_1 sample=905/1000 id=6333 B=(1,2322,2322) success=True
+nmnist_seed42_binary_B_inf_1 sample=906/1000 id=1583 B=(1,1085,1085) success=True
+nmnist_seed42_binary_B_inf_1 sample=907/1000 id=5289 B=(1,1689,1689) success=True
+nmnist_seed42_binary_B_inf_1 sample=908/1000 id=9445 B=(1,1317,1317) success=True
+nmnist_seed42_binary_B_inf_1 sample=909/1000 id=9553 B=(1,1766,1766) success=True
+nmnist_seed42_binary_B_inf_1 sample=910/1000 id=289 B=(1,1741,1741) success=False
+nmnist_seed42_binary_B_inf_1 sample=911/1000 id=3428 B=(1,1759,1759) success=True
+nmnist_seed42_binary_B_inf_1 sample=912/1000 id=1592 B=(1,1101,1101) success=True
+nmnist_seed42_binary_B_inf_1 sample=913/1000 id=5515 B=(1,1952,1952) success=True
+nmnist_seed42_binary_B_inf_1 sample=914/1000 id=1476 B=(1,905,905) success=True
+nmnist_seed42_binary_B_inf_1 sample=915/1000 id=2966 B=(1,1748,1748) success=True
+nmnist_seed42_binary_B_inf_1 sample=916/1000 id=8258 B=(1,2474,2474) success=False
+nmnist_seed42_binary_B_inf_1 sample=917/1000 id=2197 B=(1,2382,2382) success=True
+nmnist_seed42_binary_B_inf_1 sample=918/1000 id=1723 B=(1,1173,1173) success=True
+nmnist_seed42_binary_B_inf_1 sample=919/1000 id=5473 B=(1,1690,1690) success=True
+nmnist_seed42_binary_B_inf_1 sample=920/1000 id=325 B=(1,2091,2091) success=False
+nmnist_seed42_binary_B_inf_1 sample=921/1000 id=8228 B=(1,1961,1961) success=False
+nmnist_seed42_binary_B_inf_1 sample=922/1000 id=2144 B=(1,2082,2082) success=True
+nmnist_seed42_binary_B_inf_1 sample=923/1000 id=2211 B=(1,1814,1814) success=False
+nmnist_seed42_binary_B_inf_1 sample=924/1000 id=6340 B=(1,1963,1963) success=True
+nmnist_seed42_binary_B_inf_1 sample=925/1000 id=6095 B=(1,1922,1922) success=True
+nmnist_seed42_binary_B_inf_1 sample=926/1000 id=5601 B=(1,1466,1466) success=True
+nmnist_seed42_binary_B_inf_1 sample=927/1000 id=3576 B=(1,1672,1672) success=True
+nmnist_seed42_binary_B_inf_1 sample=928/1000 id=9077 B=(1,1738,1738) success=True
+nmnist_seed42_binary_B_inf_1 sample=929/1000 id=3541 B=(1,1741,1741) success=True
+nmnist_seed42_binary_B_inf_1 sample=930/1000 id=4435 B=(1,1306,1306) success=True
+nmnist_seed42_binary_B_inf_1 sample=931/1000 id=6210 B=(1,1648,1648) success=True
+nmnist_seed42_binary_B_inf_1 sample=932/1000 id=7948 B=(1,1392,1392) success=True
+nmnist_seed42_binary_B_inf_1 sample=933/1000 id=6123 B=(1,1467,1467) success=True
+nmnist_seed42_binary_B_inf_1 sample=934/1000 id=6000 B=(1,1193,1193) success=True
+nmnist_seed42_binary_B_inf_1 sample=935/1000 id=9616 B=(1,1571,1571) success=True
+nmnist_seed42_binary_B_inf_1 sample=936/1000 id=2223 B=(1,2040,2040) success=True
+nmnist_seed42_binary_B_inf_1 sample=937/1000 id=436 B=(1,1973,1973) success=True
+nmnist_seed42_binary_B_inf_1 sample=938/1000 id=5812 B=(1,1742,1742) success=True
+nmnist_seed42_binary_B_inf_1 sample=939/1000 id=442 B=(1,1781,1781) success=True
+nmnist_seed42_binary_B_inf_1 sample=940/1000 id=552 B=(1,2165,2165) success=True
+nmnist_seed42_binary_B_inf_1 sample=941/1000 id=8238 B=(1,1560,1560) success=False
+nmnist_seed42_binary_B_inf_1 sample=942/1000 id=4759 B=(1,1789,1789) success=False
+nmnist_seed42_binary_B_inf_1 sample=943/1000 id=3337 B=(1,2078,2078) success=True
+nmnist_seed42_binary_B_inf_1 sample=944/1000 id=800 B=(1,1982,1982) success=True
+nmnist_seed42_binary_B_inf_1 sample=945/1000 id=3514 B=(1,1909,1909) success=True
+nmnist_seed42_binary_B_inf_1 sample=946/1000 id=2583 B=(1,1444,1444) success=True
+nmnist_seed42_binary_B_inf_1 sample=947/1000 id=7466 B=(1,1408,1408) success=True
+nmnist_seed42_binary_B_inf_1 sample=948/1000 id=1464 B=(1,1048,1048) success=True
+nmnist_seed42_binary_B_inf_1 sample=949/1000 id=6738 B=(1,1724,1724) success=True
+nmnist_seed42_binary_B_inf_1 sample=950/1000 id=7261 B=(1,1603,1603) success=True
+nmnist_seed42_binary_B_inf_1 sample=951/1000 id=1062 B=(1,960,960) success=True
+nmnist_seed42_binary_B_inf_1 sample=952/1000 id=490 B=(1,2335,2335) success=True
+nmnist_seed42_binary_B_inf_1 sample=953/1000 id=6281 B=(1,1581,1581) success=True
+nmnist_seed42_binary_B_inf_1 sample=954/1000 id=2105 B=(1,1180,1180) success=True
+nmnist_seed42_binary_B_inf_1 sample=955/1000 id=6086 B=(1,1482,1482) success=False
+nmnist_seed42_binary_B_inf_1 sample=956/1000 id=1183 B=(1,1135,1135) success=True
+nmnist_seed42_binary_B_inf_1 sample=957/1000 id=9163 B=(1,1891,1891) success=True
+nmnist_seed42_binary_B_inf_1 sample=958/1000 id=6456 B=(1,1693,1693) success=False
+nmnist_seed42_binary_B_inf_1 sample=959/1000 id=2081 B=(1,1069,1069) success=True
+nmnist_seed42_binary_B_inf_1 sample=960/1000 id=6724 B=(1,1813,1813) success=False
+nmnist_seed42_binary_B_inf_1 sample=961/1000 id=130 B=(1,1965,1965) success=True
+nmnist_seed42_binary_B_inf_1 sample=962/1000 id=1082 B=(1,997,997) success=True
+nmnist_seed42_binary_B_inf_1 sample=963/1000 id=6926 B=(1,1618,1618) success=False
+nmnist_seed42_binary_B_inf_1 sample=964/1000 id=3825 B=(1,2233,2233) success=True
+nmnist_seed42_binary_B_inf_1 sample=965/1000 id=477 B=(1,2072,2072) success=True
+nmnist_seed42_binary_B_inf_1 sample=966/1000 id=4819 B=(1,1334,1334) success=True
+nmnist_seed42_binary_B_inf_1 sample=967/1000 id=1429 B=(1,945,945) success=True
+nmnist_seed42_binary_B_inf_1 sample=968/1000 id=2248 B=(1,2056,2056) success=True
+nmnist_seed42_binary_B_inf_1 sample=969/1000 id=5046 B=(1,1486,1486) success=True
+nmnist_seed42_binary_B_inf_1 sample=970/1000 id=6194 B=(1,1645,1645) success=False
+nmnist_seed42_binary_B_inf_1 sample=971/1000 id=681 B=(1,2016,2016) success=True
+nmnist_seed42_binary_B_inf_1 sample=972/1000 id=9352 B=(1,1531,1531) success=True
+nmnist_seed42_binary_B_inf_1 sample=973/1000 id=4275 B=(1,2014,2014) success=True
+nmnist_seed42_binary_B_inf_1 sample=974/1000 id=9199 B=(1,1669,1669) success=True
+nmnist_seed42_binary_B_inf_1 sample=975/1000 id=3790 B=(1,2096,2096) success=True
+nmnist_seed42_binary_B_inf_1 sample=976/1000 id=3606 B=(1,1598,1598) success=True
+nmnist_seed42_binary_B_inf_1 sample=977/1000 id=7993 B=(1,1198,1198) success=True
+nmnist_seed42_binary_B_inf_1 sample=978/1000 id=405 B=(1,2017,2017) success=False
+nmnist_seed42_binary_B_inf_1 sample=979/1000 id=5745 B=(1,1666,1666) success=True
+nmnist_seed42_binary_B_inf_1 sample=980/1000 id=5566 B=(1,1290,1290) success=True
+nmnist_seed42_binary_B_inf_1 sample=981/1000 id=8444 B=(1,1732,1732) success=False
+nmnist_seed42_binary_B_inf_1 sample=982/1000 id=8551 B=(1,2112,2112) success=False
+nmnist_seed42_binary_B_inf_1 sample=983/1000 id=7141 B=(1,1234,1234) success=True
+nmnist_seed42_binary_B_inf_1 sample=984/1000 id=8986 B=(1,1875,1875) success=False
+nmnist_seed42_binary_B_inf_1 sample=985/1000 id=9073 B=(1,1648,1648) success=True
+nmnist_seed42_binary_B_inf_1 sample=986/1000 id=3600 B=(1,2082,2082) success=True
+nmnist_seed42_binary_B_inf_1 sample=987/1000 id=657 B=(1,1995,1995) success=True
+nmnist_seed42_binary_B_inf_1 sample=988/1000 id=6538 B=(1,2122,2122) success=True
+nmnist_seed42_binary_B_inf_1 sample=989/1000 id=2227 B=(1,2486,2486) success=True
+nmnist_seed42_binary_B_inf_1 sample=990/1000 id=2451 B=(1,1976,1976) success=False
+nmnist_seed42_binary_B_inf_1 sample=991/1000 id=9364 B=(1,1528,1528) success=True
+nmnist_seed42_binary_B_inf_1 sample=992/1000 id=8963 B=(1,1841,1841) success=False
+nmnist_seed42_binary_B_inf_1 sample=993/1000 id=1624 B=(1,1076,1076) success=True
+nmnist_seed42_binary_B_inf_1 sample=994/1000 id=983 B=(1,1001,1001) success=True
+nmnist_seed42_binary_B_inf_1 sample=995/1000 id=3246 B=(1,1967,1967) success=True
+nmnist_seed42_binary_B_inf_1 sample=996/1000 id=4071 B=(1,1960,1960) success=True
+nmnist_seed42_binary_B_inf_1 sample=997/1000 id=1614 B=(1,1094,1094) success=True
+nmnist_seed42_binary_B_inf_1 sample=998/1000 id=9395 B=(1,2056,2056) success=True
+nmnist_seed42_binary_B_inf_1 sample=999/1000 id=1659 B=(1,1235,1235) success=True
+nmnist_seed42_binary_B_inf_1 sample=1000/1000 id=2895 B=(1,1609,1609) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 834,
+  "errors": []
+}
+START nmnist_seed42_binary_B_inf_2 samples=1000
+nmnist_seed42_binary_B_inf_2 sample=1/1000 id=6697 B=(2,2899,1901) success=True
+nmnist_seed42_binary_B_inf_2 sample=2/1000 id=415 B=(2,3569,2323) success=True
+nmnist_seed42_binary_B_inf_2 sample=3/1000 id=8930 B=(2,3542,2316) success=True
+nmnist_seed42_binary_B_inf_2 sample=4/1000 id=6374 B=(2,3278,2138) success=True
+nmnist_seed42_binary_B_inf_2 sample=5/1000 id=2551 B=(2,2818,1910) success=True
+nmnist_seed42_binary_B_inf_2 sample=6/1000 id=9699 B=(2,2554,1709) success=True
+nmnist_seed42_binary_B_inf_2 sample=7/1000 id=4982 B=(2,2852,1876) success=True
+nmnist_seed42_binary_B_inf_2 sample=8/1000 id=7911 B=(2,2851,1898) success=True
+nmnist_seed42_binary_B_inf_2 sample=9/1000 id=5766 B=(2,2607,1745) success=True
+nmnist_seed42_binary_B_inf_2 sample=10/1000 id=4875 B=(2,2393,1607) success=True
+nmnist_seed42_binary_B_inf_2 sample=11/1000 id=6503 B=(2,3349,2213) success=True
+nmnist_seed42_binary_B_inf_2 sample=12/1000 id=7068 B=(2,2955,1946) success=True
+nmnist_seed42_binary_B_inf_2 sample=13/1000 id=3704 B=(2,3105,2038) success=True
+nmnist_seed42_binary_B_inf_2 sample=14/1000 id=3519 B=(2,3466,2254) success=True
+nmnist_seed42_binary_B_inf_2 sample=15/1000 id=9020 B=(2,3038,1995) success=True
+nmnist_seed42_binary_B_inf_2 sample=16/1000 id=1554 B=(2,1932,1279) success=True
+nmnist_seed42_binary_B_inf_2 sample=17/1000 id=3379 B=(2,2510,1679) success=True
+nmnist_seed42_binary_B_inf_2 sample=18/1000 id=266 B=(2,3313,2137) success=True
+nmnist_seed42_binary_B_inf_2 sample=19/1000 id=8411 B=(2,3358,2271) success=True
+nmnist_seed42_binary_B_inf_2 sample=20/1000 id=1188 B=(2,1534,1024) success=True
+nmnist_seed42_binary_B_inf_2 sample=21/1000 id=9417 B=(2,2172,1456) success=True
+nmnist_seed42_binary_B_inf_2 sample=22/1000 id=4447 B=(2,1918,1279) success=True
+nmnist_seed42_binary_B_inf_2 sample=23/1000 id=8768 B=(2,2897,1946) success=True
+nmnist_seed42_binary_B_inf_2 sample=24/1000 id=9730 B=(2,2343,1576) success=True
+nmnist_seed42_binary_B_inf_2 sample=25/1000 id=6045 B=(2,3146,2087) success=True
+nmnist_seed42_binary_B_inf_2 sample=26/1000 id=1052 B=(2,1713,1129) success=True
+nmnist_seed42_binary_B_inf_2 sample=27/1000 id=5540 B=(2,1992,1329) success=True
+nmnist_seed42_binary_B_inf_2 sample=28/1000 id=3547 B=(2,3066,1999) success=True
+nmnist_seed42_binary_B_inf_2 sample=29/1000 id=9549 B=(2,3149,2101) success=True
+nmnist_seed42_binary_B_inf_2 sample=30/1000 id=6212 B=(2,2552,1712) success=True
+nmnist_seed42_binary_B_inf_2 sample=31/1000 id=191 B=(2,3070,2013) success=True
+nmnist_seed42_binary_B_inf_2 sample=32/1000 id=3172 B=(2,2563,1716) success=True
+nmnist_seed42_binary_B_inf_2 sample=33/1000 id=88 B=(2,3523,2301) success=True
+nmnist_seed42_binary_B_inf_2 sample=34/1000 id=6485 B=(2,2505,1661) success=True
+nmnist_seed42_binary_B_inf_2 sample=35/1000 id=653 B=(2,4158,2691) success=True
+nmnist_seed42_binary_B_inf_2 sample=36/1000 id=7289 B=(2,2080,1376) success=True
+nmnist_seed42_binary_B_inf_2 sample=37/1000 id=6688 B=(2,2776,1835) success=True
+nmnist_seed42_binary_B_inf_2 sample=38/1000 id=1361 B=(2,1695,1107) success=True
+nmnist_seed42_binary_B_inf_2 sample=39/1000 id=2208 B=(2,2932,1999) success=True
+nmnist_seed42_binary_B_inf_2 sample=40/1000 id=5538 B=(2,2695,1787) success=True
+nmnist_seed42_binary_B_inf_2 sample=41/1000 id=2605 B=(2,2417,1598) success=True
+nmnist_seed42_binary_B_inf_2 sample=42/1000 id=7421 B=(2,2174,1449) success=True
+nmnist_seed42_binary_B_inf_2 sample=43/1000 id=4442 B=(2,3075,2037) success=True
+nmnist_seed42_binary_B_inf_2 sample=44/1000 id=456 B=(2,3771,2463) success=True
+nmnist_seed42_binary_B_inf_2 sample=45/1000 id=1793 B=(2,1535,1018) success=True
+nmnist_seed42_binary_B_inf_2 sample=46/1000 id=5985 B=(2,3000,1944) success=True
+nmnist_seed42_binary_B_inf_2 sample=47/1000 id=542 B=(2,3273,2149) success=True
+nmnist_seed42_binary_B_inf_2 sample=48/1000 id=1547 B=(2,1660,1069) success=True
+nmnist_seed42_binary_B_inf_2 sample=49/1000 id=9953 B=(2,2571,1704) success=True
+nmnist_seed42_binary_B_inf_2 sample=50/1000 id=1612 B=(2,1729,1130) success=True
+nmnist_seed42_binary_B_inf_2 sample=51/1000 id=4568 B=(2,2491,1659) success=True
+nmnist_seed42_binary_B_inf_2 sample=52/1000 id=5083 B=(2,3001,1941) success=True
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=1
+nmnist_seed42_binary_B_inf_2 sample=25/1000 id=6045 B=(2,3146,2087) success=True
+nmnist_seed42_binary_B_inf_2 sample=50/1000 id=1612 B=(2,1729,1130) success=True
+nmnist_seed42_binary_B_inf_2 sample=75/1000 id=4087 B=(2,2263,1499) success=True
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=76
+Traceback (most recent call last):
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 423, in <module>
+    main()
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 407, in main
+    metadata, audit = run_condition(cache=cache, model=model, device=device, seed=seed,
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 275, in run_condition
+    write_partial()
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 220, in write_partial
+    atomic_npz(
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 83, in atomic_npz
+    os.replace(temporary, path)
+PermissionError: [WinError 5] Access is denied: 'C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\testing\\qsnn_temp_drift_project\\Reports\\results\\nmnist\\nmnist_seed42_binary_B_inf_2.partial.npz.tmp' -> 'C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\testing\\qsnn_temp_drift_project\\Reports\\results\\nmnist\\nmnist_seed42_binary_B_inf_2.partial.npz'
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=101
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=101
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=101
+nmnist_seed42_binary_B_inf_2 sample=164/1000 id=1533 B=(2,1808,1173) success=True
+nmnist_seed42_binary_B_inf_2 sample=228/1000 id=6188 B=(2,3448,2309) success=True
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=101
+nmnist_seed42_binary_B_inf_2 sample=101/1000 id=2602 B=(2,2313,1572) success=True
+nmnist_seed42_binary_B_inf_2 sample=102/1000 id=5997 B=(2,3039,1998) success=True
+nmnist_seed42_binary_B_inf_2 sample=103/1000 id=8727 B=(2,3720,2508) success=True
+nmnist_seed42_binary_B_inf_2 sample=104/1000 id=7894 B=(2,2445,1618) success=True
+nmnist_seed42_binary_B_inf_2 sample=105/1000 id=8122 B=(2,3203,2132) success=True
+nmnist_seed42_binary_B_inf_2 sample=106/1000 id=9688 B=(2,2496,1661) success=True
+nmnist_seed42_binary_B_inf_2 sample=107/1000 id=2857 B=(2,3314,2193) success=True
+nmnist_seed42_binary_B_inf_2 sample=108/1000 id=2388 B=(2,2614,1700) success=True
+nmnist_seed42_binary_B_inf_2 sample=109/1000 id=4111 B=(2,2852,1893) success=True
+nmnist_seed42_binary_B_inf_2 sample=110/1000 id=8428 B=(2,3630,2433) success=True
+nmnist_seed42_binary_B_inf_2 sample=111/1000 id=5982 B=(2,2933,1944) success=True
+nmnist_seed42_binary_B_inf_2 sample=112/1000 id=8416 B=(2,2766,1833) success=True
+nmnist_seed42_binary_B_inf_2 sample=113/1000 id=8330 B=(2,3431,2266) success=True
+nmnist_seed42_binary_B_inf_2 sample=114/1000 id=9995 B=(2,3188,2138) success=True
+nmnist_seed42_binary_B_inf_2 sample=115/1000 id=9962 B=(2,2267,1538) success=True
+nmnist_seed42_binary_B_inf_2 sample=116/1000 id=1139 B=(2,1808,1161) success=True
+nmnist_seed42_binary_B_inf_2 sample=117/1000 id=2995 B=(2,3112,2024) success=True
+nmnist_seed42_binary_B_inf_2 sample=118/1000 id=1840 B=(2,2067,1336) success=True
+nmnist_seed42_binary_B_inf_2 sample=119/1000 id=7461 B=(2,2525,1670) success=True
+nmnist_seed42_binary_B_inf_2 sample=120/1000 id=4805 B=(2,2132,1415) success=True
+nmnist_seed42_binary_B_inf_2 sample=121/1000 id=7864 B=(2,2306,1533) success=True
+nmnist_seed42_binary_B_inf_2 sample=122/1000 id=8960 B=(2,3028,2062) success=True
+nmnist_seed42_binary_B_inf_2 sample=123/1000 id=4910 B=(2,2160,1438) success=True
+nmnist_seed42_binary_B_inf_2 sample=124/1000 id=4317 B=(2,3091,2041) success=True
+nmnist_seed42_binary_B_inf_2 sample=125/1000 id=3663 B=(2,3068,2061) success=True
+nmnist_seed42_binary_B_inf_2 sample=126/1000 id=2137 B=(2,2240,1510) success=True
+nmnist_seed42_binary_B_inf_2 sample=127/1000 id=1226 B=(2,1672,1101) success=True
+nmnist_seed42_binary_B_inf_2 sample=128/1000 id=8182 B=(2,2938,1947) success=True
+nmnist_seed42_binary_B_inf_2 sample=129/1000 id=4177 B=(2,2776,1842) success=True
+nmnist_seed42_binary_B_inf_2 sample=130/1000 id=6334 B=(2,3389,2233) success=True
+nmnist_seed42_binary_B_inf_2 sample=131/1000 id=9717 B=(2,2672,1783) success=True
+nmnist_seed42_binary_B_inf_2 sample=132/1000 id=9818 B=(2,2732,1786) success=True
+nmnist_seed42_binary_B_inf_2 sample=133/1000 id=2658 B=(2,3066,2038) success=True
+nmnist_seed42_binary_B_inf_2 sample=134/1000 id=4588 B=(2,2711,1766) success=True
+nmnist_seed42_binary_B_inf_2 sample=135/1000 id=1 B=(2,3419,2249) success=True
+nmnist_seed42_binary_B_inf_2 sample=136/1000 id=8733 B=(2,3207,2174) success=True
+nmnist_seed42_binary_B_inf_2 sample=137/1000 id=6493 B=(2,3321,2206) success=True
+nmnist_seed42_binary_B_inf_2 sample=138/1000 id=1294 B=(2,1569,1034) success=True
+nmnist_seed42_binary_B_inf_2 sample=139/1000 id=8802 B=(2,3379,2202) success=True
+nmnist_seed42_binary_B_inf_2 sample=140/1000 id=484 B=(2,3392,2252) success=True
+nmnist_seed42_binary_B_inf_2 sample=141/1000 id=861 B=(2,3113,2019) success=True
+nmnist_seed42_binary_B_inf_2 sample=142/1000 id=9229 B=(2,2204,1490) success=True
+nmnist_seed42_binary_B_inf_2 sample=143/1000 id=216 B=(2,2724,1835) success=True
+nmnist_seed42_binary_B_inf_2 sample=144/1000 id=3364 B=(2,2807,1863) success=True
+nmnist_seed42_binary_B_inf_2 sample=145/1000 id=5937 B=(2,2997,1992) success=True
+nmnist_seed42_binary_B_inf_2 sample=146/1000 id=2839 B=(2,3087,2027) success=True
+nmnist_seed42_binary_B_inf_2 sample=147/1000 id=904 B=(2,3386,2213) success=True
+nmnist_seed42_binary_B_inf_2 sample=148/1000 id=2808 B=(2,2795,1808) success=True
+nmnist_seed42_binary_B_inf_2 sample=149/1000 id=3280 B=(2,3101,2074) success=True
+nmnist_seed42_binary_B_inf_2 sample=150/1000 id=8675 B=(2,3115,2101) success=True
+nmnist_seed42_binary_B_inf_2 sample=151/1000 id=9051 B=(2,2612,1730) success=True
+nmnist_seed42_binary_B_inf_2 sample=152/1000 id=5455 B=(2,3119,2077) success=True
+nmnist_seed42_binary_B_inf_2 sample=153/1000 id=7629 B=(2,2616,1729) success=True
+nmnist_seed42_binary_B_inf_2 sample=154/1000 id=5465 B=(2,2863,1882) success=True
+nmnist_seed42_binary_B_inf_2 sample=155/1000 id=8827 B=(2,3447,2290) success=True
+nmnist_seed42_binary_B_inf_2 sample=156/1000 id=3807 B=(2,1855,1274) success=True
+nmnist_seed42_binary_B_inf_2 sample=157/1000 id=9196 B=(2,2744,1841) success=True
+nmnist_seed42_binary_B_inf_2 sample=158/1000 id=9332 B=(2,3184,2104) success=True
+nmnist_seed42_binary_B_inf_2 sample=159/1000 id=9529 B=(2,2540,1691) success=True
+nmnist_seed42_binary_B_inf_2 sample=160/1000 id=6588 B=(2,2628,1679) success=True
+nmnist_seed42_binary_B_inf_2 sample=161/1000 id=2316 B=(2,2977,1992) success=True
+nmnist_seed42_binary_B_inf_2 sample=162/1000 id=154 B=(2,3452,2264) success=True
+nmnist_seed42_binary_B_inf_2 sample=163/1000 id=8215 B=(2,2654,1798) success=True
+nmnist_seed42_binary_B_inf_2 sample=164/1000 id=1533 B=(2,1808,1173) success=True
+nmnist_seed42_binary_B_inf_2 sample=165/1000 id=8884 B=(2,3381,2228) success=True
+nmnist_seed42_binary_B_inf_2 sample=166/1000 id=6282 B=(2,2590,1744) success=True
+nmnist_seed42_binary_B_inf_2 sample=167/1000 id=3008 B=(2,3327,2224) success=True
+nmnist_seed42_binary_B_inf_2 sample=168/1000 id=9541 B=(2,2562,1720) success=True
+nmnist_seed42_binary_B_inf_2 sample=169/1000 id=5815 B=(2,2821,1862) success=True
+nmnist_seed42_binary_B_inf_2 sample=170/1000 id=3691 B=(2,3711,2418) success=True
+nmnist_seed42_binary_B_inf_2 sample=171/1000 id=9685 B=(2,3462,2282) success=True
+nmnist_seed42_binary_B_inf_2 sample=172/1000 id=4043 B=(2,3197,2111) success=True
+nmnist_seed42_binary_B_inf_2 sample=173/1000 id=491 B=(2,3220,2106) success=True
+nmnist_seed42_binary_B_inf_2 sample=174/1000 id=601 B=(2,3538,2331) success=True
+nmnist_seed42_binary_B_inf_2 sample=175/1000 id=7259 B=(2,2804,1912) success=True
+nmnist_seed42_binary_B_inf_2 sample=176/1000 id=8547 B=(2,2917,1951) success=True
+nmnist_seed42_binary_B_inf_2 sample=177/1000 id=8421 B=(2,3434,2289) success=True
+nmnist_seed42_binary_B_inf_2 sample=178/1000 id=8596 B=(2,3038,2058) success=True
+nmnist_seed42_binary_B_inf_2 sample=179/1000 id=8012 B=(2,2114,1416) success=True
+nmnist_seed42_binary_B_inf_2 sample=180/1000 id=4980 B=(2,3036,2002) success=True
+nmnist_seed42_binary_B_inf_2 sample=181/1000 id=8607 B=(2,3118,2075) success=True
+nmnist_seed42_binary_B_inf_2 sample=182/1000 id=5396 B=(2,3429,2218) success=True
+nmnist_seed42_binary_B_inf_2 sample=183/1000 id=1240 B=(2,1390,927) success=True
+nmnist_seed42_binary_B_inf_2 sample=184/1000 id=2393 B=(2,3447,2312) success=True
+nmnist_seed42_binary_B_inf_2 sample=185/1000 id=3642 B=(2,3405,2281) success=True
+RESUME skip validated condition nmnist_seed42_binary_B_inf_1
+START nmnist_seed42_binary_B_inf_2 samples=1000 resume_at=176
+C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\numba\cuda\dispatcher.py:537: NumbaPerformanceWarning: [1mGrid size 2 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\numba\cuda\dispatcher.py:537: NumbaPerformanceWarning: [1mGrid size 2 will likely result in GPU under-utilization due to low occupancy.[0m
+  warn(NumbaPerformanceWarning(msg))
+nmnist_seed42_binary_B_inf_2 sample=239/1000 id=2660 B=(2,3390,2257) success=True
+nmnist_seed42_binary_B_inf_2 sample=303/1000 id=9735 B=(2,3252,2170) success=True
+nmnist_seed42_binary_B_inf_2 sample=367/1000 id=2978 B=(2,2942,1972) success=True
+nmnist_seed42_binary_B_inf_2 sample=431/1000 id=520 B=(2,3480,2281) success=True
+nmnist_seed42_binary_B_inf_2 sample=495/1000 id=1455 B=(2,1777,1168) success=True
+nmnist_seed42_binary_B_inf_2 sample=559/1000 id=9805 B=(2,2251,1491) success=True
+nmnist_seed42_binary_B_inf_2 sample=623/1000 id=6921 B=(2,2382,1592) success=True
+nmnist_seed42_binary_B_inf_2 sample=687/1000 id=8735 B=(2,3261,2189) success=True
+nmnist_seed42_binary_B_inf_2 sample=751/1000 id=9729 B=(2,2967,1960) success=True
+nmnist_seed42_binary_B_inf_2 sample=815/1000 id=4963 B=(2,2887,1853) success=True
+nmnist_seed42_binary_B_inf_2 sample=879/1000 id=9741 B=(2,2779,1824) success=True
+nmnist_seed42_binary_B_inf_2 sample=943/1000 id=3337 B=(2,3344,2227) success=True
+nmnist_seed42_binary_B_inf_2 sample=1000/1000 id=2895 B=(2,2571,1688) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B_inf_3 samples=1000 resume_at=1
+nmnist_seed42_binary_B_inf_3 sample=64/1000 id=6931 B=(3,4181,2172) success=True
+nmnist_seed42_binary_B_inf_3 sample=128/1000 id=8182 B=(3,3834,2009) success=True
+nmnist_seed42_binary_B_inf_3 sample=192/1000 id=8659 B=(3,3910,2064) success=True
+nmnist_seed42_binary_B_inf_3 sample=256/1000 id=2993 B=(3,4164,2157) success=True
+nmnist_seed42_binary_B_inf_3 sample=320/1000 id=8125 B=(3,4679,2420) success=True
+nmnist_seed42_binary_B_inf_3 sample=384/1000 id=1303 B=(3,1604,820) success=True
+nmnist_seed42_binary_B_inf_3 sample=448/1000 id=9324 B=(3,3280,1739) success=True
+nmnist_seed42_binary_B_inf_3 sample=512/1000 id=600 B=(3,4553,2310) success=True
+nmnist_seed42_binary_B_inf_3 sample=576/1000 id=1550 B=(3,1974,1018) success=True
+nmnist_seed42_binary_B_inf_3 sample=640/1000 id=361 B=(3,3867,2028) success=True
+nmnist_seed42_binary_B_inf_3 sample=704/1000 id=13 B=(3,5215,2720) success=True
+nmnist_seed42_binary_B_inf_3 sample=768/1000 id=355 B=(3,4196,2157) success=True
+nmnist_seed42_binary_B_inf_3 sample=832/1000 id=9789 B=(3,3479,1833) success=True
+nmnist_seed42_binary_B_inf_3 sample=896/1000 id=9908 B=(3,3808,1995) success=True
+nmnist_seed42_binary_B_inf_3 sample=960/1000 id=6724 B=(3,3867,1964) success=True
+nmnist_seed42_binary_B_inf_3 sample=1000/1000 id=2895 B=(3,3320,1729) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B1_500 samples=1000 resume_at=1
+nmnist_seed42_binary_B1_500 sample=64/1000 id=6931 B=(4,500,437) success=True
+nmnist_seed42_binary_B1_500 sample=128/1000 id=8182 B=(5,500,439) success=True
+nmnist_seed42_binary_B1_500 sample=192/1000 id=8659 B=(4,500,443) success=True
+nmnist_seed42_binary_B1_500 sample=256/1000 id=2993 B=(7,500,424) success=True
+nmnist_seed42_binary_B1_500 sample=320/1000 id=8125 B=(4,500,451) success=True
+nmnist_seed42_binary_B1_500 sample=384/1000 id=1303 B=(7,500,331) success=True
+nmnist_seed42_binary_B1_500 sample=448/1000 id=9324 B=(4,500,450) success=True
+nmnist_seed42_binary_B1_500 sample=512/1000 id=600 B=(4,500,450) success=True
+nmnist_seed42_binary_B1_500 sample=576/1000 id=1550 B=(9,500,323) success=True
+nmnist_seed42_binary_B1_500 sample=640/1000 id=361 B=(4,500,442) success=True
+nmnist_seed42_binary_B1_500 sample=704/1000 id=13 B=(4,500,448) success=True
+nmnist_seed42_binary_B1_500 sample=768/1000 id=355 B=(6,500,429) success=True
+nmnist_seed42_binary_B1_500 sample=832/1000 id=9789 B=(4,500,443) success=True
+nmnist_seed42_binary_B1_500 sample=896/1000 id=9908 B=(4,500,447) success=True
+nmnist_seed42_binary_B1_500 sample=960/1000 id=6724 B=(7,500,417) success=True
+nmnist_seed42_binary_B1_500 sample=1000/1000 id=2895 B=(9,500,367) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B1_750 samples=1000 resume_at=1
+nmnist_seed42_binary_B1_750 sample=64/1000 id=6931 B=(6,750,571) success=True
+nmnist_seed42_binary_B1_750 sample=128/1000 id=8182 B=(8,750,553) success=True
+nmnist_seed42_binary_B1_750 sample=192/1000 id=8659 B=(9,750,578) success=True
+nmnist_seed42_binary_B1_750 sample=256/1000 id=2993 B=(8,750,556) success=True
+nmnist_seed42_binary_B1_750 sample=320/1000 id=8125 B=(8,750,627) success=True
+nmnist_seed42_binary_B1_750 sample=384/1000 id=1303 B=(9,750,357) success=True
+nmnist_seed42_binary_B1_750 sample=448/1000 id=9324 B=(9,750,555) success=True
+nmnist_seed42_binary_B1_750 sample=512/1000 id=600 B=(8,750,563) success=True
+nmnist_seed42_binary_B1_750 sample=576/1000 id=1550 B=(9,750,443) success=True
+nmnist_seed42_binary_B1_750 sample=640/1000 id=361 B=(9,750,548) success=True
+nmnist_seed42_binary_B1_750 sample=704/1000 id=13 B=(8,750,618) success=True
+nmnist_seed42_binary_B1_750 sample=768/1000 id=355 B=(7,750,575) success=True
+nmnist_seed42_binary_B1_750 sample=832/1000 id=9789 B=(9,750,575) success=True
+nmnist_seed42_binary_B1_750 sample=896/1000 id=9908 B=(7,750,601) success=True
+nmnist_seed42_binary_B1_750 sample=960/1000 id=6724 B=(9,750,535) success=True
+nmnist_seed42_binary_B1_750 sample=1000/1000 id=2895 B=(8,750,530) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B1_1000 samples=1000 resume_at=1
+nmnist_seed42_binary_B1_1000 sample=64/1000 id=6931 B=(9,1000,659) success=True
+nmnist_seed42_binary_B1_1000 sample=128/1000 id=8182 B=(8,1000,708) success=True
+nmnist_seed42_binary_B1_1000 sample=192/1000 id=8659 B=(9,1000,700) success=True
+nmnist_seed42_binary_B1_1000 sample=256/1000 id=2993 B=(9,1000,659) success=True
+nmnist_seed42_binary_B1_1000 sample=320/1000 id=8125 B=(9,1000,813) success=True
+nmnist_seed42_binary_B1_1000 sample=384/1000 id=1303 B=(9,1000,550) success=True
+nmnist_seed42_binary_B1_1000 sample=448/1000 id=9324 B=(8,1000,711) success=True
+nmnist_seed42_binary_B1_1000 sample=512/1000 id=600 B=(9,1000,708) success=True
+nmnist_seed42_binary_B1_1000 sample=576/1000 id=1550 B=(8,1000,514) success=True
+nmnist_seed42_binary_B1_1000 sample=640/1000 id=361 B=(9,1000,687) success=True
+nmnist_seed42_binary_B1_1000 sample=704/1000 id=13 B=(9,1000,723) success=True
+nmnist_seed42_binary_B1_1000 sample=768/1000 id=355 B=(9,1000,723) success=True
+nmnist_seed42_binary_B1_1000 sample=832/1000 id=9789 B=(9,1000,712) success=True
+nmnist_seed42_binary_B1_1000 sample=896/1000 id=9908 B=(9,1000,747) success=True
+nmnist_seed42_binary_B1_1000 sample=960/1000 id=6724 B=(9,1000,628) success=True
+nmnist_seed42_binary_B1_1000 sample=1000/1000 id=2895 B=(9,1000,676) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B1_1500 samples=1000 resume_at=1
+nmnist_seed42_binary_B1_1500 sample=64/1000 id=6931 B=(9,1500,919) success=True
+nmnist_seed42_binary_B1_1500 sample=128/1000 id=8182 B=(9,1500,918) success=True
+nmnist_seed42_binary_B1_1500 sample=192/1000 id=8659 B=(9,1500,972) success=True
+nmnist_seed42_binary_B1_1500 sample=256/1000 id=2993 B=(9,1500,842) success=True
+nmnist_seed42_binary_B1_1500 sample=320/1000 id=8125 B=(9,1500,1024) success=True
+nmnist_seed42_binary_B1_1500 sample=384/1000 id=1303 B=(9,1500,630) success=True
+nmnist_seed42_binary_B1_1500 sample=448/1000 id=9324 B=(9,1500,945) success=True
+nmnist_seed42_binary_B1_1500 sample=512/1000 id=600 B=(9,1500,871) success=True
+nmnist_seed42_binary_B1_1500 sample=576/1000 id=1550 B=(9,1500,740) success=True
+nmnist_seed42_binary_B1_1500 sample=640/1000 id=361 B=(9,1500,960) success=True
+nmnist_seed42_binary_B1_1500 sample=704/1000 id=13 B=(9,1500,979) success=True
+nmnist_seed42_binary_B1_1500 sample=768/1000 id=355 B=(9,1500,935) success=True
+nmnist_seed42_binary_B1_1500 sample=832/1000 id=9789 B=(9,1500,891) success=True
+nmnist_seed42_binary_B1_1500 sample=896/1000 id=9908 B=(9,1500,958) success=True
+nmnist_seed42_binary_B1_1500 sample=960/1000 id=6724 B=(9,1500,891) success=True
+nmnist_seed42_binary_B1_1500 sample=1000/1000 id=2895 B=(9,1500,914) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B0_200 samples=1000 resume_at=1
+nmnist_seed42_binary_B0_200 sample=64/1000 id=6931 B=(9,811,200) success=True
+nmnist_seed42_binary_B0_200 sample=128/1000 id=8182 B=(9,664,200) success=True
+nmnist_seed42_binary_B0_200 sample=192/1000 id=8659 B=(9,785,200) success=True
+nmnist_seed42_binary_B0_200 sample=256/1000 id=2993 B=(9,766,200) success=True
+nmnist_seed42_binary_B0_200 sample=320/1000 id=8125 B=(8,690,200) success=True
+nmnist_seed42_binary_B0_200 sample=384/1000 id=1303 B=(9,749,200) success=True
+nmnist_seed42_binary_B0_200 sample=448/1000 id=9324 B=(9,738,200) success=True
+nmnist_seed42_binary_B0_200 sample=512/1000 id=600 B=(9,704,200) success=True
+nmnist_seed42_binary_B0_200 sample=576/1000 id=1550 B=(9,774,200) success=True
+nmnist_seed42_binary_B0_200 sample=640/1000 id=361 B=(9,738,200) success=True
+nmnist_seed42_binary_B0_200 sample=704/1000 id=13 B=(9,675,200) success=True
+nmnist_seed42_binary_B0_200 sample=768/1000 id=355 B=(9,812,200) success=True
+nmnist_seed42_binary_B0_200 sample=832/1000 id=9789 B=(9,769,200) success=True
+nmnist_seed42_binary_B0_200 sample=896/1000 id=9908 B=(9,793,200) success=True
+nmnist_seed42_binary_B0_200 sample=960/1000 id=6724 B=(9,862,200) success=True
+nmnist_seed42_binary_B0_200 sample=1000/1000 id=2895 B=(9,748,200) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 973,
+  "errors": []
+}
+START nmnist_seed42_binary_B0_300 samples=1000 resume_at=1
+nmnist_seed42_binary_B0_300 sample=64/1000 id=6931 B=(9,1190,300) success=True
+nmnist_seed42_binary_B0_300 sample=128/1000 id=8182 B=(9,1226,300) success=True
+nmnist_seed42_binary_B0_300 sample=192/1000 id=8659 B=(9,1275,300) success=True
+nmnist_seed42_binary_B0_300 sample=256/1000 id=2993 B=(9,1267,300) success=True
+nmnist_seed42_binary_B0_300 sample=320/1000 id=8125 B=(9,1199,300) success=True
+nmnist_seed42_binary_B0_300 sample=384/1000 id=1303 B=(9,1125,300) success=True
+nmnist_seed42_binary_B0_300 sample=448/1000 id=9324 B=(9,1203,300) success=True
+nmnist_seed42_binary_B0_300 sample=512/1000 id=600 B=(9,1206,300) success=True
+nmnist_seed42_binary_B0_300 sample=576/1000 id=1550 B=(9,1158,300) success=True
+nmnist_seed42_binary_B0_300 sample=640/1000 id=361 B=(9,1185,300) success=True
+nmnist_seed42_binary_B0_300 sample=704/1000 id=13 B=(9,1142,300) success=True
+nmnist_seed42_binary_B0_300 sample=768/1000 id=355 B=(9,1191,300) success=True
+nmnist_seed42_binary_B0_300 sample=832/1000 id=9789 B=(9,1282,300) success=True
+nmnist_seed42_binary_B0_300 sample=896/1000 id=9908 B=(9,1241,300) success=True
+nmnist_seed42_binary_B0_300 sample=960/1000 id=6724 B=(9,1218,300) success=True
+nmnist_seed42_binary_B0_300 sample=1000/1000 id=2895 B=(9,1252,300) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 999,
+  "errors": []
+}
+START nmnist_seed42_binary_B0_400 samples=1000 resume_at=1
+nmnist_seed42_binary_B0_400 sample=64/1000 id=6931 B=(9,1610,400) success=True
+nmnist_seed42_binary_B0_400 sample=128/1000 id=8182 B=(9,1622,400) success=True
+nmnist_seed42_binary_B0_400 sample=192/1000 id=8659 B=(9,1696,400) success=True
+nmnist_seed42_binary_B0_400 sample=256/1000 id=2993 B=(9,1667,400) success=True
+nmnist_seed42_binary_B0_400 sample=320/1000 id=8125 B=(9,1626,400) success=True
+nmnist_seed42_binary_B0_400 sample=384/1000 id=1303 B=(9,1431,400) success=True
+nmnist_seed42_binary_B0_400 sample=448/1000 id=9324 B=(9,1672,400) success=True
+nmnist_seed42_binary_B0_400 sample=512/1000 id=600 B=(9,1611,400) success=True
+nmnist_seed42_binary_B0_400 sample=576/1000 id=1550 B=(9,1500,400) success=True
+nmnist_seed42_binary_B0_400 sample=640/1000 id=361 B=(9,1577,400) success=True
+nmnist_seed42_binary_B0_400 sample=704/1000 id=13 B=(9,1600,400) success=True
+nmnist_seed42_binary_B0_400 sample=768/1000 id=355 B=(9,1688,400) success=True
+nmnist_seed42_binary_B0_400 sample=832/1000 id=9789 B=(9,1639,400) success=True
+nmnist_seed42_binary_B0_400 sample=896/1000 id=9908 B=(9,1710,400) success=True
+nmnist_seed42_binary_B0_400 sample=960/1000 id=6724 B=(9,1758,400) success=True
+nmnist_seed42_binary_B0_400 sample=1000/1000 id=2895 B=(9,1666,400) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_binary_B0_600 samples=1000 resume_at=1
+nmnist_seed42_binary_B0_600 sample=64/1000 id=6931 B=(9,2552,600) success=True
+nmnist_seed42_binary_B0_600 sample=128/1000 id=8182 B=(9,2450,600) success=True
+nmnist_seed42_binary_B0_600 sample=192/1000 id=8659 B=(9,2403,600) success=True
+nmnist_seed42_binary_B0_600 sample=256/1000 id=2993 B=(9,2374,600) success=True
+nmnist_seed42_binary_B0_600 sample=320/1000 id=8125 B=(9,2546,600) success=True
+nmnist_seed42_binary_B0_600 sample=384/1000 id=1303 B=(9,2250,600) success=True
+nmnist_seed42_binary_B0_600 sample=448/1000 id=9324 B=(9,2537,600) success=True
+nmnist_seed42_binary_B0_600 sample=512/1000 id=600 B=(9,2524,600) success=True
+nmnist_seed42_binary_B0_600 sample=576/1000 id=1550 B=(9,2162,600) success=True
+nmnist_seed42_binary_B0_600 sample=640/1000 id=361 B=(9,2422,600) success=True
+nmnist_seed42_binary_B0_600 sample=704/1000 id=13 B=(9,2569,600) success=True
+nmnist_seed42_binary_B0_600 sample=768/1000 id=355 B=(9,2511,600) success=True
+nmnist_seed42_binary_B0_600 sample=832/1000 id=9789 B=(9,2367,600) success=True
+nmnist_seed42_binary_B0_600 sample=896/1000 id=9908 B=(9,2547,600) success=True
+nmnist_seed42_binary_B0_600 sample=960/1000 id=6724 B=(9,2586,600) success=True
+nmnist_seed42_binary_B0_600 sample=1000/1000 id=2895 B=(9,2443,600) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B_inf_1 samples=1000 resume_at=1
+nmnist_seed42_integer_B_inf_1 sample=64/1000 id=6931 B=(1,2013,2013) success=True
+nmnist_seed42_integer_B_inf_1 sample=128/1000 id=8182 B=(1,1826,1826) success=True
+nmnist_seed42_integer_B_inf_1 sample=192/1000 id=8659 B=(1,1908,1908) success=True
+nmnist_seed42_integer_B_inf_1 sample=256/1000 id=2993 B=(1,1997,1997) success=True
+nmnist_seed42_integer_B_inf_1 sample=320/1000 id=8125 B=(1,2200,2200) success=True
+nmnist_seed42_integer_B_inf_1 sample=384/1000 id=1303 B=(1,791,791) success=True
+nmnist_seed42_integer_B_inf_1 sample=448/1000 id=9324 B=(1,1628,1628) success=True
+nmnist_seed42_integer_B_inf_1 sample=512/1000 id=600 B=(1,2129,2129) success=True
+nmnist_seed42_integer_B_inf_1 sample=576/1000 id=1550 B=(1,964,964) success=True
+nmnist_seed42_integer_B_inf_1 sample=640/1000 id=361 B=(1,1903,1903) success=True
+nmnist_seed42_integer_B_inf_1 sample=704/1000 id=13 B=(1,2513,2513) success=True
+nmnist_seed42_integer_B_inf_1 sample=768/1000 id=355 B=(1,2008,2008) success=True
+nmnist_seed42_integer_B_inf_1 sample=832/1000 id=9789 B=(1,1666,1666) success=True
+nmnist_seed42_integer_B_inf_1 sample=896/1000 id=9908 B=(1,1855,1855) success=True
+nmnist_seed42_integer_B_inf_1 sample=960/1000 id=6724 B=(1,1796,1796) success=False
+nmnist_seed42_integer_B_inf_1 sample=1000/1000 id=2895 B=(1,1606,1606) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 833,
+  "errors": []
+}
+START nmnist_seed42_integer_B_inf_2 samples=1000 resume_at=1
+nmnist_seed42_integer_B_inf_2 sample=64/1000 id=6931 B=(2,3201,2121) success=True
+nmnist_seed42_integer_B_inf_2 sample=128/1000 id=8182 B=(2,2909,1960) success=True
+nmnist_seed42_integer_B_inf_2 sample=192/1000 id=8659 B=(2,2945,2032) success=True
+nmnist_seed42_integer_B_inf_2 sample=256/1000 id=2993 B=(2,3168,2119) success=True
+nmnist_seed42_integer_B_inf_2 sample=320/1000 id=8125 B=(2,3456,2387) success=True
+nmnist_seed42_integer_B_inf_2 sample=384/1000 id=1303 B=(2,1226,815) success=True
+nmnist_seed42_integer_B_inf_2 sample=448/1000 id=9324 B=(2,2569,1718) success=True
+nmnist_seed42_integer_B_inf_2 sample=512/1000 id=600 B=(2,3509,2275) success=True
+nmnist_seed42_integer_B_inf_2 sample=576/1000 id=1550 B=(2,1564,1004) success=True
+nmnist_seed42_integer_B_inf_2 sample=640/1000 id=361 B=(2,2994,2005) success=True
+nmnist_seed42_integer_B_inf_2 sample=704/1000 id=13 B=(2,4067,2673) success=True
+nmnist_seed42_integer_B_inf_2 sample=768/1000 id=355 B=(2,3139,2118) success=True
+nmnist_seed42_integer_B_inf_2 sample=832/1000 id=9789 B=(2,2692,1802) success=True
+nmnist_seed42_integer_B_inf_2 sample=896/1000 id=9908 B=(2,2935,1969) success=True
+nmnist_seed42_integer_B_inf_2 sample=960/1000 id=6724 B=(2,2841,1924) success=True
+nmnist_seed42_integer_B_inf_2 sample=1000/1000 id=2895 B=(2,2536,1694) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B_inf_3 samples=1000 resume_at=1
+nmnist_seed42_integer_B_inf_3 sample=64/1000 id=6931 B=(3,4144,2172) success=True
+nmnist_seed42_integer_B_inf_3 sample=128/1000 id=8182 B=(3,3726,2016) success=True
+nmnist_seed42_integer_B_inf_3 sample=192/1000 id=8659 B=(3,3920,2069) success=True
+nmnist_seed42_integer_B_inf_3 sample=256/1000 id=2993 B=(3,3995,2155) success=True
+nmnist_seed42_integer_B_inf_3 sample=320/1000 id=8125 B=(3,4526,2431) success=True
+nmnist_seed42_integer_B_inf_3 sample=384/1000 id=1303 B=(3,1598,818) success=True
+nmnist_seed42_integer_B_inf_3 sample=448/1000 id=9324 B=(3,3299,1754) success=True
+nmnist_seed42_integer_B_inf_3 sample=512/1000 id=600 B=(3,4436,2309) success=True
+nmnist_seed42_integer_B_inf_3 sample=576/1000 id=1550 B=(3,1973,1021) success=True
+nmnist_seed42_integer_B_inf_3 sample=640/1000 id=361 B=(3,3864,2032) success=True
+nmnist_seed42_integer_B_inf_3 sample=704/1000 id=13 B=(3,5315,2720) success=True
+nmnist_seed42_integer_B_inf_3 sample=768/1000 id=355 B=(3,4011,2154) success=True
+nmnist_seed42_integer_B_inf_3 sample=832/1000 id=9789 B=(3,3501,1849) success=True
+nmnist_seed42_integer_B_inf_3 sample=896/1000 id=9908 B=(3,3777,2008) success=True
+nmnist_seed42_integer_B_inf_3 sample=960/1000 id=6724 B=(3,3831,1953) success=True
+nmnist_seed42_integer_B_inf_3 sample=1000/1000 id=2895 B=(3,3219,1727) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B1_500 samples=1000 resume_at=1
+nmnist_seed42_integer_B1_500 sample=64/1000 id=6931 B=(8,500,381) success=True
+nmnist_seed42_integer_B1_500 sample=128/1000 id=8182 B=(7,500,385) success=True
+nmnist_seed42_integer_B1_500 sample=192/1000 id=8659 B=(8,500,364) success=True
+nmnist_seed42_integer_B1_500 sample=256/1000 id=2993 B=(6,500,375) success=True
+nmnist_seed42_integer_B1_500 sample=320/1000 id=8125 B=(6,500,401) success=True
+nmnist_seed42_integer_B1_500 sample=384/1000 id=1303 B=(9,500,279) success=True
+nmnist_seed42_integer_B1_500 sample=448/1000 id=9324 B=(9,500,376) success=True
+nmnist_seed42_integer_B1_500 sample=512/1000 id=600 B=(9,500,364) success=True
+nmnist_seed42_integer_B1_500 sample=576/1000 id=1550 B=(9,500,275) success=True
+nmnist_seed42_integer_B1_500 sample=640/1000 id=361 B=(8,500,370) success=True
+nmnist_seed42_integer_B1_500 sample=704/1000 id=13 B=(9,500,364) success=True
+nmnist_seed42_integer_B1_500 sample=768/1000 id=355 B=(5,500,419) success=True
+nmnist_seed42_integer_B1_500 sample=832/1000 id=9789 B=(8,500,336) success=True
+nmnist_seed42_integer_B1_500 sample=896/1000 id=9908 B=(8,500,397) success=True
+nmnist_seed42_integer_B1_500 sample=960/1000 id=6724 B=(8,500,382) success=True
+nmnist_seed42_integer_B1_500 sample=1000/1000 id=2895 B=(8,500,391) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B1_750 samples=1000 resume_at=1
+nmnist_seed42_integer_B1_750 sample=64/1000 id=6931 B=(9,750,486) success=True
+nmnist_seed42_integer_B1_750 sample=128/1000 id=8182 B=(9,750,502) success=True
+nmnist_seed42_integer_B1_750 sample=192/1000 id=8659 B=(9,750,501) success=True
+nmnist_seed42_integer_B1_750 sample=256/1000 id=2993 B=(9,750,500) success=True
+nmnist_seed42_integer_B1_750 sample=320/1000 id=8125 B=(9,750,506) success=True
+nmnist_seed42_integer_B1_750 sample=384/1000 id=1303 B=(9,750,384) success=True
+nmnist_seed42_integer_B1_750 sample=448/1000 id=9324 B=(9,750,513) success=True
+nmnist_seed42_integer_B1_750 sample=512/1000 id=600 B=(8,750,509) success=True
+nmnist_seed42_integer_B1_750 sample=576/1000 id=1550 B=(9,750,440) success=True
+nmnist_seed42_integer_B1_750 sample=640/1000 id=361 B=(8,750,506) success=True
+nmnist_seed42_integer_B1_750 sample=704/1000 id=13 B=(9,750,474) success=True
+nmnist_seed42_integer_B1_750 sample=768/1000 id=355 B=(9,750,545) success=True
+nmnist_seed42_integer_B1_750 sample=832/1000 id=9789 B=(9,750,455) success=True
+nmnist_seed42_integer_B1_750 sample=896/1000 id=9908 B=(9,750,482) success=True
+nmnist_seed42_integer_B1_750 sample=960/1000 id=6724 B=(8,750,481) success=True
+nmnist_seed42_integer_B1_750 sample=1000/1000 id=2895 B=(9,750,501) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B1_1000 samples=1000 resume_at=1
+nmnist_seed42_integer_B1_1000 sample=64/1000 id=6931 B=(9,1000,619) success=True
+nmnist_seed42_integer_B1_1000 sample=128/1000 id=8182 B=(9,1000,673) success=True
+nmnist_seed42_integer_B1_1000 sample=192/1000 id=8659 B=(9,1000,660) success=True
+nmnist_seed42_integer_B1_1000 sample=256/1000 id=2993 B=(9,1000,612) success=True
+nmnist_seed42_integer_B1_1000 sample=320/1000 id=8125 B=(9,1000,697) success=True
+nmnist_seed42_integer_B1_1000 sample=384/1000 id=1303 B=(9,1000,439) success=True
+nmnist_seed42_integer_B1_1000 sample=448/1000 id=9324 B=(9,1000,630) success=True
+nmnist_seed42_integer_B1_1000 sample=512/1000 id=600 B=(8,1000,622) success=True
+nmnist_seed42_integer_B1_1000 sample=576/1000 id=1550 B=(9,1000,487) success=True
+nmnist_seed42_integer_B1_1000 sample=640/1000 id=361 B=(9,1000,682) success=True
+nmnist_seed42_integer_B1_1000 sample=704/1000 id=13 B=(8,1000,679) success=True
+nmnist_seed42_integer_B1_1000 sample=768/1000 id=355 B=(9,1000,657) success=True
+nmnist_seed42_integer_B1_1000 sample=832/1000 id=9789 B=(9,1000,571) success=True
+nmnist_seed42_integer_B1_1000 sample=896/1000 id=9908 B=(9,1000,650) success=True
+nmnist_seed42_integer_B1_1000 sample=960/1000 id=6724 B=(9,1000,659) success=True
+nmnist_seed42_integer_B1_1000 sample=1000/1000 id=2895 B=(9,1000,647) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B1_1500 samples=1000 resume_at=1
+nmnist_seed42_integer_B1_1500 sample=64/1000 id=6931 B=(9,1500,813) success=True
+nmnist_seed42_integer_B1_1500 sample=128/1000 id=8182 B=(9,1500,904) success=True
+nmnist_seed42_integer_B1_1500 sample=192/1000 id=8659 B=(9,1500,845) success=True
+nmnist_seed42_integer_B1_1500 sample=256/1000 id=2993 B=(9,1500,937) success=True
+nmnist_seed42_integer_B1_1500 sample=320/1000 id=8125 B=(9,1500,964) success=True
+nmnist_seed42_integer_B1_1500 sample=384/1000 id=1303 B=(9,1500,660) success=True
+nmnist_seed42_integer_B1_1500 sample=448/1000 id=9324 B=(9,1500,859) success=True
+nmnist_seed42_integer_B1_1500 sample=512/1000 id=600 B=(8,1500,872) success=True
+nmnist_seed42_integer_B1_1500 sample=576/1000 id=1550 B=(9,1500,682) success=True
+nmnist_seed42_integer_B1_1500 sample=640/1000 id=361 B=(9,1500,931) success=True
+nmnist_seed42_integer_B1_1500 sample=704/1000 id=13 B=(9,1500,864) success=True
+nmnist_seed42_integer_B1_1500 sample=768/1000 id=355 B=(9,1500,879) success=True
+nmnist_seed42_integer_B1_1500 sample=832/1000 id=9789 B=(9,1500,781) success=True
+nmnist_seed42_integer_B1_1500 sample=896/1000 id=9908 B=(9,1500,839) success=True
+nmnist_seed42_integer_B1_1500 sample=960/1000 id=6724 B=(9,1500,826) success=True
+nmnist_seed42_integer_B1_1500 sample=1000/1000 id=2895 B=(9,1500,958) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B0_200 samples=1000 resume_at=1
+nmnist_seed42_integer_B0_200 sample=64/1000 id=6931 B=(9,840,200) success=True
+nmnist_seed42_integer_B0_200 sample=128/1000 id=8182 B=(9,795,200) success=True
+nmnist_seed42_integer_B0_200 sample=192/1000 id=8659 B=(9,862,200) success=True
+nmnist_seed42_integer_B0_200 sample=256/1000 id=2993 B=(9,820,200) success=True
+nmnist_seed42_integer_B0_200 sample=320/1000 id=8125 B=(9,768,200) success=True
+nmnist_seed42_integer_B0_200 sample=384/1000 id=1303 B=(9,826,200) success=True
+nmnist_seed42_integer_B0_200 sample=448/1000 id=9324 B=(9,819,200) success=True
+nmnist_seed42_integer_B0_200 sample=512/1000 id=600 B=(9,820,200) success=True
+nmnist_seed42_integer_B0_200 sample=576/1000 id=1550 B=(9,834,200) success=True
+nmnist_seed42_integer_B0_200 sample=640/1000 id=361 B=(9,753,200) success=True
+nmnist_seed42_integer_B0_200 sample=704/1000 id=13 B=(9,810,200) success=True
+nmnist_seed42_integer_B0_200 sample=768/1000 id=355 B=(9,792,200) success=True
+nmnist_seed42_integer_B0_200 sample=832/1000 id=9789 B=(9,837,200) success=True
+nmnist_seed42_integer_B0_200 sample=896/1000 id=9908 B=(9,883,200) success=True
+nmnist_seed42_integer_B0_200 sample=960/1000 id=6724 B=(9,856,200) success=True
+nmnist_seed42_integer_B0_200 sample=1000/1000 id=2895 B=(9,825,200) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 998,
+  "errors": []
+}
+START nmnist_seed42_integer_B0_300 samples=1000 resume_at=1
+nmnist_seed42_integer_B0_300 sample=64/1000 id=6931 B=(9,1299,300) success=True
+nmnist_seed42_integer_B0_300 sample=128/1000 id=8182 B=(9,1264,300) success=True
+nmnist_seed42_integer_B0_300 sample=192/1000 id=8659 B=(9,1237,300) success=True
+nmnist_seed42_integer_B0_300 sample=256/1000 id=2993 B=(9,1257,300) success=True
+nmnist_seed42_integer_B0_300 sample=320/1000 id=8125 B=(9,1220,300) success=True
+nmnist_seed42_integer_B0_300 sample=384/1000 id=1303 B=(9,1251,300) success=True
+nmnist_seed42_integer_B0_300 sample=448/1000 id=9324 B=(9,1228,300) success=True
+nmnist_seed42_integer_B0_300 sample=512/1000 id=600 B=(9,1186,300) success=True
+nmnist_seed42_integer_B0_300 sample=576/1000 id=1550 B=(9,1183,300) success=True
+nmnist_seed42_integer_B0_300 sample=640/1000 id=361 B=(9,1114,300) success=True
+nmnist_seed42_integer_B0_300 sample=704/1000 id=13 B=(9,1162,300) success=True
+nmnist_seed42_integer_B0_300 sample=768/1000 id=355 B=(9,1251,300) success=True
+nmnist_seed42_integer_B0_300 sample=832/1000 id=9789 B=(9,1259,300) success=True
+nmnist_seed42_integer_B0_300 sample=896/1000 id=9908 B=(9,1226,300) success=True
+nmnist_seed42_integer_B0_300 sample=960/1000 id=6724 B=(8,1228,300) success=True
+nmnist_seed42_integer_B0_300 sample=1000/1000 id=2895 B=(9,1224,300) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B0_400 samples=1000 resume_at=1
+nmnist_seed42_integer_B0_400 sample=64/1000 id=6931 B=(9,1702,400) success=True
+nmnist_seed42_integer_B0_400 sample=128/1000 id=8182 B=(9,1680,400) success=True
+nmnist_seed42_integer_B0_400 sample=192/1000 id=8659 B=(9,1699,400) success=True
+nmnist_seed42_integer_B0_400 sample=256/1000 id=2993 B=(9,1645,400) success=True
+nmnist_seed42_integer_B0_400 sample=320/1000 id=8125 B=(9,1651,400) success=True
+nmnist_seed42_integer_B0_400 sample=384/1000 id=1303 B=(9,1539,400) success=True
+nmnist_seed42_integer_B0_400 sample=448/1000 id=9324 B=(9,1653,400) success=True
+nmnist_seed42_integer_B0_400 sample=512/1000 id=600 B=(9,1620,400) success=True
+nmnist_seed42_integer_B0_400 sample=576/1000 id=1550 B=(9,1484,400) success=True
+nmnist_seed42_integer_B0_400 sample=640/1000 id=361 B=(9,1643,400) success=True
+nmnist_seed42_integer_B0_400 sample=704/1000 id=13 B=(9,1650,400) success=True
+nmnist_seed42_integer_B0_400 sample=768/1000 id=355 B=(9,1594,400) success=True
+nmnist_seed42_integer_B0_400 sample=832/1000 id=9789 B=(9,1719,400) success=True
+nmnist_seed42_integer_B0_400 sample=896/1000 id=9908 B=(9,1677,400) success=True
+nmnist_seed42_integer_B0_400 sample=960/1000 id=6724 B=(9,1750,400) success=True
+nmnist_seed42_integer_B0_400 sample=1000/1000 id=2895 B=(9,1576,400) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed42_integer_B0_600 samples=1000 resume_at=1
+nmnist_seed42_integer_B0_600 sample=64/1000 id=6931 B=(9,2414,600) success=True
+nmnist_seed42_integer_B0_600 sample=128/1000 id=8182 B=(9,2324,600) success=True
+nmnist_seed42_integer_B0_600 sample=192/1000 id=8659 B=(9,2422,600) success=True
+nmnist_seed42_integer_B0_600 sample=256/1000 id=2993 B=(9,2521,600) success=True
+nmnist_seed42_integer_B0_600 sample=320/1000 id=8125 B=(9,2535,600) success=True
+nmnist_seed42_integer_B0_600 sample=384/1000 id=1303 B=(9,2039,600) success=True
+nmnist_seed42_integer_B0_600 sample=448/1000 id=9324 B=(9,2555,600) success=True
+nmnist_seed42_integer_B0_600 sample=512/1000 id=600 B=(9,2501,600) success=True
+nmnist_seed42_integer_B0_600 sample=576/1000 id=1550 B=(9,2081,600) success=True
+nmnist_seed42_integer_B0_600 sample=640/1000 id=361 B=(9,2514,600) success=True
+nmnist_seed42_integer_B0_600 sample=704/1000 id=13 B=(9,2474,600) success=True
+nmnist_seed42_integer_B0_600 sample=768/1000 id=355 B=(9,2427,600) success=True
+nmnist_seed42_integer_B0_600 sample=832/1000 id=9789 B=(9,2647,600) success=True
+nmnist_seed42_integer_B0_600 sample=896/1000 id=9908 B=(9,2535,600) success=True
+nmnist_seed42_integer_B0_600 sample=960/1000 id=6724 B=(9,2650,600) success=True
+nmnist_seed42_integer_B0_600 sample=1000/1000 id=2895 B=(9,2452,600) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B_inf_1 samples=1000 resume_at=1
+nmnist_seed123_binary_B_inf_1 sample=64/1000 id=9647 B=(1,1581,1581) success=True
+nmnist_seed123_binary_B_inf_1 sample=128/1000 id=8894 B=(1,2016,2016) success=True
+nmnist_seed123_binary_B_inf_1 sample=192/1000 id=3567 B=(1,2128,2128) success=False
+nmnist_seed123_binary_B_inf_1 sample=256/1000 id=3799 B=(1,1932,1932) success=True
+nmnist_seed123_binary_B_inf_1 sample=320/1000 id=6083 B=(1,1666,1666) success=False
+nmnist_seed123_binary_B_inf_1 sample=384/1000 id=4243 B=(1,1556,1556) success=False
+nmnist_seed123_binary_B_inf_1 sample=448/1000 id=2297 B=(1,1753,1753) success=True
+nmnist_seed123_binary_B_inf_1 sample=512/1000 id=1432 B=(1,947,947) success=False
+nmnist_seed123_binary_B_inf_1 sample=576/1000 id=4118 B=(1,2207,2207) success=True
+nmnist_seed123_binary_B_inf_1 sample=640/1000 id=6443 B=(1,2061,2061) success=False
+nmnist_seed123_binary_B_inf_1 sample=704/1000 id=8489 B=(1,2340,2340) success=False
+nmnist_seed123_binary_B_inf_1 sample=768/1000 id=3600 B=(1,2059,2059) success=True
+nmnist_seed123_binary_B_inf_1 sample=832/1000 id=9239 B=(1,1414,1414) success=True
+nmnist_seed123_binary_B_inf_1 sample=896/1000 id=7070 B=(1,1497,1497) success=True
+nmnist_seed123_binary_B_inf_1 sample=960/1000 id=2676 B=(1,1883,1883) success=False
+nmnist_seed123_binary_B_inf_1 sample=1000/1000 id=3342 B=(1,2019,2019) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 769,
+  "errors": []
+}
+START nmnist_seed123_binary_B_inf_2 samples=1000 resume_at=1
+nmnist_seed123_binary_B_inf_2 sample=64/1000 id=9647 B=(2,2523,1693) success=True
+nmnist_seed123_binary_B_inf_2 sample=128/1000 id=8894 B=(2,3203,2172) success=True
+nmnist_seed123_binary_B_inf_2 sample=192/1000 id=3567 B=(2,3464,2261) success=True
+nmnist_seed123_binary_B_inf_2 sample=256/1000 id=3799 B=(2,3120,2046) success=True
+nmnist_seed123_binary_B_inf_2 sample=320/1000 id=6083 B=(2,2656,1770) success=True
+nmnist_seed123_binary_B_inf_2 sample=384/1000 id=4243 B=(2,2466,1624) success=True
+nmnist_seed123_binary_B_inf_2 sample=448/1000 id=2297 B=(2,2850,1854) success=True
+nmnist_seed123_binary_B_inf_2 sample=512/1000 id=1432 B=(2,1491,971) success=True
+nmnist_seed123_binary_B_inf_2 sample=576/1000 id=4118 B=(2,3514,2371) success=True
+nmnist_seed123_binary_B_inf_2 sample=640/1000 id=6443 B=(2,3278,2168) success=True
+nmnist_seed123_binary_B_inf_2 sample=704/1000 id=8489 B=(2,3786,2519) success=True
+nmnist_seed123_binary_B_inf_2 sample=768/1000 id=3600 B=(2,3345,2207) success=True
+nmnist_seed123_binary_B_inf_2 sample=832/1000 id=9239 B=(2,2330,1509) success=True
+nmnist_seed123_binary_B_inf_2 sample=896/1000 id=7070 B=(2,2312,1553) success=True
+nmnist_seed123_binary_B_inf_2 sample=960/1000 id=2676 B=(2,3085,1988) success=True
+nmnist_seed123_binary_B_inf_2 sample=1000/1000 id=3342 B=(2,3264,2143) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B_inf_3 samples=1000 resume_at=1
+nmnist_seed123_binary_B_inf_3 sample=64/1000 id=9647 B=(3,3236,1721) success=True
+nmnist_seed123_binary_B_inf_3 sample=128/1000 id=8894 B=(3,4266,2233) success=True
+nmnist_seed123_binary_B_inf_3 sample=192/1000 id=3567 B=(3,4574,2319) success=True
+nmnist_seed123_binary_B_inf_3 sample=256/1000 id=3799 B=(3,4027,2076) success=True
+nmnist_seed123_binary_B_inf_3 sample=320/1000 id=6083 B=(3,3556,1808) success=True
+nmnist_seed123_binary_B_inf_3 sample=384/1000 id=4243 B=(3,3285,1649) success=True
+nmnist_seed123_binary_B_inf_3 sample=448/1000 id=2297 B=(3,3813,1900) success=True
+nmnist_seed123_binary_B_inf_3 sample=512/1000 id=1432 B=(3,1953,979) success=True
+nmnist_seed123_binary_B_inf_3 sample=576/1000 id=4118 B=(3,4584,2400) success=True
+nmnist_seed123_binary_B_inf_3 sample=640/1000 id=6443 B=(3,4159,2207) success=True
+nmnist_seed123_binary_B_inf_3 sample=704/1000 id=8489 B=(3,4887,2594) success=True
+nmnist_seed123_binary_B_inf_3 sample=768/1000 id=3600 B=(3,4291,2225) success=True
+nmnist_seed123_binary_B_inf_3 sample=832/1000 id=9239 B=(3,3001,1537) success=True
+nmnist_seed123_binary_B_inf_3 sample=896/1000 id=7070 B=(3,2977,1591) success=True
+nmnist_seed123_binary_B_inf_3 sample=960/1000 id=2676 B=(3,3982,2018) success=True
+nmnist_seed123_binary_B_inf_3 sample=1000/1000 id=3342 B=(3,4194,2178) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B1_500 samples=1000 resume_at=1
+nmnist_seed123_binary_B1_500 sample=64/1000 id=9647 B=(6,500,442) success=True
+nmnist_seed123_binary_B1_500 sample=128/1000 id=8894 B=(5,500,433) success=True
+nmnist_seed123_binary_B1_500 sample=192/1000 id=3567 B=(5,500,391) success=True
+nmnist_seed123_binary_B1_500 sample=256/1000 id=3799 B=(4,500,433) success=True
+nmnist_seed123_binary_B1_500 sample=320/1000 id=6083 B=(4,500,449) success=True
+nmnist_seed123_binary_B1_500 sample=384/1000 id=4243 B=(6,500,401) success=True
+nmnist_seed123_binary_B1_500 sample=448/1000 id=2297 B=(4,500,430) success=True
+nmnist_seed123_binary_B1_500 sample=512/1000 id=1432 B=(8,500,338) success=True
+nmnist_seed123_binary_B1_500 sample=576/1000 id=4118 B=(3,500,462) success=True
+nmnist_seed123_binary_B1_500 sample=640/1000 id=6443 B=(7,500,427) success=True
+nmnist_seed123_binary_B1_500 sample=704/1000 id=8489 B=(5,500,435) success=True
+nmnist_seed123_binary_B1_500 sample=768/1000 id=3600 B=(7,500,434) success=True
+nmnist_seed123_binary_B1_500 sample=832/1000 id=9239 B=(7,500,431) success=True
+nmnist_seed123_binary_B1_500 sample=896/1000 id=7070 B=(9,500,375) success=True
+nmnist_seed123_binary_B1_500 sample=960/1000 id=2676 B=(4,500,430) success=True
+nmnist_seed123_binary_B1_500 sample=1000/1000 id=3342 B=(4,500,436) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B1_750 samples=1000 resume_at=1
+nmnist_seed123_binary_B1_750 sample=64/1000 id=9647 B=(9,750,579) success=True
+nmnist_seed123_binary_B1_750 sample=128/1000 id=8894 B=(9,750,569) success=True
+nmnist_seed123_binary_B1_750 sample=192/1000 id=3567 B=(8,750,550) success=True
+nmnist_seed123_binary_B1_750 sample=256/1000 id=3799 B=(8,750,567) success=True
+nmnist_seed123_binary_B1_750 sample=320/1000 id=6083 B=(9,750,543) success=True
+nmnist_seed123_binary_B1_750 sample=384/1000 id=4243 B=(9,750,511) success=True
+nmnist_seed123_binary_B1_750 sample=448/1000 id=2297 B=(9,750,577) success=True
+nmnist_seed123_binary_B1_750 sample=512/1000 id=1432 B=(9,750,466) success=True
+nmnist_seed123_binary_B1_750 sample=576/1000 id=4118 B=(8,750,566) success=True
+nmnist_seed123_binary_B1_750 sample=640/1000 id=6443 B=(8,750,577) success=True
+nmnist_seed123_binary_B1_750 sample=704/1000 id=8489 B=(9,750,569) success=True
+nmnist_seed123_binary_B1_750 sample=768/1000 id=3600 B=(9,750,599) success=True
+nmnist_seed123_binary_B1_750 sample=832/1000 id=9239 B=(9,750,559) success=True
+nmnist_seed123_binary_B1_750 sample=896/1000 id=7070 B=(8,750,516) success=True
+nmnist_seed123_binary_B1_750 sample=960/1000 id=2676 B=(7,750,596) success=True
+nmnist_seed123_binary_B1_750 sample=1000/1000 id=3342 B=(7,750,548) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B1_1000 samples=1000 resume_at=1
+nmnist_seed123_binary_B1_1000 sample=64/1000 id=9647 B=(9,1000,695) success=True
+nmnist_seed123_binary_B1_1000 sample=128/1000 id=8894 B=(9,1000,641) success=True
+nmnist_seed123_binary_B1_1000 sample=192/1000 id=3567 B=(9,1000,712) success=True
+nmnist_seed123_binary_B1_1000 sample=256/1000 id=3799 B=(9,1000,679) success=True
+nmnist_seed123_binary_B1_1000 sample=320/1000 id=6083 B=(9,1000,656) success=True
+nmnist_seed123_binary_B1_1000 sample=384/1000 id=4243 B=(9,1000,619) success=True
+nmnist_seed123_binary_B1_1000 sample=448/1000 id=2297 B=(9,1000,693) success=True
+nmnist_seed123_binary_B1_1000 sample=512/1000 id=1432 B=(9,1000,516) success=True
+nmnist_seed123_binary_B1_1000 sample=576/1000 id=4118 B=(9,1000,756) success=True
+nmnist_seed123_binary_B1_1000 sample=640/1000 id=6443 B=(9,1000,715) success=True
+nmnist_seed123_binary_B1_1000 sample=704/1000 id=8489 B=(9,1000,726) success=True
+nmnist_seed123_binary_B1_1000 sample=768/1000 id=3600 B=(8,1000,741) success=True
+nmnist_seed123_binary_B1_1000 sample=832/1000 id=9239 B=(9,1000,678) success=True
+nmnist_seed123_binary_B1_1000 sample=896/1000 id=7070 B=(8,1000,685) success=True
+nmnist_seed123_binary_B1_1000 sample=960/1000 id=2676 B=(9,1000,708) success=True
+nmnist_seed123_binary_B1_1000 sample=1000/1000 id=3342 B=(8,1000,709) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B1_1500 samples=1000 resume_at=1
+nmnist_seed123_binary_B1_1500 sample=64/1000 id=9647 B=(9,1500,946) success=True
+nmnist_seed123_binary_B1_1500 sample=128/1000 id=8894 B=(9,1500,953) success=True
+nmnist_seed123_binary_B1_1500 sample=192/1000 id=3567 B=(9,1500,972) success=True
+nmnist_seed123_binary_B1_1500 sample=256/1000 id=3799 B=(9,1500,929) success=True
+nmnist_seed123_binary_B1_1500 sample=320/1000 id=6083 B=(9,1500,855) success=True
+nmnist_seed123_binary_B1_1500 sample=384/1000 id=4243 B=(9,1500,866) success=True
+nmnist_seed123_binary_B1_1500 sample=448/1000 id=2297 B=(9,1500,874) success=True
+nmnist_seed123_binary_B1_1500 sample=512/1000 id=1432 B=(9,1500,648) success=True
+nmnist_seed123_binary_B1_1500 sample=576/1000 id=4118 B=(9,1500,983) success=True
+nmnist_seed123_binary_B1_1500 sample=640/1000 id=6443 B=(9,1500,942) success=True
+nmnist_seed123_binary_B1_1500 sample=704/1000 id=8489 B=(9,1500,955) success=True
+nmnist_seed123_binary_B1_1500 sample=768/1000 id=3600 B=(9,1500,876) success=True
+nmnist_seed123_binary_B1_1500 sample=832/1000 id=9239 B=(9,1500,831) success=True
+nmnist_seed123_binary_B1_1500 sample=896/1000 id=7070 B=(9,1500,843) success=True
+nmnist_seed123_binary_B1_1500 sample=960/1000 id=2676 B=(9,1500,975) success=True
+nmnist_seed123_binary_B1_1500 sample=1000/1000 id=3342 B=(9,1500,902) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B0_200 samples=1000 resume_at=1
+nmnist_seed123_binary_B0_200 sample=64/1000 id=9647 B=(9,822,200) success=True
+nmnist_seed123_binary_B0_200 sample=128/1000 id=8894 B=(9,891,200) success=True
+nmnist_seed123_binary_B0_200 sample=192/1000 id=3567 B=(9,884,200) success=True
+nmnist_seed123_binary_B0_200 sample=256/1000 id=3799 B=(9,777,200) success=True
+nmnist_seed123_binary_B0_200 sample=320/1000 id=6083 B=(9,720,200) success=True
+nmnist_seed123_binary_B0_200 sample=384/1000 id=4243 B=(9,851,200) success=True
+nmnist_seed123_binary_B0_200 sample=448/1000 id=2297 B=(9,763,200) success=True
+nmnist_seed123_binary_B0_200 sample=512/1000 id=1432 B=(9,797,200) success=True
+nmnist_seed123_binary_B0_200 sample=576/1000 id=4118 B=(9,761,200) success=True
+nmnist_seed123_binary_B0_200 sample=640/1000 id=6443 B=(9,684,200) success=False
+nmnist_seed123_binary_B0_200 sample=704/1000 id=8489 B=(9,740,200) success=True
+nmnist_seed123_binary_B0_200 sample=768/1000 id=3600 B=(9,820,200) success=True
+nmnist_seed123_binary_B0_200 sample=832/1000 id=9239 B=(9,856,200) success=True
+nmnist_seed123_binary_B0_200 sample=896/1000 id=7070 B=(9,781,200) success=True
+nmnist_seed123_binary_B0_200 sample=960/1000 id=2676 B=(9,725,200) success=True
+nmnist_seed123_binary_B0_200 sample=1000/1000 id=3342 B=(9,850,200) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 992,
+  "errors": []
+}
+START nmnist_seed123_binary_B0_300 samples=1000 resume_at=1
+nmnist_seed123_binary_B0_300 sample=64/1000 id=9647 B=(9,1254,300) success=True
+nmnist_seed123_binary_B0_300 sample=128/1000 id=8894 B=(9,1259,300) success=True
+nmnist_seed123_binary_B0_300 sample=192/1000 id=3567 B=(9,1341,300) success=True
+nmnist_seed123_binary_B0_300 sample=256/1000 id=3799 B=(9,1259,300) success=True
+nmnist_seed123_binary_B0_300 sample=320/1000 id=6083 B=(9,1354,300) success=True
+nmnist_seed123_binary_B0_300 sample=384/1000 id=4243 B=(9,1332,300) success=True
+nmnist_seed123_binary_B0_300 sample=448/1000 id=2297 B=(9,1244,300) success=True
+nmnist_seed123_binary_B0_300 sample=512/1000 id=1432 B=(9,1153,300) success=True
+nmnist_seed123_binary_B0_300 sample=576/1000 id=4118 B=(9,1263,300) success=True
+nmnist_seed123_binary_B0_300 sample=640/1000 id=6443 B=(9,1297,300) success=True
+nmnist_seed123_binary_B0_300 sample=704/1000 id=8489 B=(9,1215,300) success=True
+nmnist_seed123_binary_B0_300 sample=768/1000 id=3600 B=(9,1334,300) success=True
+nmnist_seed123_binary_B0_300 sample=832/1000 id=9239 B=(9,1348,300) success=True
+nmnist_seed123_binary_B0_300 sample=896/1000 id=7070 B=(9,1152,300) success=True
+nmnist_seed123_binary_B0_300 sample=960/1000 id=2676 B=(9,1238,300) success=True
+nmnist_seed123_binary_B0_300 sample=1000/1000 id=3342 B=(9,1326,300) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B0_400 samples=1000 resume_at=1
+nmnist_seed123_binary_B0_400 sample=64/1000 id=9647 B=(9,1690,400) success=True
+nmnist_seed123_binary_B0_400 sample=128/1000 id=8894 B=(9,1776,400) success=True
+nmnist_seed123_binary_B0_400 sample=192/1000 id=3567 B=(9,1712,400) success=True
+nmnist_seed123_binary_B0_400 sample=256/1000 id=3799 B=(9,1655,400) success=True
+nmnist_seed123_binary_B0_400 sample=320/1000 id=6083 B=(9,1780,400) success=True
+nmnist_seed123_binary_B0_400 sample=384/1000 id=4243 B=(9,1627,400) success=True
+nmnist_seed123_binary_B0_400 sample=448/1000 id=2297 B=(9,1720,400) success=True
+nmnist_seed123_binary_B0_400 sample=512/1000 id=1432 B=(9,1580,400) success=True
+nmnist_seed123_binary_B0_400 sample=576/1000 id=4118 B=(9,1818,400) success=True
+nmnist_seed123_binary_B0_400 sample=640/1000 id=6443 B=(9,1816,400) success=True
+nmnist_seed123_binary_B0_400 sample=704/1000 id=8489 B=(9,1724,400) success=True
+nmnist_seed123_binary_B0_400 sample=768/1000 id=3600 B=(9,1772,400) success=True
+nmnist_seed123_binary_B0_400 sample=832/1000 id=9239 B=(9,1753,400) success=True
+nmnist_seed123_binary_B0_400 sample=896/1000 id=7070 B=(9,1583,400) success=True
+nmnist_seed123_binary_B0_400 sample=960/1000 id=2676 B=(9,1741,400) success=True
+nmnist_seed123_binary_B0_400 sample=1000/1000 id=3342 B=(9,1708,400) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_binary_B0_600 samples=1000 resume_at=1
+nmnist_seed123_binary_B0_600 sample=64/1000 id=9647 B=(9,2562,600) success=True
+nmnist_seed123_binary_B0_600 sample=128/1000 id=8894 B=(9,2619,600) success=True
+nmnist_seed123_binary_B0_600 sample=192/1000 id=3567 B=(9,2757,600) success=True
+nmnist_seed123_binary_B0_600 sample=256/1000 id=3799 B=(9,2553,600) success=True
+nmnist_seed123_binary_B0_600 sample=320/1000 id=6083 B=(9,2620,600) success=True
+nmnist_seed123_binary_B0_600 sample=384/1000 id=4243 B=(9,2495,600) success=True
+nmnist_seed123_binary_B0_600 sample=448/1000 id=2297 B=(9,2423,600) success=True
+nmnist_seed123_binary_B0_600 sample=512/1000 id=1432 B=(9,2102,600) success=True
+nmnist_seed123_binary_B0_600 sample=576/1000 id=4118 B=(9,2588,600) success=True
+nmnist_seed123_binary_B0_600 sample=640/1000 id=6443 B=(9,2658,600) success=True
+nmnist_seed123_binary_B0_600 sample=704/1000 id=8489 B=(9,2588,600) success=True
+nmnist_seed123_binary_B0_600 sample=768/1000 id=3600 B=(9,2612,600) success=True
+nmnist_seed123_binary_B0_600 sample=832/1000 id=9239 B=(9,2639,600) success=True
+nmnist_seed123_binary_B0_600 sample=896/1000 id=7070 B=(9,2335,600) success=True
+nmnist_seed123_binary_B0_600 sample=960/1000 id=2676 B=(9,2636,600) success=True
+nmnist_seed123_binary_B0_600 sample=1000/1000 id=3342 B=(9,2516,600) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_integer_B_inf_1 samples=1000 resume_at=1
+nmnist_seed123_integer_B_inf_1 sample=64/1000 id=9647 B=(1,1599,1599) success=True
+nmnist_seed123_integer_B_inf_1 sample=128/1000 id=8894 B=(1,1990,1990) success=True
+nmnist_seed123_integer_B_inf_1 sample=192/1000 id=3567 B=(1,2150,2150) success=False
+nmnist_seed123_integer_B_inf_1 sample=256/1000 id=3799 B=(1,1937,1937) success=True
+nmnist_seed123_integer_B_inf_1 sample=320/1000 id=6083 B=(1,1648,1648) success=False
+nmnist_seed123_integer_B_inf_1 sample=384/1000 id=4243 B=(1,1541,1541) success=False
+nmnist_seed123_integer_B_inf_1 sample=448/1000 id=2297 B=(1,1765,1765) success=True
+nmnist_seed123_integer_B_inf_1 sample=512/1000 id=1432 B=(1,948,948) success=True
+nmnist_seed123_integer_B_inf_1 sample=576/1000 id=4118 B=(1,2243,2243) success=True
+nmnist_seed123_integer_B_inf_1 sample=640/1000 id=6443 B=(1,2087,2087) success=False
+nmnist_seed123_integer_B_inf_1 sample=704/1000 id=8489 B=(1,2347,2347) success=True
+nmnist_seed123_integer_B_inf_1 sample=768/1000 id=3600 B=(1,2065,2065) success=False
+nmnist_seed123_integer_B_inf_1 sample=832/1000 id=9239 B=(1,1414,1414) success=True
+nmnist_seed123_integer_B_inf_1 sample=896/1000 id=7070 B=(1,1518,1518) success=True
+nmnist_seed123_integer_B_inf_1 sample=960/1000 id=2676 B=(1,1890,1890) success=False
+nmnist_seed123_integer_B_inf_1 sample=1000/1000 id=3342 B=(1,2028,2028) success=False
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 779,
+  "errors": []
+}
+START nmnist_seed123_integer_B_inf_2 samples=1000 resume_at=1
+nmnist_seed123_integer_B_inf_2 sample=64/1000 id=9647 B=(2,2480,1690) success=True
+nmnist_seed123_integer_B_inf_2 sample=128/1000 id=8894 B=(2,3219,2168) success=True
+nmnist_seed123_integer_B_inf_2 sample=192/1000 id=3567 B=(2,3480,2276) success=True
+nmnist_seed123_integer_B_inf_2 sample=256/1000 id=3799 B=(2,3079,2051) success=True
+nmnist_seed123_integer_B_inf_2 sample=320/1000 id=6083 B=(2,2660,1764) success=True
+nmnist_seed123_integer_B_inf_2 sample=384/1000 id=4243 B=(2,2489,1635) success=True
+nmnist_seed123_integer_B_inf_2 sample=448/1000 id=2297 B=(2,2868,1876) success=True
+nmnist_seed123_integer_B_inf_2 sample=512/1000 id=1432 B=(2,1466,971) success=True
+nmnist_seed123_integer_B_inf_2 sample=576/1000 id=4118 B=(2,3558,2373) success=True
+nmnist_seed123_integer_B_inf_2 sample=640/1000 id=6443 B=(2,3265,2172) success=True
+nmnist_seed123_integer_B_inf_2 sample=704/1000 id=8489 B=(2,3807,2531) success=True
+nmnist_seed123_integer_B_inf_2 sample=768/1000 id=3600 B=(2,3278,2190) success=True
+nmnist_seed123_integer_B_inf_2 sample=832/1000 id=9239 B=(2,2291,1516) success=True
+nmnist_seed123_integer_B_inf_2 sample=896/1000 id=7070 B=(2,2333,1579) success=True
+nmnist_seed123_integer_B_inf_2 sample=960/1000 id=2676 B=(2,2993,1982) success=True
+nmnist_seed123_integer_B_inf_2 sample=1000/1000 id=3342 B=(2,3224,2143) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_integer_B_inf_3 samples=1000 resume_at=1
+nmnist_seed123_integer_B_inf_3 sample=64/1000 id=9647 B=(3,3181,1726) success=True
+nmnist_seed123_integer_B_inf_3 sample=128/1000 id=8894 B=(3,4103,2223) success=True
+nmnist_seed123_integer_B_inf_3 sample=192/1000 id=3567 B=(3,4373,2321) success=True
+nmnist_seed123_integer_B_inf_3 sample=256/1000 id=3799 B=(3,3982,2082) success=True
+nmnist_seed123_integer_B_inf_3 sample=320/1000 id=6083 B=(3,3393,1801) success=True
+nmnist_seed123_integer_B_inf_3 sample=384/1000 id=4243 B=(3,3336,1647) success=True
+nmnist_seed123_integer_B_inf_3 sample=448/1000 id=2297 B=(3,3683,1904) success=True
+nmnist_seed123_integer_B_inf_3 sample=512/1000 id=1432 B=(3,1904,978) success=True
+nmnist_seed123_integer_B_inf_3 sample=576/1000 id=4118 B=(3,4512,2404) success=True
+nmnist_seed123_integer_B_inf_3 sample=640/1000 id=6443 B=(3,4153,2213) success=True
+nmnist_seed123_integer_B_inf_3 sample=704/1000 id=8489 B=(3,4823,2580) success=True
+nmnist_seed123_integer_B_inf_3 sample=768/1000 id=3600 B=(3,4206,2230) success=True
+nmnist_seed123_integer_B_inf_3 sample=832/1000 id=9239 B=(3,2975,1535) success=True
+nmnist_seed123_integer_B_inf_3 sample=896/1000 id=7070 B=(3,2937,1597) success=True
+nmnist_seed123_integer_B_inf_3 sample=960/1000 id=2676 B=(3,3800,2027) success=True
+nmnist_seed123_integer_B_inf_3 sample=1000/1000 id=3342 B=(3,4192,2179) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 1000,
+  "errors": []
+}
+START nmnist_seed123_integer_B1_500 samples=1000 resume_at=1
+nmnist_seed123_integer_B1_500 sample=64/1000 id=9647 B=(9,500,364) success=True
+nmnist_seed123_integer_B1_500 sample=128/1000 id=8894 B=(8,500,382) success=True
+nmnist_seed123_integer_B1_500 sample=192/1000 id=3567 B=(8,500,386) success=True
+nmnist_seed123_integer_B1_500 sample=256/1000 id=3799 B=(7,500,378) success=True
+nmnist_seed123_integer_B1_500 sample=320/1000 id=6083 B=(6,500,371) success=True
+nmnist_seed123_integer_B1_500 sample=384/1000 id=4243 B=(9,500,305) success=True
+nmnist_seed123_integer_B1_500 sample=448/1000 id=2297 B=(9,500,359) success=True
+nmnist_seed123_integer_B1_500 sample=512/1000 id=1432 B=(8,500,305) success=True
+nmnist_seed123_integer_B1_500 sample=576/1000 id=4118 B=(8,500,400) success=True
+nmnist_seed123_integer_B1_500 sample=640/1000 id=6443 B=(8,500,394) success=True
+nmnist_seed123_integer_B1_500 sample=704/1000 id=8489 B=(8,500,392) success=True
+nmnist_seed123_integer_B1_500 sample=768/1000 id=3600 B=(6,500,402) success=True
+nmnist_seed123_integer_B1_500 sample=832/1000 id=9239 B=(9,500,366) success=True
+nmnist_seed123_integer_B1_500 sample=896/1000 id=7070 B=(7,500,354) success=True
+nmnist_seed123_integer_B1_500 sample=960/1000 id=2676 B=(8,500,388) success=True
+nmnist_seed123_integer_B1_500 sample=1000/1000 id=3342 B=(6,500,361) success=True
+{
+  "status": "PASS",
+  "sample_count": 1000,
+  "successful_attacks": 999,
+  "errors": []
+}
+START nmnist_seed123_integer_B1_750 samples=1000 resume_at=1
+nmnist_seed123_integer_B1_750 sample=64/1000 id=9647 B=(9,750,475) success=True
+nmnist_seed123_integer_B1_750 sample=128/1000 id=8894 B=(9,750,479) success=True
+nmnist_seed123_integer_B1_750 sample=192/1000 id=3567 B=(9,750,511) success=True
+nmnist_seed123_integer_B1_750 sample=256/1000 id=3799 B=(9,750,444) success=True
+nmnist_seed123_integer_B1_750 sample=320/1000 id=6083 B=(9,750,499) success=True
+nmnist_seed123_integer_B1_750 sample=384/1000 id=4243 B=(8,750,469) success=True
+Traceback (most recent call last):
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 473, in <module>
+    main()
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 457, in main
+    metadata, audit = run_condition(cache=cache, model=model, device=device, seed=seed,
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\scripts\run_phase1_nmnist_benchmark.py", line 279, in run_condition
+    adversarial_batch, displacement_batch = attack(clean_tensor_batch, label_tensor_batch)
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\attacks\pil_pgd.py", line 304, in __call__
+    task = F.cross_entropy(exact_model_forward(pil), labels, reduction="none")
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\attacks\pil_pgd.py", line 290, in exact_model_forward
+    return torch.cat([self.model(value[index:index + 1])
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\attacks\pil_pgd.py", line 290, in <listcomp>
+    return torch.cat([self.model(value[index:index + 1])
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\testing\qsnn_temp_drift_project\models\nmnist_snn.py", line 51, in forward
+    output_membrane = output_membrane + self.classifier(spikes2.flatten(1))
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\torch\nn\modules\module.py", line 1736, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\torch\nn\modules\module.py", line 1747, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\lib\site-packages\torch\nn\modules\linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: CUDA error: CUBLAS_STATUS_EXECUTION_FAILED when calling cublasLtMatmul with transpose_mat1 1 transpose_mat2 0 m 10 n 1 k 2048 mat1_ld 2048 mat2_ld 2048 result_ld 10 abcType 0 computeType 68 scaleType 0
+Unhandled exception caught in c10/util/AbortHandler.h
+00007FF82D5D839400007FF82D5B6DC0 torch_python.dll!THPGenerator_initDefaultGenerator [<unknown file> @ <unknown line number>]
+00007FF9BA3C218700007FF9BA3C2170 ucrtbase.dll!terminate [<unknown file> @ <unknown line number>]
+00007FF9A0281AAB00007FF9A0281150 VCRUNTIME140_1.dll!_NLG_Return2 [<unknown file> @ <unknown line number>]
+00007FF9A028231700007FF9A0281150 VCRUNTIME140_1.dll!_NLG_Return2 [<unknown file> @ <unknown line number>]
+00007FF9A02840D900007FF9A0284030 VCRUNTIME140_1.dll!_CxxFrameHandler4 [<unknown file> @ <unknown line number>]
+00007FF9BD2654FF00007FF9BD265460 ntdll.dll!_chkstk [<unknown file> @ <unknown line number>]
+00007FF9BD1CBD2500007FF9BD1CB6D0 ntdll.dll!RtlWow64GetCurrentMachine [<unknown file> @ <unknown line number>]
+00007FF9BD10F88D00007FF9BD10F700 ntdll.dll!RtlRaiseException [<unknown file> @ <unknown line number>]
+00007FF9BAAD41CA00007FF9BAAD4140 KERNELBASE.dll!RaiseException [<unknown file> @ <unknown line number>]
+00007FF99578648000007FF9957863F0 VCRUNTIME140.dll!CxxThrowException [<unknown file> @ <unknown line number>]
+00007FF8DC1F6C6E00007FF8DC1F6C00 c10.dll!c10::detail::torchCheckFail [<unknown file> @ <unknown line number>]
+00007FF98046384F00007FF980463550 c10_cuda.dll!c10::cuda::c10_cuda_check_implementation [<unknown file> @ <unknown line number>]
+00007FFFC9EE0B0C00007FFFC9EE0A00 torch_cuda.dll!at::cuda::CUDAEvent::record [<unknown file> @ <unknown line number>]
+00007FFFC9EEE29900007FFFC9EED580 torch_cuda.dll!at::cuda::getCachingHostAllocator [<unknown file> @ <unknown line number>]
+00007FFFC9EECF5900007FFFC9EEB800 torch_cuda.dll!at::cuda::flush_icache [<unknown file> @ <unknown line number>]
+00007FF8DC1BBC9D00007FF8DC1BBAD0 c10.dll!c10::SymBool::operator| [<unknown file> @ <unknown line number>]
+00007FF8DC1AF1D200007FF8DC1AF160 c10.dll!c10::ConstantSymNodeImpl<bool>::~ConstantSymNodeImpl<bool> [<unknown file> @ <unknown line number>]
+00007FF8DC1DF94500007FF8DC1DF8D0 c10.dll!c10::TensorImpl::~TensorImpl [<unknown file> @ <unknown line number>]
+00007FF833DD773500007FF833DD5F10 torch_cpu.dll!at::DynamicLibrary::sym [<unknown file> @ <unknown line number>]
+00007FF833D7ECA800007FF833D7EC20 torch_cpu.dll!at::TensorBase::reset [<unknown file> @ <unknown line number>]
+00007FF82D5E5B9500007FF82D5D8DB0 torch_python.dll!initModule [<unknown file> @ <unknown line number>]
+00007FF82D67925500007FF82D647380 torch_python.dll!THPPointer<THPStorage>::THPPointer<THPStorage> [<unknown file> @ <unknown line number>]
+00007FF82D682C5D00007FF82D680750 torch_python.dll!THPVariable_Wrap [<unknown file> @ <unknown line number>]
+00007FF90959E89D00007FF90959E6B8 python310.dll!PyObject_GetDictPtr [<unknown file> @ <unknown line number>]
+00007FF9095FEA3600007FF9095FDF30 python310.dll!Py_NewReference [<unknown file> @ <unknown line number>]
+00007FF9095A2A9E00007FF9095A2750 python310.dll!PyErr_Clear [<unknown file> @ <unknown line number>]
+00007FF9095A2AB100007FF9095A2750 python310.dll!PyErr_Clear [<unknown file> @ <unknown line number>]
+00007FF9095BF18200007FF9095BE440 python310.dll!PyObject_GenericSetAttrWithDict [<unknown file> @ <unknown line number>]
+00007FF9095BE28600007FF9095BE210 python310.dll!PyDict_SetItem [<unknown file> @ <unknown line number>]
+00007FF9095A152F00007FF9095A14F0 python310.dll!PyDict_SetItemString [<unknown file> @ <unknown line number>]
+00007FF90968659A00007FF9096861E0 python310.dll!PyInterpreterState_Delete [<unknown file> @ <unknown line number>]
+00007FF90968702000007FF909686848 python310.dll!PyThreadState_Clear [<unknown file> @ <unknown line number>]
+00007FF90968526D00007FF9096851CC python310.dll!Py_FinalizeEx [<unknown file> @ <unknown line number>]
+00007FF909683FD600007FF909683FBC python310.dll!Py_RunMain [<unknown file> @ <unknown line number>]
+00007FF909664DC500007FF909664DA0 python310.dll!Py_Main [<unknown file> @ <unknown line number>]
+00007FF708691230 <unknown symbol address> python.exe!<unknown symbol> [<unknown file> @ <unknown line number>]
+00007FF9BBC8CD8700007FF9BBC8CD70 KERNEL32.DLL!BaseThreadInitThunk [<unknown file> @ <unknown line number>]
+00007FF9BD1ACAEC00007FF9BD1ACAC0 ntdll.dll!RtlUserThreadStart [<unknown file> @ <unknown line number>]
+

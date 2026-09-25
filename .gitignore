@@ -15,11 +15,12 @@ docs/*
 
 results/
 *.csv
-# *.json
+*.json
 !package.json
 !*.config.json
 
-
+*.json
+*.png
 
 __pycache__/
 *.pyc
