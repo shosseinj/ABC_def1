@@ -1,0 +1,17 @@
+{
+  "seed": 42,
+  "time_window": 100.0,
+  "test_size": 0.2,
+  "val_size": 0.2,
+  "n_qubits": 4,
+  "n_layers": 4,
+  "n_classes": 3,
+  "learning_rate": 0.01,
+  "epochs": 80,
+  "min_clean_accuracy": 0.85,
+  "quantum_temp_enabled": true,
+  "quantum_temp_epsilon": 0.02,
+  "lambda_q": 0.1,
+  "lambda_pred": 0.0,
+  "consistency_enabled": false
+}

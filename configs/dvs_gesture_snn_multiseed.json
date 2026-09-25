@@ -1,0 +1,22 @@
+{
+  "dataset": "DVS-Gesture",
+  "data_root": "data/dvs_gesture",
+  "seeds": [42, 123, 777, 2026, 6543],
+  "split_seed": 42,
+  "validation_fraction": 0.2,
+  "temporal_bins": 10,
+  "sensor_size": [64, 64],
+  "downsample_factor": 2,
+  "representation": "polarity-separated per-sample normalized event-count frames",
+  "architecture": "VGGSNN-style Conv-BN-LIF-Pool x4, global average readout",
+  "lif_decay": 0.5,
+  "batch_size": 16,
+  "epochs": 60,
+  "minimum_epochs": 12,
+  "patience": 10,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "gradient_clip_norm": 1.0,
+  "device": "cuda"
+}

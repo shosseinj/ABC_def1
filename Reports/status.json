@@ -1,0 +1,166 @@
+{
+  "created_at": "2026-09-20T10:38:19.515242+00:00",
+  "current_phase": "1",
+  "phases": {
+    "0": {
+      "artifacts": [
+        "Reports/repository_inventory.json",
+        "Reports/phase_0_report.md",
+        "readme_jafar.md",
+        "Reports/logs/phase_0_environment.log"
+      ],
+      "attempts": 1,
+      "gate_log": "Reports/logs/phase_0_gate_attempt_2.log",
+      "last_gate_errors": [],
+      "passed_at": "2026-09-20T10:51:18.973558+00:00",
+      "status": "PASS"
+    },
+    "0_5": {
+      "artifacts": [
+        "Reports/result_schema.json",
+        "Reports/contract_test_report.json",
+        "Reports/phase_0_5_report.md",
+        "Reports/logs/phase_0_5_contract_tests.log"
+      ],
+      "attempts": 1,
+      "gate_log": "Reports/logs/phase_0_5_gate_attempt_1.log",
+      "last_gate_errors": [],
+      "passed_at": "2026-09-20T10:53:37.230041+00:00",
+      "status": "PASS"
+    },
+    "0_75": {
+      "artifacts": [
+        "Reports/benchmark_specification.json",
+        "Reports/benchmark_specification.md",
+        "Reports/phase_0_75_report.md",
+        "Reports/results/benchmark_checkpoint_validation.json",
+        "Reports/logs/phase_0_75_final_contract_tests.log"
+      ],
+      "attempts": 3,
+      "gate_log": "Reports/logs/phase_0_75_gate_attempt_4.log",
+      "last_gate_errors": [],
+      "passed_at": "2026-09-21T04:58:05.115300+00:00",
+      "remediation": {
+        "cifar10_dvs_seeds_complete": [
+          42,
+          123,
+          777
+        ],
+        "cifar10_dvs_seeds_pending_outside_benchmark": [
+          2026,
+          6543
+        ],
+        "dvs_gesture_seeds_complete": [
+          42,
+          123,
+          777,
+          2026,
+          6543
+        ],
+        "nmnist_dataset": "PASS",
+        "pil_pgd_contract_tests": "PASS_13_OF_13"
+      },
+      "remediation_started_at": "2026-09-20T10:58:54.446185+00:00",
+      "status": "PASS"
+    },
+    "1": {
+      "active_condition": {
+        "beta": 750,
+        "budget_type": "B1",
+        "completed_samples": 375,
+        "elapsed_seconds": 159.90707803281953,
+        "eta_seconds": 266.51179672136584,
+        "gpu_utilization_percent": 0.0,
+        "progress_percent": 37.5,
+        "representation": "integer",
+        "run_id": "nmnist_seed123_integer_B1_750",
+        "runner": "OPTIMIZED",
+        "seconds_per_sample": 0.4264188747541854,
+        "seed": 123,
+        "selected_attack_batch_size": 64,
+        "selected_audit_batch_size": 64,
+        "status": "RUNNING",
+        "total_samples": 1000,
+        "updated_at": "2026-09-22T15:29:10.779403+00:00",
+        "vram_used_mib": 4230.0
+      },
+      "artifacts": [
+        "Reports/phase_1_seed42_report.md",
+        "Reports/phase_1_NMNIST_report.md",
+        "Reports/phase_1_NMNIST_final_report.md"
+      ],
+      "attempts": 3,
+      "batch_optimization": {
+        "attack_batch_8_equivalence": "FAIL_REJECTED",
+        "attack_batch_size": 1,
+        "audit_inference_batch_size": 64,
+        "binary_audit_batch_equivalence": "PASS_1000_OF_1000",
+        "integer_audit_batch_equivalence": "PASS_64_OF_64",
+        "report": "Reports/phase_1_batch_optimization_report.md",
+        "status": "PASS_WITH_ATTACK_BATCHING_REJECTED"
+      },
+      "blocker": "Reports/diagnostic_blocker.md",
+      "contract_tests": "PASS_17_OF_17_CELL_PACKET_SEMANTICS",
+      "dry_run": {
+        "benchmark_result": false,
+        "conditions": 4,
+        "evidence": "Reports/results/nmnist_dry_run/dry_run_PASS.json",
+        "seed": 42,
+        "status": "PASS"
+      },
+      "evidence_audit": "Reports/nmnist_temporal_semantics_audit.md",
+      "feasibility": "PASS_1000_OF_1000_EACH_SEED",
+      "feasibility_results": "Reports/results/nmnist_representation_feasibility.json",
+      "former_blocker": "RESOLVED_BY_AUTHORITATIVE_CELL_PACKET_AMENDMENT",
+      "gpu_vectorization": {
+        "attack_batch_size": 64,
+        "audit_batch_size": 64,
+        "exact_comparisons": "192/192",
+        "independent_audit": "PASS_192_OF_192",
+        "regression_tests": "18/18",
+        "report": "Reports/phase_1_gpu_vectorization_report.md",
+        "result": "Reports/results/phase1_gpu_vectorization_equivalence.json",
+        "speedup_range": "19.81x-51.16x",
+        "status": "PASS"
+      },
+      "independent_sample_batching": {
+        "batch_size_8_equivalence": "PASS_64_OF_64",
+        "batch_size_8_speedup": 0.497574,
+        "batch_sizes_not_run_after_throughput_regression": [
+          16,
+          32,
+          64
+        ],
+        "report": "Reports/phase_1_independent_batching_report.md",
+        "result": "Reports/results/phase1_independent_batch_equivalence.json",
+        "selected_batch_size": 1,
+        "status": "PASS_EQUIVALENCE_THROUGHPUT_REJECTED"
+      },
+      "last_gate_errors": [],
+      "last_valid_sample": {
+        "beta": 1,
+        "budget_type": "B_inf",
+        "position": 512,
+        "representation": "binary",
+        "sample_id": 600,
+        "seed": 42
+      },
+      "optimization_equivalence": {
+        "benchmark_resumed": false,
+        "completed_items": 45,
+        "report": "Reports/phase_1_optimization_report.md",
+        "speedup_factor": 4.51743192525446,
+        "status": "PASS",
+        "total_items": 45
+      },
+      "pause_state": "Reports/checkpoints/phase1_pause_state.json",
+      "started_at": "2026-09-21T04:58:05.115300+00:00",
+      "status": "RUNNING",
+      "updated_at": "2026-09-22T03:58:27.229807+00:00"
+    }
+  },
+  "project": "SNN + TEMP-DRIFT spike-retiming attack benchmark",
+  "reason": "Phase 1 optimized runner active: nmnist_seed123_integer_B1_750 375/1000.",
+  "status": "RUNNING",
+  "updated_at": "2026-09-22T15:29:10.779403+00:00"
+}

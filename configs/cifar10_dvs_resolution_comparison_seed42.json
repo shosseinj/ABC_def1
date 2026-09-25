@@ -1,0 +1,39 @@
+{
+  "dataset": "CIFAR10-DVS",
+  "data_root": "data/cifar10_dvs",
+  "split_seed": 42,
+  "model_seed": 42,
+  "temporal_bins": 10,
+  "batch_size": 16,
+  "optimizer": "AdamW",
+  "learning_rate": 0.001,
+  "weight_decay": 1e-4,
+  "gradient_clip_norm": 1.0,
+  "scheduler": {
+    "type": "ReduceLROnPlateau",
+    "mode": "max",
+    "factor": 0.5,
+    "patience": 8,
+    "min_lr": 1e-6,
+    "step_on": "validation_accuracy"
+  },
+  "checkpoint_rule": "highest validation accuracy, then lowest validation loss, then earliest epoch",
+  "device": "cuda",
+  "resolutions": {
+    "128x128": {
+      "sensor_size": [128, 128],
+      "downsample_factor": 1,
+      "max_epochs": 80,
+      "early_stop_patience": 15
+    },
+    "64x64": {
+      "sensor_size": [64, 64],
+      "downsample_factor": 2,
+      "max_epochs": 80,
+      "early_stop_patience": 15
+    }
+  },
+  "attacks_enabled": false,
+  "defenses_enabled": false,
+  "held_out_enabled": false
+}

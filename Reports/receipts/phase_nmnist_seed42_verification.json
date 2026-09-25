@@ -1,0 +1,66 @@
+{
+  "status": "PASS",
+  "scope": "N-MNIST Binary seed 42 only",
+  "commands": [
+    "C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe -u scripts/verify_nmnist_seed42_clean.py",
+    "C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe -u scripts/verify_nmnist_seed42_attacks.py --log Reports/logs/nmnist_seed42_verification/phase2_attack_audit_20260925_113031.log",
+    "C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe -m pytest tests/test_benchmark_contract.py -q",
+    "git diff --check"
+  ],
+  "artifacts": [
+    {
+      "path": "Reports/nmnist_seed42_verification.md",
+      "sha256": "1d3dfe8471f8435579ddadc8d4631316525b219f75124844defe6aa5aad3c18a"
+    },
+    {
+      "path": "Reports/results/nmnist_seed42_verification/seed42_clean_verification.json",
+      "sha256": "7aab179200043d6f7357c477078e2f3454c1b7f6efd68ae4b77923bd2cde0645"
+    },
+    {
+      "path": "Reports/results/nmnist_seed42_verification/seed42_clean_predictions.npz",
+      "sha256": "35d1dea7878bdb9cf775b2a57d3f2b0bc4ff667f5181be173fc3a124ff8e9af7"
+    },
+    {
+      "path": "Reports/results/nmnist_seed42_verification/seed42_attack_verification.json",
+      "sha256": "c426c4aa5969c8e04d416d4d7cb4ea377baac9b3dfcdc2bedaf0ed93e8dac955"
+    },
+    {
+      "path": "Reports/logs/nmnist_seed42_verification/phase1_clean_20260925_114016.log",
+      "sha256": "8003f06803498a1ee9ea149eb0086546b32abcd1993b0e45ae4c84faadbe1a20"
+    },
+    {
+      "path": "Reports/logs/nmnist_seed42_verification/phase2_attack_audit_20260925_113031.log",
+      "sha256": "d8972352cce1275723f3376e26016e71864041d9920f57cebd739262d7ec0873"
+    },
+    {
+      "path": "scripts/verify_nmnist_seed42_clean.py",
+      "sha256": "6d522edea5a7033929d2bc0eed64aedfb4a1a7ce07f06b0b29d77c049d9fdc3d"
+    },
+    {
+      "path": "scripts/verify_nmnist_seed42_attacks.py",
+      "sha256": "928db84fb95edba6e92d94eab3f0617beeb535a516024ef9177000a99f06d5a1"
+    },
+    {
+      "path": "README.md",
+      "sha256": "cf3146910adea57b733d06d596c836f7692fb6b7d38790ea2dc17b2ecc384017"
+    },
+    {
+      "path": "readme_jafar.md",
+      "sha256": "a20079cb58a2c7675ecb9278cbdce7ac3c01edd6acfade17b47f1b99e3141da7"
+    }
+  ],
+  "tests": [
+    "clean gate PASS: 9873/10000, 98.73% accuracy, 98.7183% macro-F1",
+    "batch-size 1 versus 64: 0/10000 prediction mismatches",
+    "input-only duplicate and train/test overlap checks PASS",
+    "all 9 attack cells and 9000 records independently audited: PASS",
+    "tests/test_benchmark_contract.py: 6 passed",
+    "git diff --check: PASS"
+  ],
+  "limitations": [
+    "Local results are NON_COMPARABLE to paper Table 1 because temporal binning, model/checkpoint, and attacked subset differ.",
+    "The historical Binary training runner hard-coded its effective configuration instead of loading the standalone count-frame config.",
+    "Historical attack metadata did not serialize an attack source/config hash or complete interpreter command; current source inspection, artifact reconstruction, and ten fresh exact reproductions bound this provenance limitation.",
+    "No retraining and no new attack generation were performed because the frozen evidence passed verification."
+  ]
+}

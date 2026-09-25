@@ -11,10 +11,11 @@ results/*.json
 data/*
 # Reports/*
 docs/*
+.opencode/*
 
 results/
 *.csv
-*.json
+# *.json
 !package.json
 !*.config.json
 

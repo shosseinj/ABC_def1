@@ -1,0 +1,24 @@
+{
+  "command": "\"C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe\" -m unittest discover -s ResearchLoop/tests -v",
+  "coverage": [
+    "B_inf/B1/B0",
+    "timeline",
+    "packet identity/count",
+    "line/polarity/spatial identity",
+    "unit value/amplitude",
+    "capacity-1",
+    "integer packet expansion",
+    "clean-correct ASR",
+    "deterministic subset",
+    "SHA-256 and atomic JSON manifest",
+    "frame norms"
+  ],
+  "errors": 0,
+  "failures": 0,
+  "generated_at": "2026-09-20T10:53:16.236667+00:00",
+  "independence": "strict_project outputs are checked by the separately implemented audit_retiming function",
+  "log_path": "Reports/logs/phase_0_5_contract_tests.log",
+  "log_sha256": "bf6e008d8b45bdf05a4790eb123f19be22d3633b6c640568919c0f60e99b6425",
+  "status": "PASS",
+  "tests_run": 11
+}

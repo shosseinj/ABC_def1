@@ -1,0 +1,69 @@
+{
+  "artifacts": [
+    {
+      "bytes": 16109,
+      "path": "Reports/benchmark_specification.json",
+      "sha256": "6caf482061a699835eaaf78a0c4e157b8e44c6cbdf56e241ee9af9391710735d"
+    },
+    {
+      "bytes": 7383,
+      "path": "Reports/benchmark_specification.md",
+      "sha256": "41cee318460dc5769fd42ed7a7e579293780ba0474d8b96e346b73efe71dcf20"
+    },
+    {
+      "bytes": 1717,
+      "path": "Reports/phase_0_75_report.md",
+      "sha256": "524dd99f41d80ed7127a67973cdb203011021d5107853a1ccc7f78474df43769"
+    },
+    {
+      "bytes": 9473,
+      "path": "Reports/results/benchmark_checkpoint_validation.json",
+      "sha256": "6ef408d0f7cb1d3921343838db641cbb4ccdeddb692b784872d1877e2845a1c4"
+    },
+    {
+      "bytes": 16176,
+      "path": "Reports/logs/phase_0_75_checkpoint_validation.log",
+      "sha256": "d5895185033a39f6a06fbc5782de972b4aa9d07ceb310fbb999f297b32005ece"
+    },
+    {
+      "bytes": 1126,
+      "path": "Reports/logs/phase_0_75_final_contract_tests.log",
+      "sha256": "24bcee5a3c0fc7b63e68617b5a7085f6c7eb21089180e1d71dadb79771e35cf9"
+    },
+    {
+      "bytes": 88,
+      "path": "Reports/logs/phase_0_75_gate_attempt_4.log",
+      "sha256": "13dd3f974a5766590726bc2c6cb98dedc48706250233c584ecbd5c147cfcfea5"
+    },
+    {
+      "bytes": 7893,
+      "path": "attacks/pil_pgd.py",
+      "sha256": "06fcdc32a5e7dfc37830060026a8de780dbe2f83037f2e80fdce1abc900a2977"
+    }
+  ],
+  "commands": [
+    "\"C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe\" -m ResearchLoop.tools.validate_benchmark_checkpoints",
+    "\"C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe\" -m unittest discover -s ResearchLoop/tests -v",
+    "\"C:\\Users\\jafari.h.SPADANACO\\Desktop\\ai_project\\.venv\\Scripts\\python.exe\" ResearchLoop/tools/gate.py <project-root> ResearchLoop/config.json 0_75"
+  ],
+  "gate": {
+    "log": "Reports/logs/phase_0_75_gate_attempt_4.log",
+    "status": "PASS"
+  },
+  "generated_at": "2026-09-21T04:55:29.623242+00:00",
+  "limitations": [
+    "Binary clean accuracy is low for repository DVS-Gesture/CIFAR10-DVS models trained on normalized count inputs; comparisons are non-comparable unless exact matching is demonstrated."
+  ],
+  "phase": "0_75",
+  "status": "PASS",
+  "tests": [
+    {
+      "checkpoint_matrix": "PASS",
+      "validated": 9
+    },
+    {
+      "contract_suite": "PASS",
+      "tests": 13
+    }
+  ]
+}

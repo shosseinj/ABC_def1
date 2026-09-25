@@ -1,0 +1,376 @@
+{
+  "asr": {
+    "definition": "100 * attack_success_count / clean_correct_count",
+    "denominator": "stored explicitly and never changed between budget cells",
+    "eligibility": "correct under both frozen binary and integer clean representations",
+    "manifest": "one immutable dataset/model/seed manifest reused for every representation, budget family, and beta"
+  },
+  "attack": {
+    "alpha": 1.0,
+    "backward": "soft retiming straight-through surrogate",
+    "budget_penalty": 10.0,
+    "capacity_penalty": 20.0,
+    "final_evaluation": "exact returned strict tensor is evaluated and retained",
+    "forward": "strict projected tensor",
+    "implementation": "attacks/pil_pgd.py",
+    "iterations": {
+      "B0": 40,
+      "B1": 40,
+      "B_inf": 20
+    },
+    "logit_clip": 10.0,
+    "name": "PIL-PGD timing-only retiming",
+    "temperature": 1.0,
+    "threat_model": "untargeted white-box"
+  },
+  "auditor": {
+    "checks": [
+      "packet IDs/count",
+      "fixed event line including x/y/polarity",
+      "fixed value/amplitude",
+      "integer timeline",
+      "capacity-1",
+      "B_inf",
+      "B1",
+      "B0"
+    ],
+    "implementation": "ResearchLoop/core/audit.py",
+    "independence": "does not invoke attack projection",
+    "serialization": "displacements reconstruct the exact strict model-evaluated tensor"
+  },
+  "budgets": {
+    "B0": "count_i[t_adv[i]!=t_clean[i]] <= beta",
+    "B1": "sum_i |t_adv[i]-t_clean[i]| <= beta",
+    "B_inf": "max_i |t_adv[i]-t_clean[i]| <= beta",
+    "reporting": "all three realized values stored for every sample"
+  },
+  "checkpoint_policy": "Exactly seeds 42, 123, and 777. A checkpoint is accepted only after strict architecture load, seed/config/parameter/hash/provenance checks, clean evaluation, and atomic validated marker. Seeds 2026 and 6543 are outside this benchmark.",
+  "comparison_policy": "PAPER_COMPARABLE only if dataset, representation, T, model, attack, budget, denominator, and attacked subset all exactly match; current repository-model rows default NON_COMPARABLE unless an exact match is demonstrated.",
+  "datasets": {
+    "CIFAR10-DVS": {
+      "budgets": {
+        "binary": {
+          "B0": [
+            1000,
+            2000,
+            4000,
+            8000
+          ],
+          "B1": [
+            2000,
+            4000,
+            8000,
+            16000
+          ],
+          "B_inf": [
+            1,
+            2,
+            3
+          ]
+        },
+        "integer": {
+          "B0": [
+            1000,
+            2000,
+            4000,
+            8000
+          ],
+          "B1": [
+            2000,
+            4000,
+            8000,
+            16000
+          ],
+          "B_inf": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "checkpoints": [
+        {
+          "binary_clean_accuracy": 0.122,
+          "checkpoint": "checkpoints\\cifar10_dvs_snn_seed42_best.pt",
+          "checkpoint_sha256": "7f0c6a4af012082a79c15296191520146ad612f4d60a9478f593a500d9a5d7d7",
+          "clean_correct_denominator": 70,
+          "config": "configs\\cifar10_dvs_snn_seed42.json",
+          "config_sha256": "7ec04aa66cc3e43cd8484829f2f2dcdf349885b5df38363f3c8212de405021ae",
+          "integer_clean_accuracy": 0.391,
+          "manifest": "Reports\\checkpoints\\cifar10_dvs_seed42_clean_correct_manifest.json",
+          "manifest_sha256": "5574cff5b2d9dac5ae33cd30a297fa4d415fdc828cd9773c1b7a36d80a6cfcc8",
+          "parameters": 187402,
+          "seed": 42,
+          "split": "results\\cifar10_dvs_snn_seed42_split.json",
+          "split_sha256": "b2bf0cb84169112cfa70f8b59f00964e34f6c3d5ace200865fe2a757f7f977c8"
+        },
+        {
+          "binary_clean_accuracy": 0.186,
+          "checkpoint": "checkpoints\\cifar10_dvs_snn_seed123_best.pt",
+          "checkpoint_sha256": "1712510c621f021b312a70fdc8457f0237722fbb3bdf96e3a62f010fc4f4ce12",
+          "clean_correct_denominator": 100,
+          "config": "configs\\cifar10_dvs_snn_seed42.json",
+          "config_sha256": "7ec04aa66cc3e43cd8484829f2f2dcdf349885b5df38363f3c8212de405021ae",
+          "integer_clean_accuracy": 0.492,
+          "manifest": "Reports\\checkpoints\\cifar10_dvs_seed123_clean_correct_manifest.json",
+          "manifest_sha256": "ff71e67a47b405289f02e57e647c59264956976fd3356c014ea42c84a1139143",
+          "parameters": 187402,
+          "seed": 123,
+          "split": "results\\cifar10_dvs_snn_seed42_split.json",
+          "split_sha256": "b2bf0cb84169112cfa70f8b59f00964e34f6c3d5ace200865fe2a757f7f977c8"
+        },
+        {
+          "binary_clean_accuracy": 0.173,
+          "checkpoint": "checkpoints\\cifar10_dvs_snn_seed777_best.pt",
+          "checkpoint_sha256": "61702677146897c241bcc6504231b5f51a083aee82f9566ba6ecd770d88dbe06",
+          "clean_correct_denominator": 100,
+          "config": "configs\\cifar10_dvs_snn_seed42.json",
+          "config_sha256": "7ec04aa66cc3e43cd8484829f2f2dcdf349885b5df38363f3c8212de405021ae",
+          "integer_clean_accuracy": 0.503,
+          "manifest": "Reports\\checkpoints\\cifar10_dvs_seed777_clean_correct_manifest.json",
+          "manifest_sha256": "c581f23ce795e87bed4316ebedf9143f936afa02093a152e8e9b8c2ed6df7714",
+          "parameters": 187402,
+          "seed": 777,
+          "split": "results\\cifar10_dvs_snn_seed42_split.json",
+          "split_sha256": "b2bf0cb84169112cfa70f8b59f00964e34f6c3d5ace200865fe2a757f7f977c8"
+        }
+      ],
+      "event_format": "Tonic structured events (x,y,t,p), sensor 128x128x2",
+      "model": "CIFAR10DVSConvSNN",
+      "preprocessing": "Per-sample timestamps mapped to 10 equal-duration bins; polarity-separated 128x128 additive counts with per-sample max normalization for repository model; binary grid is presence(count>0).",
+      "representations": [
+        "binary",
+        "integer"
+      ],
+      "split": "Tonic dataset has no official split; frozen seed-42 class-stratified 80/10/10 train/validation/test indices; attacked set is 100 deterministic test samples clean-correct under both representations per model seed.",
+      "subset_size": 100
+    },
+    "DVS-Gesture": {
+      "budgets": {
+        "binary": {
+          "B0": [
+            1000,
+            2000,
+            4000,
+            8000
+          ],
+          "B1": [
+            2000,
+            4000,
+            8000,
+            16000
+          ],
+          "B_inf": [
+            1,
+            2,
+            3
+          ]
+        },
+        "integer": {
+          "B0": [
+            1000,
+            2000,
+            4000,
+            8000
+          ],
+          "B1": [
+            2000,
+            4000,
+            8000,
+            16000
+          ],
+          "B_inf": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "checkpoints": [
+        {
+          "binary_clean_accuracy": 0.125,
+          "checkpoint": "checkpoints\\dvs_gesture_snn_seed42_best.pt",
+          "checkpoint_sha256": "b3faa98397d7abf138dfe255e8512ab87b241208b86fdaeba770f5546db889ab",
+          "clean_correct_denominator": 30,
+          "config": "configs\\dvs_gesture_snn_multiseed.json",
+          "config_sha256": "8003fa21389e1898eb1c56eb0877e7adb959316d8ec98bc5c19152234310a7c7",
+          "integer_clean_accuracy": 0.8409090909090909,
+          "manifest": "Reports\\checkpoints\\dvs_gesture_seed42_clean_correct_manifest.json",
+          "manifest_sha256": "6140be41cbc85f9244dedd5134371840b05672fe408b24ae7ed282119fd4df11",
+          "parameters": 242315,
+          "seed": 42,
+          "split": "Reports\\results\\dvs_gesture_split.json",
+          "split_sha256": "debea292d903f69f0fa044207e28f355a21750c16a67f66fea602a6ec2a632e4"
+        },
+        {
+          "binary_clean_accuracy": 0.19318181818181818,
+          "checkpoint": "checkpoints\\dvs_gesture_snn_seed123_best.pt",
+          "checkpoint_sha256": "f8c72f439f4db7d4edd1d3ed1ecd35001fe6a6da94c77c01f5fea7e363cd0323",
+          "clean_correct_denominator": 38,
+          "config": "configs\\dvs_gesture_snn_multiseed.json",
+          "config_sha256": "8003fa21389e1898eb1c56eb0877e7adb959316d8ec98bc5c19152234310a7c7",
+          "integer_clean_accuracy": 0.7803030303030303,
+          "manifest": "Reports\\checkpoints\\dvs_gesture_seed123_clean_correct_manifest.json",
+          "manifest_sha256": "fa4f30966209980518c7ac59fa22f6fdd09bea1fb653d7605a74fc668d4046b5",
+          "parameters": 242315,
+          "seed": 123,
+          "split": "Reports\\results\\dvs_gesture_split.json",
+          "split_sha256": "debea292d903f69f0fa044207e28f355a21750c16a67f66fea602a6ec2a632e4"
+        },
+        {
+          "binary_clean_accuracy": 0.0946969696969697,
+          "checkpoint": "checkpoints\\dvs_gesture_snn_seed777_best.pt",
+          "checkpoint_sha256": "255f1d62aec0e3605bdb1a853d24a34e19c044cae5490380a5908f38024dedcd",
+          "clean_correct_denominator": 24,
+          "config": "configs\\dvs_gesture_snn_multiseed.json",
+          "config_sha256": "8003fa21389e1898eb1c56eb0877e7adb959316d8ec98bc5c19152234310a7c7",
+          "integer_clean_accuracy": 0.8712121212121212,
+          "manifest": "Reports\\checkpoints\\dvs_gesture_seed777_clean_correct_manifest.json",
+          "manifest_sha256": "d9e6a4fd18bcc9132411c0ea1398ea225ad4cab40e7a76260eec6a2ffd60ab0a",
+          "parameters": 242315,
+          "seed": 777,
+          "split": "Reports\\results\\dvs_gesture_split.json",
+          "split_sha256": "debea292d903f69f0fa044207e28f355a21750c16a67f66fea602a6ec2a632e4"
+        }
+      ],
+      "event_format": "Tonic structured events (x,y,t,p), sensor 128x128x2",
+      "model": "DVSGestureConvSNN",
+      "preprocessing": "Official sample timestamps mapped to 10 equal-duration bins; coordinates downsampled 2x to 64x64; polarity-separated additive counts with per-sample max normalization for repository model; binary grid is presence(count>0).",
+      "representations": [
+        "binary",
+        "integer"
+      ],
+      "split": "Official train/test; deterministic seed-42 stratified 80/20 train/validation split; attacked set is all official-test samples clean-correct under both representations per model seed.",
+      "subset_size": "all eligible"
+    },
+    "N-MNIST": {
+      "budgets": {
+        "binary": {
+          "B0": [
+            200,
+            300,
+            400,
+            600
+          ],
+          "B1": [
+            500,
+            750,
+            1000,
+            1500
+          ],
+          "B_inf": [
+            1,
+            2,
+            3
+          ]
+        },
+        "integer": {
+          "B0": [
+            200,
+            300,
+            400,
+            600
+          ],
+          "B1": [
+            500,
+            750,
+            1000,
+            1500
+          ],
+          "B_inf": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      "checkpoints": [
+        {
+          "binary_clean_accuracy": 0.8548,
+          "checkpoint": "checkpoints\\nmnist_snn_clean_seed42_best.pt",
+          "checkpoint_sha256": "c1f941a16e0004d11d9aa73e2689d92357a32be007986d336a91a7d93b7b6f59",
+          "clean_correct_denominator": 1000,
+          "config": "configs\\nmnist_snn_clean_seed42.json",
+          "config_sha256": "41afe1f9456b576883e52d5f0e47af0c5edd5f6840862960d20756a4fc54dafd",
+          "integer_clean_accuracy": 0.9849,
+          "manifest": "Reports\\checkpoints\\n_mnist_seed42_clean_correct_manifest.json",
+          "manifest_sha256": "1839493222ca9f05637f83d29766b90112056f0b01988cc165a4898767700039",
+          "parameters": 25482,
+          "seed": 42,
+          "split": "results\\nmnist_snn_multiseed_split.json",
+          "split_sha256": "a12176ce117ab9a85dd29d277901f8617ad2b5427dd3f976dbba436942f70198"
+        },
+        {
+          "binary_clean_accuracy": 0.9565,
+          "checkpoint": "checkpoints\\nmnist_snn_clean_seed123_best.pt",
+          "checkpoint_sha256": "7382ca960d3c21e57105d29576910ef9e9362aed847e0fb40d145fd07c82b384",
+          "clean_correct_denominator": 1000,
+          "config": "configs\\nmnist_snn_clean_seed42.json",
+          "config_sha256": "41afe1f9456b576883e52d5f0e47af0c5edd5f6840862960d20756a4fc54dafd",
+          "integer_clean_accuracy": 0.9814,
+          "manifest": "Reports\\checkpoints\\n_mnist_seed123_clean_correct_manifest.json",
+          "manifest_sha256": "d169a7a2c37469baac8ed029cf9dceeae2c0444eef472df514bfb48eae80030f",
+          "parameters": 25482,
+          "seed": 123,
+          "split": "results\\nmnist_snn_multiseed_split.json",
+          "split_sha256": "a12176ce117ab9a85dd29d277901f8617ad2b5427dd3f976dbba436942f70198"
+        },
+        {
+          "binary_clean_accuracy": 0.8015,
+          "checkpoint": "checkpoints\\nmnist_snn_clean_seed777_best.pt",
+          "checkpoint_sha256": "a0fae10b20db29b99da8675cf8be1a98f4c3a0bf47422d6c22b170e4113a2030",
+          "clean_correct_denominator": 1000,
+          "config": "configs\\nmnist_snn_clean_seed42.json",
+          "config_sha256": "41afe1f9456b576883e52d5f0e47af0c5edd5f6840862960d20756a4fc54dafd",
+          "integer_clean_accuracy": 0.9853,
+          "manifest": "Reports\\checkpoints\\n_mnist_seed777_clean_correct_manifest.json",
+          "manifest_sha256": "6ace1cb472d34c879913deecbad0750560f59939c9954de9608769191290dea5",
+          "parameters": 25482,
+          "seed": 777,
+          "split": "results\\nmnist_snn_multiseed_split.json",
+          "split_sha256": "a12176ce117ab9a85dd29d277901f8617ad2b5427dd3f976dbba436942f70198"
+        }
+      ],
+      "event_format": "Tonic structured events (x,y,t,p), sensor 34x34x2",
+      "model": "NMNISTConvSNN",
+      "preprocessing": "Per-sample native timestamp range mapped by integer floor to 10 equal-duration bins; polarity-separated 34x34 additive uint8 count grid; binary grid is presence(count>0); integer grid retains count.",
+      "representations": [
+        "binary",
+        "integer"
+      ],
+      "split": "Official train/test; frozen seed-42 stratified train/validation split; attacked set is 1000 deterministic samples clean-correct under both representations per model seed.",
+      "subset_size": 1000
+    }
+  },
+  "frozen": true,
+  "frozen_at": "2026-09-21T04:55:29.619705+00:00",
+  "packetization": "Each nonzero event-line/time cell is a value-preserving packet. Binary value is 1; integer-grid packet retains its cell count/amplitude. No packet creation, deletion, splitting, line, polarity, spatial, or value change.",
+  "projection": {
+    "capacity": "at most one packet per event-line/time-bin",
+    "global_budget": "B1 distance and B0 move counters are shared across all lines in a sample",
+    "ordering": "candidates sorted by descending probability then shorter distance and stable source/target identity",
+    "reservation": "unmoved origins remain reserved; moved origins are released; symmetric overwrite swaps are prohibited",
+    "timeline": "targets restricted to [0,9]"
+  },
+  "reference": {
+    "budget_grid_sources": "project-requested locked grids; overlap with paper Tables 1/2 is compared only on exact matching cells",
+    "comparison_values": "ResearchLoop/reference/reference_results.csv; immutable contextual reference only",
+    "date": "2026-02-03",
+    "title": "Time Is All It Takes: Spike-Retiming Attacks on Event-Driven Spiking Neural Networks",
+    "url": "https://arxiv.org/html/2602.03284v1",
+    "version": "arXiv:2602.03284v1"
+  },
+  "seeds": [
+    42,
+    123,
+    777
+  ],
+  "statistics": {
+    "ci95": "two-sided Student-t interval with df=2 around seed mean",
+    "n": 3,
+    "sd": "sample standard deviation, ddof=1"
+  },
+  "time_bins": 10,
+  "timestamp_domain": "integer [0,9]",
+  "timestamp_unit": "discrete post-preprocessing time-bin index"
+}
