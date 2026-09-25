@@ -112,7 +112,7 @@ Clean-only evaluation of all requested seeds and both frozen representations is 
 
 ### N-MNIST benchmark tables with seed-matched clean accuracy
 
-While ASR is reported in seed-specific rows, each row uses the clean full-test accuracy from the same seed. This avoids mixing a three-seed mean accuracy with a single-seed ASR. The prior Binary ASRs generated against count-trained checkpoints remain excluded. The representation-matched Binary seed-42 row is complete, independently based on 1,000 clean-correct samples per budget cell, and all listed cells have status `PASS`. Seed 123 is only partially complete and seed 777 remains pending, so no three-seed aggregate attack row is reported. Evidence: `Reports/results/nmnist_binary_true_attacks/asr_by_seed.csv`.
+While ASR is reported in seed-specific rows, each row uses the clean full-test accuracy from the same seed. This avoids mixing a three-seed mean accuracy with a single-seed ASR. The prior Binary ASRs generated against count-trained checkpoints remain excluded. The representation-matched Binary seed-42 row is complete, independently based on 1,000 clean-correct samples per budget cell, and all listed cells have status `PASS`. Seed 123 is only partially complete and seed 777 remains pending, so no three-seed aggregate attack row is reported. **The local rows are `NON_COMPARABLE` to the paper rows because temporal binning, victim architecture/checkpoint, and attacked-subset selection differ.** See `Reports/nmnist_table1_audit.md` and `Reports/results/nmnist_binary_true_attacks/asr_by_seed.csv`.
 
 #### Table 1 — Binary-grid DVS, N-MNIST
 
@@ -121,9 +121,9 @@ While ASR is reported in seed-specific rows, each row uses the clean full-test a
 | N-MNIST | ConvNet | 99.06 | 100 | 100 | 100 | 58.9 | 99.9 | 100 | 13.0 | 53.1 | 98.5 |
 |  | ResNet18 | 99.62 | 100 | 100 | 100 | 69.2 | 97.4 | 100 | 78.9 | 100 | 100 |
 |  | VGGSNN | 99.64 | 98.9 | 100 | 100 | 26.4 | 65.5 | 94.7 | 18.3 | 81.8 | 99.8 |
-|  | **SNN (Ours), seed 42** | **98.73** | **82.9** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** |
-|  | **SNN (Ours), seed 123** | **98.29** | **74.1** | **100.0** | **100.0** | **99.8** | **100.0** | pending | pending | pending | pending |
-|  | **SNN (Ours), seed 777** | **98.53** | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+|  | **SNN (Ours; NON_COMPARABLE), seed 42** | **98.73** | **82.9** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** |
+|  | **SNN (Ours; NON_COMPARABLE), seed 123** | **98.29** | **74.1** | **100.0** | **100.0** | **99.8** | **100.0** | pending | pending | pending | pending |
+|  | **SNN (Ours; NON_COMPARABLE), seed 777** | **98.53** | pending | pending | pending | pending | pending | pending | pending | pending |
 
 Final representation-matched clean accuracy across seeds 42, 123, and 777: **98.52 ± 0.22%** (95% t CI 97.97–99.06%).
 
