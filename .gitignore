@@ -9,7 +9,7 @@ checkpoints/*.pt
 results/*.csv
 results/*.json
 data/*
-Reports/*
+# Reports/*
 docs/*
 
 results/
@@ -44,9 +44,9 @@ venv/
 *.pkl
 *.joblib
 
-# Checkpoints & logs
-Reports/checkpoints/
-Reports/logs/
+# # Checkpoints & logs
+# Reports/checkpoints/
+# Reports/logs/
 checkpoints/
 logs/
 
