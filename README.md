@@ -110,7 +110,7 @@ Phase 1 now uses the amended amplitude-bearing-cell contract. Integer amplitudes
 
 > **Corrected Phase A active:** New N-MNIST strict Integer-only manifests are complete for seeds 42, 123, and 777. Each contains 1,000 samples selected deterministically only from that seed's Integer-clean-correct official-test predictions, with no Binary dependency. Corrected attacks write only under `Reports/results/nmnist_integer_corrected/`; the first condition (seed 42, $B_\infty=1$) independently passed at 84.70% ASR, and the remaining resumable conditions are running. Legacy intersection-based Integer rows are excluded from final tables.
 
-> **True N-MNIST Binary clean training PASS (2026-09-23):** Independently initialized Binary-grid checkpoints were trained with occupancy inputs in both training and evaluation. Full official-test accuracies are 98.73% (seed 42), 98.29% (seed 123), and 98.53% (seed 777), giving **98.52 ± 0.22%** (sample SD; 95% t CI 97.97–99.06%). All three use all classes and pass the class-collapse check. These results supersede the invalid 85.48%, 95.65%, and 80.15% count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/nmnist_binary_true/`.
+> **N-MNIST Binary seed-42 independent verification PASS (2026-09-25):** The frozen custom SNN has exactly **25,482** trainable parameters and independently achieved **98.73% accuracy (9,873/10,000)** and **98.7183% macro-F1** on the complete official test partition at batch size 64. Batch sizes 1 and 64 produced identical predictions. Dataset, split, duplicate/overlap, preprocessing, label, checkpoint-selection, and evaluation checks passed. All nine seed-42 attack cells also passed independent 1,000-sample reconstruction and prediction audits. These local results are **`NON_COMPARABLE`** to the paper because preprocessing, model/checkpoint, and sample selection differ. See `Reports/nmnist_seed42_verification.md`.
 
 > **True DVS-Gesture Binary clean training PASS (2026-09-23):** Representation-matched full official-test accuracies are 78.79% (seed 42), 80.68% (seed 123), and 84.47% (seed 777), giving **81.31 ± 2.89%**. All class-collapse checks pass. These results supersede the invalid 12.50%, 19.32%, and 9.47% normalized-count-checkpoint-on-Binary evaluations. Evidence: `Reports/results/dvs_gesture_binary_true/`.
 
@@ -126,7 +126,20 @@ Clean-only evaluation of all requested seeds and both frozen representations is 
 
 ### N-MNIST benchmark tables with seed-matched clean accuracy
 
-While ASR is reported in seed-specific rows, each row uses the clean full-test accuracy from the same seed. This avoids mixing a three-seed mean accuracy with a single-seed ASR. The prior Binary ASRs generated against count-trained checkpoints remain excluded. The representation-matched Binary seed-42 row is complete, independently based on 1,000 clean-correct samples per budget cell, and all listed cells have status `PASS`. Seed 123 is only partially complete and seed 777 remains pending, so no three-seed aggregate attack row is reported. Evidence: `Reports/results/nmnist_binary_true_attacks/asr_by_seed.csv`.
+This verification table reports **seed 42 only**. The custom-SNN row uses the independently measured full-test accuracy and 1,000 clean-correct samples in every attack cell. Prior Binary ASRs generated against count-trained checkpoints remain excluded. **The local row is `NON_COMPARABLE` to the paper rows because temporal binning, victim architecture/checkpoint, and attacked-subset selection differ.** See `Reports/nmnist_seed42_verification.md`.
+
+#### Exact N-MNIST trainable parameter counts
+
+Counts use `sum(p.numel() for p in model.parameters() if p.requires_grad)`. BatchNorm running statistics are buffers and are excluded; the configured non-parametric `LIFNode`s add no trainable parameters. The official N-MNIST YAML files were removed from the latest upstream tree but remain in upstream commit `f16738f80be94067223f4968c1c318a125b9a321`; the model-source blobs are unchanged in the current upstream commit.
+
+| Model | Exact configured constructor | Trainable parameters | Evidence |
+|---|---|---:|---|
+| **SNN (Ours)** | `NMNISTConvSNN(decay=0.5, n_classes=10)` | **25,482** | `models/nmnist_snn.py`; instantiated by `scripts/run_nmnist_binary_true_attacks.py` |
+| Paper **ConvNet** | `simplenet_v2(num_classes=10, img_size=(2,34,34), T=10)` | **299,264** | [N-MNIST config](https://github.com/yuyi-sd/Spike-Retiming-Attacks/blob/f16738f80be94067223f4968c1c318a125b9a321/configs/PGDTimeShiftL1_simplenet_v2_nmnist_binary.yaml); [`SimpleNet_v2`](https://github.com/yuyi-sd/Spike-Retiming-Attacks/blob/f16738f80be94067223f4968c1c318a125b9a321/models/simplenet.py#L50-L76) |
+| Paper **Spiking ResNet18** | `spiking_resnet18(num_classes=10, img_size=(2,34,34), T=10)` | **11,173,386** | [N-MNIST config](https://github.com/yuyi-sd/Spike-Retiming-Attacks/blob/f16738f80be94067223f4968c1c318a125b9a321/configs/PGDTimeShiftL1_resnet18_nmnist_binary.yaml); [`ResNet18`](https://github.com/yuyi-sd/Spike-Retiming-Attacks/blob/f16738f80be94067223f4968c1c318a125b9a321/models/resnet.py#L6-L69) |
+| Paper **VGGSNN** | `spiking_vggsnn(num_classes=10, img_size=(2,34,34), T=10)` | **9,227,786** | [N-MNIST config](https://github.com/yuyi-sd/Spike-Retiming-Attacks/blob/f16738f80be94067223f4968c1c318a125b9a321/configs/PGDTimeShiftL1_vggsnn_nmnist_binary.yaml); [`VGGSNN`](https://github.com/yuyi-sd/Spike-Retiming-Attacks/blob/f16738f80be94067223f4968c1c318a125b9a321/models/vgg.py#L50-L98) |
+
+The paper's configured ConvNet is `simplenet_v2`; counting the separate generic `simplenet` v1 definition would incorrectly give approximately 2.40 million parameters.
 
 #### Table 1 — Binary-grid DVS, N-MNIST
 
@@ -135,13 +148,9 @@ While ASR is reported in seed-specific rows, each row uses the clean full-test a
 | N-MNIST | ConvNet | 99.06 | 100 | 100 | 100 | 58.9 | 99.9 | 100 | 13.0 | 53.1 | 98.5 |
 |  | ResNet18 | 99.62 | 100 | 100 | 100 | 69.2 | 97.4 | 100 | 78.9 | 100 | 100 |
 |  | VGGSNN | 99.64 | 98.9 | 100 | 100 | 26.4 | 65.5 | 94.7 | 18.3 | 81.8 | 99.8 |
-|  | **SNN (Ours), seed 42** | **98.73** | **82.9** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** |
-|  | **SNN (Ours), seed 123** | **98.29** | **74.1** | **100.0** | **100.0** | **99.8** | **100.0** | pending | pending | pending | pending |
-|  | **SNN (Ours), seed 777** | **98.53** | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+|  | **Custom SNN (ours; verified seed 42; NON_COMPARABLE)** | **98.73** | **82.9** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** |
 
-Final representation-matched clean accuracy across seeds 42, 123, and 777: **98.52 ± 0.22%** (95% t CI 97.97–99.06%).
-
-The attack values above are seed-specific ASR percentages, not a three-seed mean. Seed 42 has 1,000/1,000 audited samples in every displayed budget cell. For seed 123, only the displayed completed cells are currently supported; unavailable cells remain explicitly `pending`.
+The attack values are independently verified seed-42 ASR percentages, not a multi-seed mean. The denominator is the same frozen manifest of 1,000 clean-correct samples in every cell. Every active budget was realized exactly; packet identity/count/amplitude, total mass, event line, temporal domain, collision freedom, reconstruction, and predictions passed. The 100% cells mean 1,000/1,000 successes under the frozen local protocol.
 
 #### Table 2 — Integer-grid DVS, N-MNIST
 
