@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parents[1]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
-from models.improved_event_snn import ImprovedEventConvSNN
+from models.improved_event_snn import ImprovedEventConvSNN, ResidualEventConvSNN
 
 PYTHON = Path(r"C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\Scripts\python.exe")
 CONFIG_PATH = ROOT / "configs/clean_improved.config.json"
@@ -222,12 +222,28 @@ def augment_batch(frames: torch.Tensor, dataset: str) -> torch.Tensor:
     if flip_probability:
         mask = torch.rand(len(frames), device=frames.device) < flip_probability
         frames[mask] = frames[mask].flip(-1)
+    if dataset == "cifar10_dvs" and CONFIG["cifar_rotation_degrees"]:
+        # One nearest-neighbor spatial rotation per sample, shared by all T/C.
+        radians = ((torch.rand(len(frames), device=frames.device) * 2.0 - 1.0) *
+                   float(CONFIG["cifar_rotation_degrees"]) * math.pi / 180.0)
+        theta = torch.zeros((len(frames), 2, 3), device=frames.device,
+                            dtype=frames.dtype)
+        theta[:, 0, 0] = radians.cos(); theta[:, 0, 1] = -radians.sin()
+        theta[:, 1, 0] = radians.sin(); theta[:, 1, 1] = radians.cos()
+        packed = frames.flatten(1, 2)
+        grid = F.affine_grid(theta, packed.shape, align_corners=False)
+        frames = F.grid_sample(packed, grid, mode="nearest", padding_mode="zeros",
+                               align_corners=False).unflatten(1, (10, 2))
     if dataset == "cifar10_dvs" and CONFIG["cifar_cutout_size"]:
         size = int(CONFIG["cifar_cutout_size"])
         tops = torch.randint(0, 129 - size, (len(frames),), device=frames.device)
         lefts = torch.randint(0, 129 - size, (len(frames),), device=frames.device)
         for index, (top, left) in enumerate(zip(tops.tolist(), lefts.tolist())):
             frames[index, :, :, top:top + size, left:left + size] = 0
+    if dataset == "cifar10_dvs" and CONFIG["cifar_event_dropout"]:
+        # Drop occupied cells without rescaling surviving Binary/Integer amplitudes.
+        keep = torch.rand_like(frames) >= float(CONFIG["cifar_event_dropout"])
+        frames = frames * keep
     return frames
 
 
@@ -279,22 +295,47 @@ def train_one(dataset: str, representation: str, seed: int, mode: str,
     pools = (CONFIG["dvs_pools"] if dataset == "dvs_gesture" else
              CONFIG["cifar_pools"])
     pool_after_spike = dataset == "cifar10_dvs"
-    model = ImprovedEventConvSNN(
-        n_classes=n_classes, channels=channels,
-        decay=CONFIG["lif_decay"], threshold=CONFIG["lif_threshold"],
-        readout_size=CONFIG["readout_size"],
-        pool_after_spike=pool_after_spike, pools=pools,
-        feature_dropout=(CONFIG["cifar_feature_dropout"]
-                         if dataset == "cifar10_dvs" else 0.0)).to(device)
+    if dataset == "cifar10_dvs" and CONFIG["cifar_architecture"] == "residual":
+        model = ResidualEventConvSNN(
+            n_classes=n_classes,
+            stem_channels=CONFIG["cifar_residual_stem_channels"],
+            stage_channels=CONFIG["cifar_residual_stage_channels"],
+            decay=CONFIG["lif_decay"], threshold=CONFIG["lif_threshold"],
+            readout_size=CONFIG["cifar_readout_size"],
+            feature_dropout=CONFIG["cifar_feature_dropout"]).to(device)
+    else:
+        model = ImprovedEventConvSNN(
+            n_classes=n_classes, channels=channels,
+            decay=CONFIG["lif_decay"], threshold=CONFIG["lif_threshold"],
+            readout_size=(CONFIG["cifar_readout_size"]
+                          if dataset == "cifar10_dvs" else CONFIG["readout_size"]),
+            pool_after_spike=pool_after_spike, pools=pools,
+            feature_dropout=(CONFIG["cifar_feature_dropout"]
+                             if dataset == "cifar10_dvs" else 0.0),
+            normalization=(CONFIG["cifar_normalization"]
+                           if dataset == "cifar10_dvs" else "batch"),
+            temporal_attention=(CONFIG["cifar_temporal_attention"]
+                                if dataset == "cifar10_dvs" else False)).to(device)
+    weight_decay = (CONFIG["cifar_weight_decay"] if dataset == "cifar10_dvs"
+                    else CONFIG["weight_decay"])
     optimizer = torch.optim.AdamW(model.parameters(), lr=CONFIG["learning_rate"],
-                                  weight_decay=CONFIG["weight_decay"])
-    epochs = int(epochs_override or (CONFIG["development_epochs"] if mode == "develop"
-                                     else CONFIG["max_epochs"]))
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
-        optimizer, T_max=epochs, eta_min=1e-6)
-    scaler = torch.amp.GradScaler("cuda", enabled=bool(CONFIG["amp"]))
+                                  weight_decay=weight_decay)
     batch_size = int(CONFIG["dvs_batch_size"] if dataset == "dvs_gesture"
                      else CONFIG["cifar_batch_size"])
+    epochs = int(epochs_override or (CONFIG["development_epochs"] if mode == "develop"
+                                     else CONFIG["max_epochs"]))
+    scheduler_per_batch = (dataset == "cifar10_dvs" and
+                           CONFIG["cifar_scheduler"] == "OneCycleLR")
+    if scheduler_per_batch:
+        scheduler = torch.optim.lr_scheduler.OneCycleLR(
+            optimizer, max_lr=CONFIG["learning_rate"], epochs=epochs,
+            steps_per_epoch=math.ceil(len(split["train_indices"]) / batch_size),
+            pct_start=CONFIG["cifar_onecycle_pct_start"], div_factor=10.0,
+            final_div_factor=1000.0)
+    else:
+        scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(
+            optimizer, T_max=epochs, eta_min=1e-6)
+    scaler = torch.amp.GradScaler("cuda", enabled=bool(CONFIG["amp"]))
     validation_loader = make_loader(
         train_frames, train_labels, split["validation_indices"], batch_size,
         False, seed, dataset)
@@ -352,15 +393,18 @@ def train_one(dataset: str, representation: str, seed: int, mode: str,
                 temporal_loss = (dataset == "cifar10_dvs" and
                                  CONFIG["cifar_temporal_ensemble_loss"])
                 temporal_logits = model(frames, return_sequence=temporal_loss)
-                logits = (temporal_logits.mean(dim=1) if temporal_loss else
-                          temporal_logits)
+                logits = (model.aggregate_logits(temporal_logits)
+                          if temporal_loss and hasattr(model, "aggregate_logits") else
+                          temporal_logits.mean(dim=1) if temporal_loss else temporal_logits)
                 smoothing = (CONFIG["cifar_label_smoothing"]
                              if dataset == "cifar10_dvs" else 0.0)
                 if temporal_loss:
                     repeated_labels = labels[:, None].expand(-1, temporal_logits.shape[1])
-                    loss = F.cross_entropy(
+                    auxiliary_loss = F.cross_entropy(
                         temporal_logits.flatten(0, 1), repeated_labels.flatten(),
                         label_smoothing=smoothing)
+                    loss = (F.cross_entropy(logits, labels, label_smoothing=smoothing) +
+                            CONFIG["cifar_temporal_auxiliary_weight"] * auxiliary_loss)
                 else:
                     loss = F.cross_entropy(logits, labels, label_smoothing=smoothing)
             scaler.scale(loss).backward()
@@ -369,6 +413,8 @@ def train_one(dataset: str, representation: str, seed: int, mode: str,
                                            CONFIG["gradient_clip_norm"])
             scaler.step(optimizer)
             scaler.update()
+            if scheduler_per_batch:
+                scheduler.step()
             seen += len(labels)
             correct += int((logits.argmax(1) == labels).sum())
             loss_sum += float(loss.detach()) * len(labels)
@@ -384,18 +430,29 @@ def train_one(dataset: str, representation: str, seed: int, mode: str,
                 "representation": representation, "seed": seed,
                 "best_epoch": epoch, "validation": validation,
                 "model": {"channels": channels, "n_classes": n_classes,
+                          "architecture": (CONFIG["cifar_architecture"]
+                                           if dataset == "cifar10_dvs" else "plain"),
+                          "residual_stem_channels": CONFIG["cifar_residual_stem_channels"],
+                          "residual_stage_channels": CONFIG["cifar_residual_stage_channels"],
                           "decay": CONFIG["lif_decay"],
                           "threshold": CONFIG["lif_threshold"],
-                          "readout_size": CONFIG["readout_size"],
+                          "readout_size": (CONFIG["cifar_readout_size"]
+                                           if dataset == "cifar10_dvs" else
+                                           CONFIG["readout_size"]),
                           "pool_after_spike": pool_after_spike,
                           "pools": pools,
                           "feature_dropout": (CONFIG["cifar_feature_dropout"]
-                                              if dataset == "cifar10_dvs" else 0.0)},
+                                              if dataset == "cifar10_dvs" else 0.0),
+                          "normalization": (CONFIG["cifar_normalization"]
+                                            if dataset == "cifar10_dvs" else "batch"),
+                          "temporal_attention": (CONFIG["cifar_temporal_attention"]
+                                                 if dataset == "cifar10_dvs" else False)},
                 "config": CONFIG,
             }, checkpoint)
         else:
             stale += 1
-        scheduler.step()
+        if not scheduler_per_batch:
+            scheduler.step()
         row = {"dataset": dataset, "representation": representation,
                "seed": seed, "epoch": epoch, "train_loss": loss_sum / seen,
                "train_accuracy": correct / seen,
@@ -421,6 +478,9 @@ def train_one(dataset: str, representation: str, seed: int, mode: str,
         print(f"{dataset} | {representation} | {seed} | {epoch} | "
               f"{row['train_accuracy']:.4f} | {validation['accuracy']:.4f} | "
               f"{best_accuracy:.4f}", flush=True)
+        if (mode == "develop" and
+                stale >= CONFIG["development_early_stop_patience"]):
+            break
         if (mode == "final" and epoch >= CONFIG["minimum_epochs"] and
                 stale >= CONFIG["early_stop_patience"]):
             break
