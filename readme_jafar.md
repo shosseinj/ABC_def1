@@ -1,5 +1,11 @@
 # Current Research Status — TEMP-DRIFT Benchmark / Prior QSNN Work
 
+> **Controlled comparison in progress (2026-09-27):** The three N-MNIST reference architectures are being trained locally under the same frozen data split and training recipe as the custom SNN. A new joint clean-correct manifest and independent attack audits will be required before a fair four-model result is available. The current Tables 1–2 are published-reference context only. See `Reports/nmnist_controlled_four_models_status.md`.
+
+> **Published-reference comparison (2026-09-27):** Tables 1 and 2 now place the seed-42 custom SNN results from equal-event-count, first-1,000-clean-correct, paper-budget Binary and Integer runs beside ConvNet, Spiking ResNet18, and VGGSNN values transcribed from the paper. The three reference models were not rerun locally. The tables are descriptive, not controlled architecture rankings, because the custom model's training/checkpoint and clean accuracy differ. Older equal-duration results remain `NON_COMPARABLE`. See `Reports/nmnist_published_reference_comparison.md`, `Reports/nmnist_paper_aligned_integer_comparison.md`, and `Reports/nmnist_fair_comparison_audit.md`.
+
+> **Projection update (2026-09-27):** All nine seed-42 N-MNIST paper-aligned Binary budget conditions completed with independent audit `PASS`. Each uses 1,000 frozen clean-correct samples; `B0=200` achieved 99.4% ASR and the other eight conditions achieved 100%. An exact-equivalence-tested CUDA final projector accelerated `B_inf=3`; its first 768 records use the earlier projector and its final 232 use the new one, as recorded in metadata. The full projector equivalence suite passed 72/72 cases. These are local results, not a completed paper replication. See `Reports/nmnist_paper_aligned_projection_speedup.md`.
+
 > **Active clean-training remediation (2026-09-24):** TEMP-DRIFT and all other attacks are paused. A representation-matched, clean-only 12-checkpoint campaign is running for DVS-Gesture and CIFAR10-DVS over Binary/strict Integer grids and seeds 42/123/777. Three final seed-42 runs are currently complete; the campaign is resumable and selects checkpoints only by validation accuracy.
 
 ## Improved representation-matched clean SNN campaign (2026-09-24)
@@ -112,7 +118,7 @@ Clean-only evaluation of all requested seeds and both frozen representations is 
 
 ### N-MNIST benchmark tables with seed-matched clean accuracy
 
-This verification table reports **seed 42 only**. The custom-SNN row uses the independently measured full-test accuracy and 1,000 clean-correct samples in every attack cell. Prior Binary ASRs generated against count-trained checkpoints remain excluded. **The local row is `NON_COMPARABLE` to the paper rows because temporal binning, victim architecture/checkpoint, and attacked-subset selection differ.** See `Reports/nmnist_seed42_verification.md`.
+Table 1 reports the newer **seed-42 paper-aligned Binary run**: equal-event-count `T=10` frames, first 1,000 clean-correct official-test samples, and nine paper budget cells. The three other rows are published values, not local measurements. The older local 98.73%-accuracy equal-duration result is preserved in `Reports/nmnist_seed42_verification.md` and excluded here. Training/checkpoint and clean-accuracy differences remain, so Table 1 is a descriptive published-reference comparison; see `Reports/nmnist_published_reference_comparison.md`.
 
 #### Exact N-MNIST trainable parameter counts
 
@@ -132,9 +138,11 @@ Counts use each actual N-MNIST configuration, not generic architecture names.
 | N-MNIST | ConvNet | 99.06 | 100 | 100 | 100 | 58.9 | 99.9 | 100 | 13.0 | 53.1 | 98.5 |
 |  | ResNet18 | 99.62 | 100 | 100 | 100 | 69.2 | 97.4 | 100 | 78.9 | 100 | 100 |
 |  | VGGSNN | 99.64 | 98.9 | 100 | 100 | 26.4 | 65.5 | 94.7 | 18.3 | 81.8 | 99.8 |
-|  | **Custom SNN (ours; verified seed 42; NON_COMPARABLE)** | **98.73** | **82.9** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** |
+|  | **Custom SNN (ours; seed 42; Binary; exploratory / training unmatched)** | **98.56** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **100.0** | **99.4** | **100.0** | **100.0** |
 
-The attack values are independently verified seed-42 ASR percentages, not a multi-seed mean. The denominator is the same frozen manifest of 1,000 clean-correct samples in every cell. Every active budget was realized exactly; packet identity/count/amplitude, total mass, event line, temporal domain, collision freedom, reconstruction, and predictions passed. The 100% cells mean 1,000/1,000 successes under the frozen local protocol.
+The local attack values are independently verified seed-42 ASR percentages, not a multi-seed mean. The denominator is the same frozen manifest of 1,000 clean-correct samples in every cell. Packet identity/count/amplitude, total mass, event line, temporal domain, collision freedom, reconstruction, active-budget constraints, and predictions passed independent audit. The 100% cells mean 1,000/1,000 successes; `B0=200` means 994/1,000. The published rows retain their original paper provenance.
+
+Refresh the two local table rows from audited artifacts with `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_and_update_nmnist_paper_tables.ps1`. Add `-RunMissing` to train/run only missing conditions before refreshing; completed conditions are hash-checked and skipped. Add `-CheckOnly` for read-only verification. The three published rows are never changed by this runner.
 
 #### Table 2 — Integer-grid DVS, N-MNIST
 
@@ -143,9 +151,12 @@ The attack values are independently verified seed-42 ASR percentages, not a mult
 | N-MNIST | ConvNet | 99.19 | 100 | 100 | 100 | 61.8 | 99.2 | 100 | 100 | 13.0 | 56.1 | 99.1 | 100 |
 |  | ResNet18 | 99.62 | 100 | 100 | 100 | 53.9 | 93.6 | 99.8 | 100 | 86.1 | 99.8 | 100 | 100 |
 |  | VGGSNN | 99.71 | 46.3 | 100 | 100 | 8.3 | 18.5 | 39.9 | 76.7 | 5.8 | 11.2 | 16.1 | 49.8 |
-|  | **SNN (Ours), seed 42** | **98.49** | **83.3** | **100** | **100** | **100** | **100** | **100** | **100** | **99.8** | **100** | **100** | **100** |
-|  | **SNN (Ours), seed 123** | **98.14** | **77.9** | **100** | **100** | **99.9** | pending | — | — | — | — | — | — |
-|  | **SNN (Ours), seed 777** | **98.53** | pending | pending | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+|  | **Custom SNN (ours; seed 42; Integer; exploratory / training unmatched)** | **98.60** | **100.0** | **100.0** | **100.0** | **99.2** | **100.0** | **100.0** | **100.0** | **94.5** | **100.0** | **100.0** | **100.0** |
+|  | **SNN (Ours), seed 42; equal-duration, NON_COMPARABLE** | **98.49** | **83.3** | **100** | **100** | **100** | **100** | **100** | **100** | **99.8** | **100** | **100** | **100** |
+|  | **SNN (Ours), seed 123; equal-duration, NON_COMPARABLE** | **98.14** | **77.9** | **100** | **100** | **99.9** | pending | — | — | — | — | — | — |
+|  | **SNN (Ours), seed 777; equal-duration, NON_COMPARABLE** | **98.53** | pending | pending | pending | pending | pending | pending | pending | pending | pending | pending | pending |
+
+The new seed-42 equal-event-count Integer row uses a separate count-trained checkpoint, the same frozen 1,000 clean-correct test samples for all 11 budget cells, and independently audited packet-level retiming. All 11 cells have audit `PASS` and hash-verified completion markers. It is a descriptive comparison with published values, not a controlled architecture ranking: the custom model, training, checkpoint, and clean accuracy differ. The older equal-duration Integer rows are historical diagnostics and remain `NON_COMPARABLE`.
 
 Final clean accuracy across seeds 42, 123, and 777: **98.39 ± 0.21%**.
 
@@ -309,5 +320,9 @@ The paired budget-matched analysis reports PGD-only, TEMP-only, both-success, an
 - `tests/test_nmnist_budget_matched_atomic_writer.py`
 
 ## Bottom line
+
+### Paper-aligned N-MNIST Integer runner (11/11 audited PASS)
+
+Run `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_nmnist_seed42_paper_aligned_integer_all.ps1` from the repository root. The runner trains a separate seed-42 count-input checkpoint on equal-event-count `T=10` frames, then attacks the same frozen 1,000 clean-correct test samples at all 11 Integer budgets and independently audits each condition. All 11 are complete and hash verified; rerunning skips them. The paper model numbers remain published reference values; this runner measures only the local model. See `Reports/nmnist_paper_aligned_integer_comparison.md`.
 
 The repository contains completed five-seed QSNN-v3 validation evidence, a completed five-seed SNN reference, an independently audited canonical seed-42 attack protocol, and a completed 1,600-record budget-matched PGD/TEMP-DRIFT-v2 comparison. The evidence shows small, non-significant ASR differences and higher TEMP timestamp/frame distortion in the reported QSNN wall-clock cell. It does not establish attack superiority, QSNN robustness superiority, or a multi-seed robustness claim.
