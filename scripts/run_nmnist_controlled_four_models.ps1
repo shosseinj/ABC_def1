@@ -1,5 +1,5 @@
 param(
-    [switch]$FullBudgets,
+    [switch]$CriticalOnly,
     [switch]$DryRun
 )
 
@@ -22,14 +22,14 @@ function Invoke-Python([string]$Script, [string[]]$Arguments) {
 Push-Location $root
 try {
     foreach ($representation in @('binary', 'integer')) {
-        foreach ($model in @('convnet', 'resnet18', 'vggsnn')) {
+        foreach ($model in @('custom', 'convnet', 'resnet18', 'vggsnn')) {
             $args = @('--representation', $representation, '--model', $model)
             if ($DryRun) { Write-Host "WOULD TRAIN $representation $model" }
             else { Invoke-Python 'scripts/train_nmnist_controlled_four_models.py' $args }
         }
         if ($DryRun) { Write-Host "WOULD FREEZE joint clean-correct $representation manifest" }
         else { Invoke-Python 'scripts/build_nmnist_controlled_manifest.py' @('--representation', $representation) }
-        if ($FullBudgets) {
+        if (-not $CriticalOnly) {
             $conditions = @(
                 @{Kind='B_inf'; Budget=1}, @{Kind='B_inf'; Budget=2}, @{Kind='B_inf'; Budget=3},
                 @{Kind='B1'; Budget=500}, @{Kind='B1'; Budget=750}, @{Kind='B1'; Budget=1000},
@@ -50,8 +50,11 @@ try {
             }
         }
     }
+    if (-not $DryRun) {
+        Invoke-Python 'scripts/summarize_nmnist_controlled_four_models.py' @()
+    }
     if ($DryRun) { Write-Host 'Dry run complete; no experiment was executed.' }
-    else { Write-Host 'Controlled four-model paired experiment complete; inspect Reports/results/nmnist_controlled_four_models.' }
+    else { Write-Host 'Controlled four-model paired experiment complete; inspect Reports/results/nmnist_controlled_four_models_lr1e4.' }
 } finally {
     Pop-Location
 }

@@ -1,0 +1,15 @@
+% Sources: scripts/run_nmnist_budget_matched_comparison_v2_seed42.py:491-509,628-679;
+% scripts/run_nmnist_attack_protocol_v3_auditable_seed42.py:85-105,238-253;
+% scripts/run_nmnist_controlled_attack.py:39-133; attacks/temp_drift.py:8-20.
+\section{Evaluation metrics}
+For labels $y_i$ and predictions $\hat y_i$, clean accuracy is $N^{-1}\sum_i\mathbf1[\hat y_i=y_i]$. For class $c$, precision is $TP_c/(TP_c+FP_c)$, recall is $TP_c/(TP_c+FN_c)$, and macro-F1 is $C^{-1}\sum_c 2P_cR_c/(P_c+R_c)$, with undefined zero denominators handled by the evaluation implementation. Clean accuracy and macro-F1 must be labeled validation or official test.
+
+Let $M=\{i:\hat y_i^{\rm clean}=y_i\}$ be the frozen clean-correct manifest. Untargeted attack success rate is $\mathrm{ASR}=100|M|^{-1}\sum_{i\in M}\mathbf1[\hat y_i^{\rm adv}\ne y_i]$ percent; report numerator and denominator. Per-class ASR is the same expression restricted to $M_c=\{i\in M:y_i=c\}$, and is NOT VERIFIED if per-class denominators have not been recomputed from saved records. The four-model report uses $|M|=1000$ per representation/model/budget; the timestamp comparison uses $|M|=100$ per model/epsilon/access cell.
+
+For paired methods $A,B$ on the same IDs, define $n_{10}=\#\{A\text{ succeeds},B\text{ fails}\}$ and $n_{01}=\#\{A\text{ fails},B\text{ succeeds}\}$. The paired ASR difference is $(n_{01}-n_{10})/|M|$ when comparing $B-A$; exact McNemar/binomial inference uses only discordant pairs. The saved analysis also computes class-stratified bootstrap intervals (`scripts/run_nmnist_budget_matched_comparison_v2_seed42.py:628-659`). A single seed does not establish across-seed uncertainty.
+
+For native timestamps, mean normalized shift is $N^{-1}\sum_i|t_i'-t_i|/(t_N-t_1+1)$; bin-change fraction is $N^{-1}\sum_i\mathbf1[b(t_i')\ne b(t_i)]$; frame distortion is $\|F(E,t')-F(E,t)\|_2$. Check exact saved implementation in `scripts/run_nmnist_budget_matched_comparison_v2_seed42.py:491-509` before quoting a number. For grid packets, realized $B_\infty,B_1,B_0$ are defined in `mathematical_formulation.tex` and audited per sample.
+
+Query measures are distinct: candidate evaluations, attack-internal model forwards, backward evaluations, and verification forwards. PGD has 21 candidates, 41 attack forwards, 20 backwards in the timestamp protocol. TEMP has zero backwards and either 21 or 41 attack forwards in access-matched cells; wall-clock cells use calibrated $Q$ rather than equal query count. Sources: `scripts/run_nmnist_budget_matched_comparison_v2_seed42.py:686-695`, `readme_jafar.md:251-262`.
+
+The product-state timing surrogate $F_{\rm prod}=\prod_j\cos^2((\theta'_j-\theta_j)/2)$ appears in `attacks/temp_drift.py:8-20` and related defense utilities. This is a surrogate fidelity on encoded angles, not a measured quantum-hardware state fidelity. Any trace-distance or hardware-fidelity result is NOT VERIFIED for final N-MNIST experiments.

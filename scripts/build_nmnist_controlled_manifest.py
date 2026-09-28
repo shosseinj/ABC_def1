@@ -12,7 +12,7 @@ import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
 PYTHON = Path(r"C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\Scripts\python.exe")
-OUT = ROOT / "Reports/results/nmnist_controlled_four_models"
+OUT = ROOT / "Reports/results/nmnist_controlled_four_models_lr1e4"
 NAMES = ("custom", "convnet", "resnet18", "vggsnn")
 
 
@@ -30,7 +30,7 @@ def main(representation: str) -> None:
     prior = ROOT / f"Reports/results/nmnist_seed42_paper_aligned{'_integer' if representation == 'integer' else ''}/seed42_clean_result.json"
     results = {}
     for name in NAMES:
-        path = prior if name == "custom" else OUT / f"{representation}_{name}_seed42.json"
+        path = OUT / f"{representation}_{name}_seed42.json"
         result = json.loads(path.read_text(encoding="utf-8"))
         if not (result.get("clean_gate_pass", True) and result.get("status") == "PASS"
                 and result["seed"] == 42 and result["test"]["samples"] == 10000

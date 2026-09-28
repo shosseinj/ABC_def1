@@ -27,15 +27,16 @@ from experiments.nmnist.reference_models.resnet import ResNet18
 from experiments.nmnist.reference_models.simplenet import SimpleNet_v2
 from experiments.nmnist.reference_models.vgg import VGGSNN
 from experiments.nmnist.snn_baseline import stratified_train_validation_indices
+from models.nmnist_snn import NMNISTConvSNN
 from scripts.train_nmnist_seed42_paper_aligned import (
     CachedBinary, Logger, atomic_json, evaluate, make_loader, set_determinism, sha256, train_epoch,
 )
 
 PYTHON = Path(r"C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\Scripts\python.exe")
-OUT = ROOT / "Reports/results/nmnist_controlled_four_models"
-STATE = ROOT / "Reports/checkpoints/nmnist_controlled_four_models"
-CONFIG = ROOT / "configs/nmnist_controlled_four_models.json"
-MODELS = {"convnet": SimpleNet_v2, "resnet18": ResNet18, "vggsnn": VGGSNN}
+OUT = ROOT / "Reports/results/nmnist_controlled_four_models_lr1e4"
+STATE = ROOT / "Reports/checkpoints/nmnist_controlled_four_models_lr1e4"
+CONFIG = ROOT / "configs/nmnist_controlled_four_models_lr1e4.json"
+MODELS = {"custom": NMNISTConvSNN, "convnet": SimpleNet_v2, "resnet18": ResNet18, "vggsnn": VGGSNN}
 
 
 def atomic_torch(path: Path, value: dict) -> None:
@@ -76,10 +77,11 @@ def run(model_name: str, representation: str) -> None:
             return
         if old.get("test", {}).get("accuracy", 1.0) < 0.95:
             raise RuntimeError(f"{run_id}: existing clean accuracy below 95%; revise the common recipe")
-    log = Logger(ROOT / f"Reports/logs/nmnist_controlled_four_models/{run_id}.log")
+    log = Logger(ROOT / f"Reports/logs/nmnist_controlled_four_models_lr1e4/{run_id}.log")
     try:
         set_determinism(42)
-        model = BatchMajorReference(MODELS[model_name](num_classes=10, img_size=(2, 34, 34))).cuda()
+        model = (NMNISTConvSNN(0.5, 10) if model_name == "custom" else
+                 BatchMajorReference(MODELS[model_name](num_classes=10, img_size=(2, 34, 34)))).cuda()
         parameters = sum(p.numel() for p in model.parameters() if p.requires_grad)
         optimizer = torch.optim.Adam(model.parameters(), lr=config["learning_rate"], weight_decay=config["weight_decay"])
         history = []
@@ -136,7 +138,8 @@ def run(model_name: str, representation: str) -> None:
         with history_path.open("w", encoding="utf-8", newline="") as stream:
             writer = csv.DictWriter(stream, fieldnames=history[0].keys())
             writer.writeheader(); writer.writerows(history)
-        source_model_path = ROOT / f"experiments/nmnist/reference_models/{'simplenet' if model_name == 'convnet' else 'resnet' if model_name == 'resnet18' else 'vgg'}.py"
+        source_model_path = (ROOT / "models/nmnist_snn.py" if model_name == "custom" else
+                             ROOT / f"experiments/nmnist/reference_models/{'simplenet' if model_name == 'convnet' else 'resnet' if model_name == 'resnet18' else 'vgg'}.py")
         result = {"status": "PASS" if test["accuracy"] >= 0.95 else "INSUFFICIENT_CLEAN_ACCURACY", "run_id": run_id, "model": model_name, "representation": representation,
                   "seed": 42, "parameters": parameters, "test": test, "best_epoch": checkpoint["epoch"],
                   "checkpoint_path": str(best_path.relative_to(ROOT)).replace("\\", "/"), "checkpoint_sha256": sha256(best_path),

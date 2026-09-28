@@ -1,0 +1,11 @@
+# Seeds and dataset protocol
+
+| Study | Partition and representation | Seed(s) | Model selection | Attack denominator |
+|---|---|---|---|---|
+| QSNN-v3 validation | N-MNIST official 60,000 training samples split into 55,000 development training and 5,000 validation; timestamp events converted to 10 ordered polarity frames for attack | 42, 123, 777, 2026, 6543 for QSNN clean validation; seed 42 for attack | highest validation accuracy, then lowest validation loss; no official test access | 100 common-clean-correct validation IDs, first 10 per class, shared by SNN and QSNN |
+| Controlled four-model | Official 60,000 training samples stratified 55,000/5,000; official 10,000 test; equal-event-count T=10, separate Binary and Integer caches and checkpoints | 42 only | same Adam recipe, best validation accuracy then loss, separate checkpoint for each model/representation | first 1,000 official-test IDs jointly clean-correct for all four models, frozen separately per representation |
+| Earlier paper-aligned local custom SNN | Equal-event-count T=10, Binary and Integer, different training/checkpoint recipe | 42 | historical recipe | 1,000 clean-correct IDs per representation; these are **not** necessarily the same IDs as the controlled four-model manifest |
+
+Evidence: `results/nmnist_snn_multiseed_split.json`; `scripts/run_nmnist_qsnn_v3_multiseed.py:52-100`; `scripts/run_nmnist_common_attack_protocol_seed42.py:100-123`; `configs/nmnist_controlled_four_models_lr1e4.json`; `scripts/build_nmnist_controlled_manifest.py`; `Reports/results/nmnist_controlled_four_models_lr1e4/{binary,integer}_joint_clean_manifest.json`; `readme_jafar.md:119-159,175-209`.
+
+The frozen four-model manifest hashes reported in `Reports/nmnist_controlled_four_models_lr1e4_comparison.md` are Binary `ecb866405e191304f36d3de3f8447d08b02913ffee7079f3b0f3b8a63f2b46a5` and Integer `b784862be9f353691cd1902466331ab5e53f9dde4f3dfa39de5a0d5932587a34`. Joint clean-correct pools contain 9,522 and 9,495 samples, respectively. The first 1,000 selection is deterministic but is not a random or class-balanced test subset. Five-seed QSNN validation estimates cannot be transferred to the single-seed controlled attack study. Official test performance of QSNN-v3 is NOT VERIFIED.

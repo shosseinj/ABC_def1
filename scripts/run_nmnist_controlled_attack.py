@@ -21,8 +21,8 @@ from experiments.nmnist.official_pil_adapter_batched import build_attack, load_o
 from scripts.run_nmnist_seed42_paper_aligned_integer_attacks import atomic_json, sha256, state_arrays, validate, write_state
 
 PYTHON = Path(r"C:\Users\jafari.h.SPADANACO\Desktop\ai_project\.venv\Scripts\python.exe")
-OUT = ROOT / "Reports/results/nmnist_controlled_four_models/attacks"
-STATE = ROOT / "Reports/checkpoints/nmnist_controlled_four_models"
+OUT = ROOT / "Reports/results/nmnist_controlled_four_models_lr1e4/attacks"
+STATE = ROOT / "Reports/checkpoints/nmnist_controlled_four_models_lr1e4"
 BUDGETS = {"binary": {"B_inf": (1, 2, 3), "B1": (500, 750, 1000), "B0": (200, 300, 400)},
            "integer": {"B_inf": (1, 2, 3), "B1": (500, 750, 1000, 1500), "B0": (200, 300, 400, 600)}}
 
@@ -35,9 +35,9 @@ def run(representation: str, model_name: str, kind: str, budget: int) -> None:
     if not torch.cuda.is_available():
         raise RuntimeError("CUDA unavailable")
     run_id = f"controlled_{representation}_{model_name}_{kind}_{budget}_seed42"
-    result_dir = ROOT / "Reports/results/nmnist_controlled_four_models"
+    result_dir = ROOT / "Reports/results/nmnist_controlled_four_models_lr1e4"
     custom_result = ROOT / f"Reports/results/nmnist_seed42_paper_aligned{'_integer' if representation == 'integer' else ''}/seed42_clean_result.json"
-    model_result = custom_result if model_name == "custom" else result_dir / f"{representation}_{model_name}_seed42.json"
+    model_result = result_dir / f"{representation}_{model_name}_seed42.json"
     result = json.loads(model_result.read_text(encoding="utf-8"))
     manifest_path = result_dir / f"{representation}_joint_clean_manifest.json"
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
@@ -120,6 +120,7 @@ def run(representation: str, model_name: str, kind: str, budget: int) -> None:
                 "clean_correct_denominator": 1000, "successful_attack_numerator_runner": successes,
                 "manifest_path": str(manifest_path.relative_to(ROOT)).replace("\\", "/"), "manifest_sha256": sha256(manifest_path),
                 "clean_result_path": str(model_result.relative_to(ROOT)).replace("\\", "/"), "clean_result_sha256": sha256(model_result),
+                "model_source_path": result["model_source_path"], "model_source_sha256": result["model_source_sha256"],
                 "checkpoint_path": result["checkpoint_path"], "checkpoint_sha256": sha256(checkpoint_path),
                 "clean_cache_path": result["test_cache"]["path"], "clean_cache_sha256": sha256(cache_path),
                 "artifact_path": str(artifact.relative_to(ROOT)).replace("\\", "/"), "artifact_sha256": artifact_hash,

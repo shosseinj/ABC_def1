@@ -26,7 +26,7 @@ def main(metadata_path: Path, output_path: Path) -> None:
         raise RuntimeError(f"use required interpreter {PYTHON}")
     meta = json.loads(metadata_path.read_text(encoding="utf-8"))
     errors = []
-    for prefix in ("manifest", "clean_result", "checkpoint", "clean_cache", "artifact", "adapter", "configuration"):
+    for prefix in ("manifest", "clean_result", "model_source", "checkpoint", "clean_cache", "artifact", "adapter", "configuration"):
         path = ROOT / meta[f"{prefix}_path"]
         if sha256(path) != meta[f"{prefix}_sha256"]:
             errors.append(f"{prefix} hash mismatch")
@@ -42,6 +42,25 @@ def main(metadata_path: Path, output_path: Path) -> None:
     labels = np.asarray(manifest["labels"], dtype=np.int64)
     if len(ids) != 1000 or len(np.unique(ids)) != 1000 or np.any(np.diff(ids) <= 0):
         errors.append("manifest IDs are not 1000 unique ordered test IDs")
+    jointly_eligible = np.ones(10000, dtype=bool)
+    for joint_name in ("custom", "convnet", "resnet18", "vggsnn"):
+        item = manifest["models"][joint_name]
+        joint_result_path = ROOT / item["result_path"]
+        if sha256(joint_result_path) != item["result_sha256"]:
+            errors.append(f"{joint_name} clean-result hash mismatch")
+        joint_result = json.loads(joint_result_path.read_text(encoding="utf-8"))
+        joint_prediction_path = ROOT / joint_result["predictions_path"]
+        if sha256(joint_prediction_path) != item["predictions_sha256"]:
+            errors.append(f"{joint_name} prediction hash mismatch")
+        with np.load(joint_prediction_path, allow_pickle=False) as joint_data:
+            joint_ids = joint_data["sample_ids"].astype(np.int64)
+            joint_labels = joint_data["labels"].astype(np.int64)
+            joint_predictions = joint_data["predictions"].astype(np.int64)
+        if not np.array_equal(joint_ids, np.arange(10000)) or not np.array_equal(joint_labels[ids], labels):
+            errors.append(f"{joint_name} official test order/labels mismatch")
+        jointly_eligible &= joint_predictions == joint_labels
+    if not np.array_equal(np.flatnonzero(jointly_eligible)[:1000], ids):
+        errors.append("joint manifest is not first 1000 clean-correct intersection")
     with np.load(ROOT / result["predictions_path"], allow_pickle=False) as data:
         recorded_ids = data["sample_ids"].astype(np.int64)
         recorded_labels = data["labels"].astype(np.int64)
@@ -66,6 +85,8 @@ def main(metadata_path: Path, output_path: Path) -> None:
     kind, requested = meta["budget_type"], int(meta["requested_budget"])
     for index, sample_id in enumerate(ids):
         events, label = dataset[int(sample_id)]
+        if len(events["x"]) > np.iinfo(np.uint16).max:
+            errors.append(f"sample {int(sample_id)} may overflow uint16 packet counts")
         clean = converter(events, 10).astype(np.uint16)
         reconstructed_clean[index] = clean
         start, end = int(offsets[index]), int(offsets[index + 1])
